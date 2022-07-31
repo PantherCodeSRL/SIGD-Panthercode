@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCEDE77B-6073-4D4D-9D3B-7025E934EE50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SIGD</RootNamespace>
+    <AssemblyName>SIGD</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBI.Designer.cs">
+      <DependentUpon>FBI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFI.Designer.cs">
+      <DependentUpon>FFI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FF.Designer.cs">
+      <DependentUpon>FF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FB.Designer.cs">
+      <DependentUpon>FB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHI.Designer.cs">
+      <DependentUpon>FHI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FH.Designer.cs">
+      <DependentUpon>FH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1 I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1 I.Designer.cs">
+      <DependentUpon>Form1 I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquiposI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquiposI.Designer.cs">
+      <DependentUpon>FrmEquiposI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquipos.Designer.cs">
+      <DependentUpon>FrmEquipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJugadoresI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJugadoresI.Designer.cs">
+      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJugadores.Designer.cs">
+      <DependentUpon>FrmJugadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesionI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesionI.Designer.cs">
+      <DependentUpon>InicioSesionI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stringsgobales.en.Designer.cs">
+      <DependentUpon>stringsgobales.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="stringsgobales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stringsgobales.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FBI.en.resx">
+      <DependentUpon>FBI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBI.resx">
+      <DependentUpon>FBI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FB.en.resx">
+      <DependentUpon>FB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFI.en.resx">
+      <DependentUpon>FFI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFI.resx">
+      <DependentUpon>FFI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FF.resx">
+      <DependentUpon>FF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FB.resx">
+      <DependentUpon>FB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHI.en.resx">
+      <DependentUpon>FHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHI.resx">
+      <DependentUpon>FHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FH.resx">
+      <DependentUpon>FH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1 I.en-US.resx">
+      <DependentUpon>Form1 I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1 I.en.resx">
+      <DependentUpon>Form1 I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1 I.resx">
+      <DependentUpon>Form1 I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en-US.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquiposI.en.resx">
+      <DependentUpon>FrmEquiposI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquiposI.resx">
+      <DependentUpon>FrmEquiposI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipos.en.resx">
+      <DependentUpon>FrmEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipos.resx">
+      <DependentUpon>FrmEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadoresI.en.resx">
+      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadoresI.resx">
+      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadores.en.resx">
+      <DependentUpon>FrmJugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadores.resx">
+      <DependentUpon>FrmJugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesionI.en.resx">
+      <DependentUpon>InicioSesionI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesionI.resx">
+      <DependentUpon>InicioSesionI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.en.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stringsgobales.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>stringsgobales.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stringsgobales.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>stringsgobales.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncioS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-6 - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-xmark-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-regular-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle-top-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-xmark-solid-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-running-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-group-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-maximize-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degradou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degradou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\futbol-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketball-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-svg-handball-icon-1167717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caret-right-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caret-left-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
