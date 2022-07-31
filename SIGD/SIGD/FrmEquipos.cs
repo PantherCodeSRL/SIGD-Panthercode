@@ -19,7 +19,7 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Form1();
+            Form Form1 = new FormP();
             Form1.Show();
             this.Hide();
 

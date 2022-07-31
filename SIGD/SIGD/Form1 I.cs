@@ -59,7 +59,7 @@ namespace SIGD
         private void label1_click(object sender, EventArgs e)
         {
             
-            Form1 form1 = new Form1();
+            FormP form1 = new FormP();
             form1.Show();
             this.Hide();
 

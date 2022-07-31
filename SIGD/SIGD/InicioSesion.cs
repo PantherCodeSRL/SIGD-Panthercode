@@ -17,63 +17,49 @@ namespace SIGD
             InitializeComponent();
         }
 
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+            btnSalida.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
         }
 
-        private void button1_MouseLeave(object sender, EventArgs e)
+        private void btnSalida_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+            btnSalida.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSalida_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void cbxMC_CheckedChanged(object sender, EventArgs e)
         {
             if(cbxMC.Checked)
             {
-                txtbxC.UseSystemPasswordChar = false;
+                txtPwd.UseSystemPasswordChar = false;
             }
             else
             {
-                txtbxC.UseSystemPasswordChar = true;
+                txtPwd.UseSystemPasswordChar = true;
             }
-
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void lblPwd_Click(object sender, EventArgs e)
         {
             MessageBox.Show(stringsgobales.Recuperacion);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnInvitado_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void InicioSesion_FormClosing(object sender, FormClosingEventArgs e)
-        {
-        }
         
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || txtbxC.Text == "") { MessageBox.Show("complete correctamente los campos de ingreso"); }
-            Close();
-            
+            if (txtUser.Text == "" || txtPwd.Text == "")
+            {
+                MessageBox.Show("Complete correctamente los campos de ingreso","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

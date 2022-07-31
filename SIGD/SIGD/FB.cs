@@ -20,7 +20,7 @@ namespace SIGD
         Rectangle panelIOriginalRect;
         private void btnVentana1_Click(object sender, EventArgs e)
             {
-            Form1 form1 = new Form1();
+            FormP form1 = new FormP();
                 form1.Show();
             this.Hide();
             }
@@ -41,7 +41,7 @@ namespace SIGD
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form1 form1= new Form1();
+            FormP form1= new FormP();
             form1.Show();
             this.Hide();
         }

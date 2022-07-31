@@ -20,7 +20,7 @@ namespace SIGD
         Rectangle panelIOriginalRect;
         private void btnVentana1_Click(object sender, EventArgs e)
             {
-            Form1 Ventana1 = new Form1();
+            FormP Ventana1 = new FormP();
             Ventana1.Show();
             this.Hide();
             }
@@ -99,7 +99,7 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-                Form1 Form1 = new Form1();
+                FormP Form1 = new FormP();
                 Form1.Show();
                 this.Hide();
         }

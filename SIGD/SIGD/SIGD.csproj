@@ -89,11 +89,11 @@
     <Compile Include="Form1 I.Designer.cs">
       <DependentUpon>Form1 I.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormP.Designer.cs">
+      <DependentUpon>FormP.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEquiposI.cs">
       <SubType>Form</SubType>
@@ -182,14 +182,14 @@
     <EmbeddedResource Include="Form1 I.resx">
       <DependentUpon>Form1 I.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.en-US.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormP.en-US.resx">
+      <DependentUpon>FormP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.en.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormP.en.resx">
+      <DependentUpon>FormP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormP.resx">
+      <DependentUpon>FormP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEquiposI.en.resx">
       <DependentUpon>FrmEquiposI.cs</DependentUpon>
