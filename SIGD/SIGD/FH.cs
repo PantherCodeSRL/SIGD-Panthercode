@@ -87,5 +87,10 @@ namespace SIGD
             ff.Show();
             this.Close();
         }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

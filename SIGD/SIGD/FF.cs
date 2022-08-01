@@ -23,14 +23,14 @@ namespace SIGD
         {
             Form fh = new FH();
             fh.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
             Form fb = new FB();
             fb.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void resizeControl(Rectangle OriginalControlRect, Control control)
@@ -78,6 +78,11 @@ namespace SIGD
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
-        }        
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

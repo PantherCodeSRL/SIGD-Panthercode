@@ -23,7 +23,7 @@ namespace SIGD
         {
             FF ff = new FF();
             ff.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnH_Click(object sender, EventArgs e)
@@ -78,6 +78,11 @@ namespace SIGD
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

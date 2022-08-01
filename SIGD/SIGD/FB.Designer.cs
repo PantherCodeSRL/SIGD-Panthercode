@@ -273,6 +273,7 @@
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMin.Name = "btnMin";
             this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // panelI
             // 

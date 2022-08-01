@@ -336,6 +336,7 @@
             this.button5.Size = new System.Drawing.Size(20, 35);
             this.button5.TabIndex = 21;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // panelI
             // 
