@@ -18,44 +18,23 @@ namespace SIGD
         }
 
         Rectangle panelIOriginalRect;
-        private void btnVentana1_Click(object sender, EventArgs e)
-            {
-            FormP form1 = new FormP();
-                form1.Show();
-            this.Hide();
-            }
-
-         
-
-        private void button6_Click(object sender, EventArgs e)
+      
+        private void btnF_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            FF FF = new FF();
-            FF.Show();
+            FF ff = new FF();
+            ff.Show();
             this.Hide();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnH_Click(object sender, EventArgs e)
         {
-            FormP form1= new FormP();
-            form1.Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FB FB = new FB();
-            FB.Show();
-            this.Hide();
+            FH fh = new FH();
+            fh.Show();
+            this.Close();
         }
 
         private void resizeControl(Rectangle OriginalControlRect, Control control)
         {
-
             int newX = (int)(OriginalControlRect.X);
             int newY = (int)(OriginalControlRect.Y);
 
@@ -64,9 +43,6 @@ namespace SIGD
 
             control.Location = new Point(newX, newY);
             control.Size = new Size(newWidth, newHeight);
-
-
-
         }
         bool res = false;
         private void btnResH_Click(object sender, EventArgs e)
@@ -87,7 +63,6 @@ namespace SIGD
                 panelI.AutoScroll = false;
                 res = false;
             }
-
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -105,15 +80,9 @@ namespace SIGD
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
 
-        private void FB_Load(object sender, EventArgs e)
-        {
-        //    panel1OriginalRect = new Rectangle(panel1.Location.X, panel1.Location.Y, (this.Width-20)/2, panel1.Height);
-        //    resizeControl(panel1OriginalRect, panel1);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
 
         }
     }
-    }
+}

@@ -10,12 +10,11 @@ using System.Threading.Tasks;
 using System.Globalization;
 using System.Windows.Forms;
 
-
 namespace SIGD
 {
     public partial class FormP : Form
     {
-        public FormP()
+        public FormP() 
         {
             InitializeComponent();
         }
@@ -49,7 +48,6 @@ namespace SIGD
             this.WindowState = FormWindowState.Minimized;
         }
              
-
         private void btnH_Click(object sender, EventArgs e)
         {
             FH fh = new FH();
@@ -113,5 +111,3 @@ namespace SIGD
         }
     }
 }
-   
-

@@ -18,30 +18,10 @@ namespace SIGD
         }
 
         Rectangle panelIOriginalRect;
-        private void btnVentana1_Click(object sender, EventArgs e)
-            {
-            FormP Ventana1 = new FormP();
-            Ventana1.Show();
-            this.Hide();
-            }
-
-         
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            FF FF = new FF();
-            FF.Show();
-            this.Hide();
-        }
+        public bool principal = false;
 
         private void resizeControl(Rectangle OriginalControlRect, Control control)
         {
-
             int newX = (int)(OriginalControlRect.X);
             int newY = (int)(OriginalControlRect.Y);
 
@@ -50,10 +30,8 @@ namespace SIGD
 
             control.Location = new Point(newX, newY);
             control.Size = new Size(newWidth, newHeight);
-
-
-
         }
+
         bool res = false;
         private void btnResH_Click(object sender, EventArgs e)
         {
@@ -73,7 +51,6 @@ namespace SIGD
                 panelI.AutoScroll = false;
                 res = false;
             }
-
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -91,24 +68,24 @@ namespace SIGD
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
 
-        private void FH_Load(object sender, EventArgs e)
-        {
-        //    panel1OriginalRect = new Rectangle(panel1.Location.X, panel1.Location.Y, (this.Width-20)/2, panel1.Height);
-        //    resizeControl(panel1OriginalRect, panel1);
-        }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
-                FormP Form1 = new FormP();
-                Form1.Show();
-                this.Hide();
+            //preguntarle al profe sobre como mostrar el FormP
+            this.Close();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnB_Click(object sender, EventArgs e)
         {
-            Form fb= new FB();
+            FB fb= new FB();
             fb.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void btnF_Click(object sender, EventArgs e)
+        {
+            FF ff = new FF();
+            ff.Show();
+            this.Close();
         }
     }
 }

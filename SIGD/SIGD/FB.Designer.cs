@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FB));
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.plSuperior = new System.Windows.Forms.Panel();
+            this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.btnF = new System.Windows.Forms.Button();
+            this.btnH = new System.Windows.Forms.Button();
+            this.pbH = new System.Windows.Forms.PictureBox();
+            this.pbF = new System.Windows.Forms.PictureBox();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.pbB = new System.Windows.Forms.PictureBox();
+            this.tlpHerramientas = new System.Windows.Forms.TableLayoutPanel();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnMin = new System.Windows.Forms.Button();
             this.panelI = new System.Windows.Forms.Panel();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.plFB = new System.Windows.Forms.Panel();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
@@ -115,7 +115,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblFB = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -129,13 +129,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnResH = new System.Windows.Forms.Button();
-            this.panel4.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.plSuperior.SuspendLayout();
+            this.tlpOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).BeginInit();
+            this.tlpHerramientas.SuspendLayout();
             this.panelI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
@@ -145,7 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.plFB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
@@ -169,87 +169,87 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel4
+            // plSuperior
             // 
-            this.panel4.BackColor = System.Drawing.Color.SlateGray;
-            this.panel4.Controls.Add(this.tableLayoutPanel2);
-            this.panel4.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            this.plSuperior.BackColor = System.Drawing.Color.SlateGray;
+            this.plSuperior.Controls.Add(this.tlpOpciones);
+            this.plSuperior.Controls.Add(this.tlpHerramientas);
+            resources.ApplyResources(this.plSuperior, "plSuperior");
+            this.plSuperior.Name = "plSuperior";
             // 
-            // tableLayoutPanel2
+            // tlpOpciones
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button12, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button9, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(this.tlpOpciones, "tlpOpciones");
+            this.tlpOpciones.Controls.Add(this.pbMenu, 1, 0);
+            this.tlpOpciones.Controls.Add(this.btnF, 6, 0);
+            this.tlpOpciones.Controls.Add(this.btnH, 4, 0);
+            this.tlpOpciones.Controls.Add(this.pbH, 3, 0);
+            this.tlpOpciones.Controls.Add(this.pbF, 5, 0);
+            this.tlpOpciones.Controls.Add(this.btnMenu, 2, 0);
+            this.tlpOpciones.Controls.Add(this.pbB, 0, 0);
+            this.tlpOpciones.Name = "tlpOpciones";
             // 
-            // pictureBox4
+            // pbMenu
             // 
-            this.pictureBox4.Image = global::SIGD.Properties.Resources.house_solid;
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
+            this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
+            resources.ApplyResources(this.pbMenu, "pbMenu");
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.TabStop = false;
             // 
-            // button12
+            // btnF
             // 
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.btnF.FlatAppearance.BorderSize = 0;
+            this.btnF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnF, "btnF");
+            this.btnF.Name = "btnF";
+            this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.Click += new System.EventHandler(this.btnF_Click);
             // 
-            // button9
+            // btnH
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnH.FlatAppearance.BorderSize = 0;
+            this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnH, "btnH");
+            this.btnH.Name = "btnH";
+            this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
-            // pictureBox1
+            // pbH
             // 
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.pbH.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
+            resources.ApplyResources(this.pbH, "pbH");
+            this.pbH.Name = "pbH";
+            this.pbH.TabStop = false;
             // 
-            // pictureBox3
+            // pbF
             // 
-            this.pictureBox3.Image = global::SIGD.Properties.Resources.futbol_solid;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            this.pbF.Image = global::SIGD.Properties.Resources.futbol_solid;
+            resources.ApplyResources(this.pbF, "pbF");
+            this.pbF.Name = "pbF";
+            this.pbF.TabStop = false;
             // 
-            // button2
+            // btnMenu
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button9_Click);
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnMenu, "btnMenu");
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // pictureBox2
+            // pbB
             // 
-            this.pictureBox2.Image = global::SIGD.Properties.Resources.basketball_solid;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            this.pbB.Image = global::SIGD.Properties.Resources.basketball_solid;
+            resources.ApplyResources(this.pbB, "pbB");
+            this.pbB.Name = "pbB";
+            this.pbB.TabStop = false;
             // 
-            // tableLayoutPanel1
+            // tlpHerramientas
             // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            resources.ApplyResources(this.tlpHerramientas, "tlpHerramientas");
+            this.tlpHerramientas.Controls.Add(this.btnCerrar, 1, 0);
+            this.tlpHerramientas.Controls.Add(this.btnMin, 0, 0);
+            this.tlpHerramientas.Name = "tlpHerramientas";
             // 
             // btnCerrar
             // 
@@ -265,14 +265,14 @@
             this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
             this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
             // 
-            // button5
+            // btnMin
             // 
-            this.button5.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnMin.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            resources.ApplyResources(this.btnMin, "btnMin");
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMin.Name = "btnMin";
+            this.btnMin.UseVisualStyleBackColor = true;
             // 
             // panelI
             // 
@@ -446,71 +446,70 @@
             resources.ApplyResources(this.label77, "label77");
             this.label77.Name = "label77";
             // 
-            // panel1
+            // plFB
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.pictureBox27);
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox26);
-            this.panel1.Controls.Add(this.pictureBox15);
-            this.panel1.Controls.Add(this.pictureBox25);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox23);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox22);
-            this.panel1.Controls.Add(this.pictureBox13);
-            this.panel1.Controls.Add(this.pictureBox21);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.label48);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.pictureBox20);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.label47);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.pictureBox19);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label45);
-            this.panel1.Controls.Add(this.pictureBox18);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label44);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.label43);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.pictureBox17);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.label41);
-            this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label39);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label38);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label37);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label35);
-            this.panel1.Controls.Add(this.label34);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            resources.ApplyResources(this.plFB, "plFB");
+            this.plFB.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.plFB.Controls.Add(this.pictureBox27);
+            this.plFB.Controls.Add(this.pictureBox12);
+            this.plFB.Controls.Add(this.pictureBox26);
+            this.plFB.Controls.Add(this.pictureBox15);
+            this.plFB.Controls.Add(this.pictureBox25);
+            this.plFB.Controls.Add(this.pictureBox10);
+            this.plFB.Controls.Add(this.pictureBox23);
+            this.plFB.Controls.Add(this.pictureBox11);
+            this.plFB.Controls.Add(this.pictureBox22);
+            this.plFB.Controls.Add(this.pictureBox13);
+            this.plFB.Controls.Add(this.pictureBox21);
+            this.plFB.Controls.Add(this.pictureBox9);
+            this.plFB.Controls.Add(this.label48);
+            this.plFB.Controls.Add(this.label17);
+            this.plFB.Controls.Add(this.pictureBox20);
+            this.plFB.Controls.Add(this.pictureBox8);
+            this.plFB.Controls.Add(this.label47);
+            this.plFB.Controls.Add(this.label24);
+            this.plFB.Controls.Add(this.pictureBox19);
+            this.plFB.Controls.Add(this.pictureBox6);
+            this.plFB.Controls.Add(this.label45);
+            this.plFB.Controls.Add(this.pictureBox18);
+            this.plFB.Controls.Add(this.label13);
+            this.plFB.Controls.Add(this.label44);
+            this.plFB.Controls.Add(this.pictureBox7);
+            this.plFB.Controls.Add(this.label43);
+            this.plFB.Controls.Add(this.label16);
+            this.plFB.Controls.Add(this.pictureBox17);
+            this.plFB.Controls.Add(this.label22);
+            this.plFB.Controls.Add(this.pictureBox5);
+            this.plFB.Controls.Add(this.label41);
+            this.plFB.Controls.Add(this.label40);
+            this.plFB.Controls.Add(this.label12);
+            this.plFB.Controls.Add(this.label39);
+            this.plFB.Controls.Add(this.label20);
+            this.plFB.Controls.Add(this.label38);
+            this.plFB.Controls.Add(this.label14);
+            this.plFB.Controls.Add(this.label37);
+            this.plFB.Controls.Add(this.label19);
+            this.plFB.Controls.Add(this.label5);
+            this.plFB.Controls.Add(this.label35);
+            this.plFB.Controls.Add(this.label34);
+            this.plFB.Controls.Add(this.label11);
+            this.plFB.Controls.Add(this.label33);
+            this.plFB.Controls.Add(this.label9);
+            this.plFB.Controls.Add(this.label15);
+            this.plFB.Controls.Add(this.label32);
+            this.plFB.Controls.Add(this.lblFB);
+            this.plFB.Controls.Add(this.label31);
+            this.plFB.Controls.Add(this.label8);
+            this.plFB.Controls.Add(this.label10);
+            this.plFB.Controls.Add(this.label29);
+            this.plFB.Controls.Add(this.label28);
+            this.plFB.Controls.Add(this.label3);
+            this.plFB.Controls.Add(this.label27);
+            this.plFB.Controls.Add(this.label6);
+            this.plFB.Controls.Add(this.label26);
+            this.plFB.Controls.Add(this.label2);
+            this.plFB.Controls.Add(this.label1);
+            this.plFB.Name = "plFB";
             // 
             // pictureBox27
             // 
@@ -791,10 +790,10 @@
             resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
             // 
-            // label4
+            // lblFB
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblFB, "lblFB");
+            this.lblFB.Name = "lblFB";
             // 
             // label31
             // 
@@ -878,23 +877,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.plFB);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelI);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.plSuperior);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "FB";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.FB_Load);
-            this.panel4.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.plSuperior.ResumeLayout(false);
+            this.tlpOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).EndInit();
+            this.tlpHerramientas.ResumeLayout(false);
             this.panelI.ResumeLayout(false);
             this.panelI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
@@ -905,8 +903,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.plFB.ResumeLayout(false);
+            this.plFB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
@@ -933,20 +931,20 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel plSuperior;
+        private System.Windows.Forms.TableLayoutPanel tlpHerramientas;
+        private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.Button btnF;
+        private System.Windows.Forms.Button btnH;
+        private System.Windows.Forms.TableLayoutPanel tlpOpciones;
+        private System.Windows.Forms.PictureBox pbH;
+        private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.PictureBox pbB;
+        private System.Windows.Forms.PictureBox pbF;
+        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel panelI;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel plFB;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox26;
@@ -994,7 +992,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblFB;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;

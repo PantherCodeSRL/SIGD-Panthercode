@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FH));
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.btnF = new System.Windows.Forms.Button();
+            this.btnB = new System.Windows.Forms.Button();
+            this.pbFix = new System.Windows.Forms.PictureBox();
+            this.pbB = new System.Windows.Forms.PictureBox();
+            this.pbF = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -115,7 +115,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblFH = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -131,10 +131,10 @@
             this.btnResH = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFix)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
@@ -190,12 +190,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button12, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button9, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pbMenu, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnF, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnB, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pbFix, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pbB, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pbF, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMenu, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -205,75 +205,75 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(413, 55);
             this.tableLayoutPanel2.TabIndex = 27;
             // 
-            // pictureBox4
+            // pbMenu
             // 
-            this.pictureBox4.Image = global::SIGD.Properties.Resources.house_solid;
-            this.pictureBox4.Location = new System.Drawing.Point(43, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
+            this.pbMenu.Location = new System.Drawing.Point(43, 3);
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(22, 49);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenu.TabIndex = 16;
+            this.pbMenu.TabStop = false;
             // 
-            // button12
+            // btnF
             // 
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(325, 3);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(93, 49);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "Fútbol";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.btnF.FlatAppearance.BorderSize = 0;
+            this.btnF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnF.Location = new System.Drawing.Point(325, 3);
+            this.btnF.Name = "btnF";
+            this.btnF.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnF.Size = new System.Drawing.Size(93, 49);
+            this.btnF.TabIndex = 12;
+            this.btnF.Text = "Fútbol";
+            this.btnF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.Click += new System.EventHandler(this.btnF_Click);
             // 
-            // button9
+            // btnB
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(198, 3);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(93, 49);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Básquetbol";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnB.FlatAppearance.BorderSize = 0;
+            this.btnB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnB.Location = new System.Drawing.Point(198, 3);
+            this.btnB.Name = "btnB";
+            this.btnB.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnB.Size = new System.Drawing.Size(93, 49);
+            this.btnB.TabIndex = 11;
+            this.btnB.Text = "Básquetbol";
+            this.btnB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.Click += new System.EventHandler(this.btnB_Click);
             // 
-            // pictureBox1
+            // pbFix
             // 
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.pbFix.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
+            this.pbFix.Location = new System.Drawing.Point(3, 3);
+            this.pbFix.Name = "pbFix";
+            this.pbFix.Size = new System.Drawing.Size(34, 49);
+            this.pbFix.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFix.TabIndex = 13;
+            this.pbFix.TabStop = false;
             // 
-            // pictureBox2
+            // pbB
             // 
-            this.pictureBox2.Image = global::SIGD.Properties.Resources.basketball_solid;
-            this.pictureBox2.Location = new System.Drawing.Point(170, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.pbB.Image = global::SIGD.Properties.Resources.basketball_solid;
+            this.pbB.Location = new System.Drawing.Point(170, 3);
+            this.pbB.Name = "pbB";
+            this.pbB.Size = new System.Drawing.Size(22, 49);
+            this.pbB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbB.TabIndex = 14;
+            this.pbB.TabStop = false;
             // 
-            // pictureBox3
+            // pbF
             // 
-            this.pictureBox3.Image = global::SIGD.Properties.Resources.futbol_solid;
-            this.pictureBox3.Location = new System.Drawing.Point(297, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.pbF.Image = global::SIGD.Properties.Resources.futbol_solid;
+            this.pbF.Location = new System.Drawing.Point(297, 3);
+            this.pbF.Name = "pbF";
+            this.pbF.Size = new System.Drawing.Size(22, 49);
+            this.pbF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbF.TabIndex = 15;
+            this.pbF.TabStop = false;
             // 
             // btnMenu
             // 
@@ -658,7 +658,7 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lblFH);
             this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label10);
@@ -1129,15 +1129,15 @@
             this.label32.TabIndex = 0;
             this.label32.Text = "label1";
             // 
-            // label4
+            // lblFH
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(339, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Fixtures Hándbol";
+            this.lblFH.AutoSize = true;
+            this.lblFH.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFH.Location = new System.Drawing.Point(339, 40);
+            this.lblFH.Name = "lblFH";
+            this.lblFH.Size = new System.Drawing.Size(211, 29);
+            this.lblFH.TabIndex = 0;
+            this.lblFH.Text = "Fixtures Hándbol";
             // 
             // label31
             // 
@@ -1292,13 +1292,12 @@
             this.Name = "FH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.FH_Load);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFix)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelI.ResumeLayout(false);
             this.panelI.PerformLayout();
@@ -1341,13 +1340,13 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnF;
+        private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbFix;
+        private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.PictureBox pbB;
+        private System.Windows.Forms.PictureBox pbF;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel panelI;
         private System.Windows.Forms.Button btnCerrar;
@@ -1399,7 +1398,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblFH;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;

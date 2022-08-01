@@ -18,28 +18,15 @@ namespace SIGD
         }
 
         Rectangle panelIOriginalRect;
-        private void btnVentana1_Click(object sender, EventArgs e)
-            {
-            FormP Ventana1 = new FormP();
-            Ventana1.Show();
-            this.Hide();
-            }
 
-         
-
-        private void button6_Click(object sender, EventArgs e)
+        private void btnH_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            Form FH = new FH();
-            FH.Show();
+            Form fh = new FH();
+            fh.Show();
             this.Hide();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnB_Click(object sender, EventArgs e)
         {
             Form fb = new FB();
             fb.Show();
@@ -48,7 +35,6 @@ namespace SIGD
 
         private void resizeControl(Rectangle OriginalControlRect, Control control)
         {
-
             int newX = (int)(OriginalControlRect.X);
             int newY = (int)(OriginalControlRect.Y);
 
@@ -57,9 +43,6 @@ namespace SIGD
 
             control.Location = new Point(newX, newY);
             control.Size = new Size(newWidth, newHeight);
-
-
-
         }
         bool res = false;
         private void btnResH_Click(object sender, EventArgs e)
@@ -80,7 +63,6 @@ namespace SIGD
                 panelI.AutoScroll = false;
                 res = false;
             }
-
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -96,13 +78,6 @@ namespace SIGD
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
-        }
-
-        private void FF_Load(object sender, EventArgs e)
-        {
-        //    panel1OriginalRect = new Rectangle(panel1.Location.X, panel1.Location.Y, (this.Width-20)/2, panel1.Height);
-        //    resizeControl(panel1OriginalRect, panel1);
-        }
-        
+        }        
     }
-    }
+}

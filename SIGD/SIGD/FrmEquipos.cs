@@ -19,17 +19,16 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Form Form1 = new FormP();
-            Form1.Show();
-            this.Hide();
-
+            Form formp = new FormP();
+            formp.Show();
+            this.Close();
         }
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            Form FrmJugadores = new FrmJugadores();
-            FrmJugadores.Show();
-            this.Hide();
+            Form frmjugadores = new FrmJugadores();
+            frmjugadores.Show();
+            this.Close();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
