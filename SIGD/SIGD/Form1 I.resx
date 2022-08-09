@@ -487,7 +487,7 @@
     <value>0</value>
   </data>
   <data name="btnInicioSesion.Text" xml:space="preserve">
-    <value>login</value>
+    <value>Login</value>
   </data>
   <data name="btnInicioSesion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
