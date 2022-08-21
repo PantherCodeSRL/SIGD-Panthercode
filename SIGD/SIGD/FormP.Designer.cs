@@ -111,6 +111,7 @@
             // btnTraducir
             // 
             this.btnTraducir.BackColor = System.Drawing.Color.SlateGray;
+            this.btnTraducir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTraducir.FlatAppearance.BorderSize = 0;
             this.btnTraducir.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnTraducir, "btnTraducir");
@@ -123,6 +124,7 @@
             // 
             this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -136,6 +138,7 @@
             // btnInicioSesion
             // 
             this.btnInicioSesion.BackColor = System.Drawing.Color.SlateGray;
+            this.btnInicioSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicioSesion.FlatAppearance.BorderSize = 0;
             this.btnInicioSesion.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnInicioSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
@@ -182,6 +185,7 @@
             // btnFixtures
             // 
             this.btnFixtures.BackColor = System.Drawing.Color.SlateGray;
+            this.btnFixtures.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFixtures.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFixtures.FlatAppearance.BorderSize = 0;
             this.btnFixtures.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -196,6 +200,7 @@
             // btnJugadores
             // 
             this.btnJugadores.BackColor = System.Drawing.Color.SlateGray;
+            this.btnJugadores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJugadores.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnJugadores.FlatAppearance.BorderSize = 0;
             this.btnJugadores.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -210,6 +215,7 @@
             // btnEquipos
             // 
             this.btnEquipos.BackColor = System.Drawing.Color.SlateGray;
+            this.btnEquipos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEquipos.FlatAppearance.BorderSize = 0;
             this.btnEquipos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnEquipos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
@@ -249,6 +255,7 @@
             // 
             this.btnMin.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
             resources.ApplyResources(this.btnMin, "btnMin");
+            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.FlatAppearance.BorderSize = 0;
             this.btnMin.Name = "btnMin";
             this.btnMin.TabStop = false;
@@ -266,6 +273,7 @@
             // 
             // btnF
             // 
+            this.btnF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnF.FlatAppearance.BorderSize = 0;
             this.btnF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             resources.ApplyResources(this.btnF, "btnF");
@@ -276,6 +284,7 @@
             // 
             // btnB
             // 
+            this.btnB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnB.FlatAppearance.BorderSize = 0;
             this.btnB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             resources.ApplyResources(this.btnB, "btnB");
@@ -286,6 +295,7 @@
             // 
             // btnH
             // 
+            this.btnH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnH.FlatAppearance.BorderSize = 0;
             this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             resources.ApplyResources(this.btnH, "btnH");
@@ -328,4 +338,6 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }          #endregion         private System.Windows.Forms.Label lblBienvenido;         private System.Windows.Forms.Label lblEmpresa;         private System.Windows.Forms.Label lblIdioma;         private System.Windows.Forms.Label label6;         private System.Windows.Forms.Panel panInferior;         private System.Windows.Forms.Button btnCerrar;         private System.Windows.Forms.Panel plSuperior;         private System.Windows.Forms.TableLayoutPanel tlpHerramientas;         private System.Windows.Forms.PictureBox pbLogin;         private System.Windows.Forms.Button btnMin;         private System.Windows.Forms.TableLayoutPanel tlpOpciones;         private System.Windows.Forms.PictureBox pbFix;         private System.Windows.Forms.PictureBox pbEquipos;         private System.Windows.Forms.Button btnFixtures;         private System.Windows.Forms.Button btnJugadores;         private System.Windows.Forms.Button btnEquipos;         private System.Windows.Forms.PictureBox pbJugadores;         private System.Windows.Forms.Button btnTraducir;         private System.Windows.Forms.FlowLayoutPanel flpFix;         private System.Windows.Forms.Button btnH;         private System.Windows.Forms.Button btnF;         private System.Windows.Forms.Button btnB;         public System.Windows.Forms.Button btnInicioSesion;         public System.Windows.Forms.Label lblInvitado;         private System.Windows.Forms.Label lblContactos;         private System.Windows.Forms.Label label5;         private System.Windows.Forms.Label label2;         private System.Windows.Forms.Label label8;     } }  
+        }          #endregion         private System.Windows.Forms.Label lblBienvenido;         private System.Windows.Forms.Label lblEmpresa;         private System.Windows.Forms.Label lblIdioma;         private System.Windows.Forms.Label label6;         private System.Windows.Forms.Panel panInferior;         private System.Windows.Forms.Button btnCerrar;         private System.Windows.Forms.Panel plSuperior;         private System.Windows.Forms.TableLayoutPanel tlpHerramientas;         private System.Windows.Forms.PictureBox pbLogin;         private System.Windows.Forms.Button btnMin;         private System.Windows.Forms.TableLayoutPanel tlpOpciones;         private System.Windows.Forms.PictureBox pbFix;         private System.Windows.Forms.PictureBox pbEquipos;         private System.Windows.Forms.Button btnFixtures;         private System.Windows.Forms.Button btnJugadores;         private System.Windows.Forms.Button btnEquipos;         private System.Windows.Forms.PictureBox pbJugadores;         private System.Windows.Forms.Button btnTraducir;         private System.Windows.Forms.FlowLayoutPanel flpFix;         private System.Windows.Forms.Button btnH;         private System.Windows.Forms.Button btnF;         private System.Windows.Forms.Button btnB;         public System.Windows.Forms.Button btnInicioSesion;         private System.Windows.Forms.Label lblContactos;         private System.Windows.Forms.Label label5;         private System.Windows.Forms.Label label2;         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblInvitado;
+    } }  
