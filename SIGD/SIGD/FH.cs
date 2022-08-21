@@ -70,20 +70,20 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            //preguntarle al profe sobre como mostrar el FormP
+            this.Owner.Show();
             this.Close();
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
-            FB fb= new FB();
+            FB fb= new FB() { Owner = this.Owner };
             fb.Show();
             this.Close();
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
-            FF ff = new FF();
+            FF ff = new FF() { Owner = this.Owner };
             ff.Show();
             this.Close();
         }

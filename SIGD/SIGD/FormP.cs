@@ -19,28 +19,50 @@ namespace SIGD
             InitializeComponent();
         }
 
+        private void FormP_Load(object sender, EventArgs e)
+        {
+            cambioIdioma();
+        }
+
+        public Form activo;
+        bool idioma;
+
+        private void cambioIdioma()
+        {
+            btnJugadores.Text = stringsgobales.jugadores;
+            btnEquipos.Text = stringsgobales.equipos;
+            btnFixtures.Text = stringsgobales.fixtures;
+            btnF.Text = stringsgobales.futbol;
+            btnB.Text = stringsgobales.basquetbol;
+            btnH.Text = stringsgobales.handbol;
+            btnInicioSesion.Text = stringsgobales.iniciosesion;
+            lblBienvenido.Text = stringsgobales.bienvenido;
+            lblInvitado.Text = stringsgobales.invitado;
+            lblIdioma.Text = stringsgobales.idioma;
+            lblContactos.Text = stringsgobales.contactos;
+            btnTraducir.Text = stringsgobales.traducir;
+        }
+
+
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
-            InicioSesion iniciosesion = new InicioSesion();
-            iniciosesion.Show();
+            activo = new InicioSesion() { Owner = this };
+            activo.Show();
         }
-        //private void resizeControl(Rectangle OriginalControlRect, Control control)
-        //{
-        //    int newX = (int)(OriginalControlRect.X);
-        //    int newY = (int)(OriginalControlRect.Y);
-
-        //    int newWidth = (int)(OriginalControlRect.Width - 2);
-        //    int newHeight = (int)(OriginalControlRect.Height);
-
-        //    control.Location = new Point(newX, newY);
-        //    control.Size = new Size(newWidth, newHeight);
-        //}
-
-        private void lblTraducir_click(object sender, EventArgs e)
+        
+        private void btnTraducir_click(object sender, EventArgs e)
         {
-            Form1I form1I = new Form1I();
-            form1I.Show();
-            this.Hide();
+            if (!idioma)
+            {
+                idioma = true;
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            }
+            else if (idioma)
+            {
+                idioma = false;
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es");
+            }
+            cambioIdioma();
         }
 
         private void btnMin_Click(object sender, EventArgs e)
@@ -50,29 +72,30 @@ namespace SIGD
              
         private void btnH_Click(object sender, EventArgs e)
         {
-            FH fh = new FH();
-            fh.Show();
+            activo = new FH() { Owner = this };
+            activo.Show();
             this.Hide();
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
-            FF ff = new FF();
-            ff.Show();
+            activo = new FF() { Owner = this };
+            activo.Show();
             this.Hide();
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
-            FB fb = new FB();
-            fb.Show();
+            activo = new FB() { Owner = this };
+            activo.Show();
             this.Hide();
         }
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            FrmJugadores frmjugadores = new FrmJugadores();
-            frmjugadores.Show();
+           
+            activo = new FrmJugadores() { Owner = this };
+            activo.Show();
             this.Hide();
         }
 
@@ -93,8 +116,8 @@ namespace SIGD
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            FrmEquipos frmequipos = new FrmEquipos();
-            frmequipos.Show();
+            activo = new FrmEquipos() { Owner = this };
+            activo.Show();
             this.Hide();
         }
 
@@ -109,5 +132,6 @@ namespace SIGD
                 flpFix.Visible = true;
             }
         }
+
     }
 }

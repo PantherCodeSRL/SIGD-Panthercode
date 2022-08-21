@@ -29,6 +29,7 @@ namespace SIGD
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
+            this.Owner.Enabled = true;
             this.Close();
         }
 
@@ -46,11 +47,12 @@ namespace SIGD
 
         private void lblPwd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(stringsgobales.Recuperacion);
+            MessageBox.Show(stringsgobales.recuperacion);
         }
 
         private void btnInvitado_Click(object sender, EventArgs e)
         {
+            this.Owner.Enabled = true;
             this.Close();
         }
         
@@ -58,8 +60,18 @@ namespace SIGD
         {
             if (txtUser.Text == "" || txtPwd.Text == "")
             {
-                MessageBox.Show("Complete correctamente los campos de ingreso","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Complete correctamente los campos de ingreso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                this.Owner.Show();
+                this.Close();
+            }
+        }
+
+        private void InicioSesion_Load(object sender, EventArgs e)
+        {
+            this.Owner.Enabled = false;
         }
     }
 }

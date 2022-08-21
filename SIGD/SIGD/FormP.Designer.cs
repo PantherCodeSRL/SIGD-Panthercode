@@ -1,34 +1,4 @@
-﻿namespace SIGD
-{
-    partial class FormP
-    {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Código generado por el Diseñador de Windows Forms
-
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormP));
+﻿namespace SIGD {     partial class FormP     {         /// <summary>         /// Variable del diseñador necesaria.         /// </summary>         private System.ComponentModel.IContainer components = null;          /// <summary>         /// Limpiar los recursos que se estén usando.         /// </summary>         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>         protected override void Dispose(bool disposing)         {             if (disposing && (components != null))             {                 components.Dispose();             }             base.Dispose(disposing);         }          #region Código generado por el Diseñador de Windows Forms          /// <summary>         /// Método necesario para admitir el Diseñador. No se puede modificar         /// el contenido de este método con el editor de código.         /// </summary>         private void InitializeComponent()         {             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormP));
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblInvitado = new System.Windows.Forms.Label();
             this.lblEmpresa = new System.Windows.Forms.Label();
@@ -38,8 +8,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblTraducir = new System.Windows.Forms.Label();
-            this.btnContactos = new System.Windows.Forms.Button();
+            this.lblContactos = new System.Windows.Forms.Label();
+            this.btnTraducir = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.plSuperior = new System.Windows.Forms.Panel();
@@ -89,8 +59,8 @@
             // 
             // lblIdioma
             // 
-            resources.ApplyResources(this.lblIdioma, "lblIdioma");
             this.lblIdioma.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblIdioma, "lblIdioma");
             this.lblIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblIdioma.Name = "lblIdioma";
             // 
@@ -109,8 +79,8 @@
             this.panInferior.Controls.Add(this.label5);
             this.panInferior.Controls.Add(this.label2);
             this.panInferior.Controls.Add(this.label8);
-            this.panInferior.Controls.Add(this.lblTraducir);
-            this.panInferior.Controls.Add(this.btnContactos);
+            this.panInferior.Controls.Add(this.lblContactos);
+            this.panInferior.Controls.Add(this.btnTraducir);
             this.panInferior.Controls.Add(this.lblIdioma);
             this.panInferior.Controls.Add(this.lblEmpresa);
             this.panInferior.Name = "panInferior";
@@ -118,34 +88,36 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Name = "label5";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Name = "label2";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Click += new System.EventHandler(this.lblTraducir_click);
             // 
-            // lblTraducir
+            // lblContactos
             // 
-            resources.ApplyResources(this.lblTraducir, "lblTraducir");
-            this.lblTraducir.Name = "lblTraducir";
-            this.lblTraducir.Click += new System.EventHandler(this.lblTraducir_click);
+            this.lblContactos.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblContactos, "lblContactos");
+            this.lblContactos.Name = "lblContactos";
             // 
-            // btnContactos
+            // btnTraducir
             // 
-            this.btnContactos.BackColor = System.Drawing.Color.Transparent;
-            this.btnContactos.FlatAppearance.BorderSize = 0;
-            this.btnContactos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnContactos, "btnContactos");
-            this.btnContactos.Name = "btnContactos";
-            this.btnContactos.TabStop = false;
-            this.btnContactos.UseVisualStyleBackColor = false;
+            this.btnTraducir.BackColor = System.Drawing.Color.SlateGray;
+            this.btnTraducir.FlatAppearance.BorderSize = 0;
+            this.btnTraducir.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnTraducir, "btnTraducir");
+            this.btnTraducir.Name = "btnTraducir";
+            this.btnTraducir.TabStop = false;
+            this.btnTraducir.UseVisualStyleBackColor = false;
+            this.btnTraducir.Click += new System.EventHandler(this.btnTraducir_click);
             // 
             // btnCerrar
             // 
@@ -158,6 +130,8 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
+            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
             // 
             // btnInicioSesion
             // 
@@ -339,7 +313,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormP";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Peru;
+            this.Load += new System.EventHandler(this.FormP_Load);
             this.panInferior.ResumeLayout(false);
             this.panInferior.PerformLayout();
             this.plSuperior.ResumeLayout(false);
@@ -353,37 +328,4 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
-
-        #endregion
-        private System.Windows.Forms.Label lblBienvenido;
-        private System.Windows.Forms.Label lblEmpresa;
-        private System.Windows.Forms.Label lblIdioma;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panInferior;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Panel plSuperior;
-        private System.Windows.Forms.TableLayoutPanel tlpHerramientas;
-        private System.Windows.Forms.PictureBox pbLogin;
-        private System.Windows.Forms.Button btnMin;
-        private System.Windows.Forms.TableLayoutPanel tlpOpciones;
-        private System.Windows.Forms.PictureBox pbFix;
-        private System.Windows.Forms.PictureBox pbEquipos;
-        private System.Windows.Forms.Button btnFixtures;
-        private System.Windows.Forms.Button btnJugadores;
-        private System.Windows.Forms.Button btnEquipos;
-        private System.Windows.Forms.PictureBox pbJugadores;
-        private System.Windows.Forms.Button btnContactos;
-        private System.Windows.Forms.FlowLayoutPanel flpFix;
-        private System.Windows.Forms.Button btnH;
-        private System.Windows.Forms.Button btnF;
-        private System.Windows.Forms.Button btnB;
-        public System.Windows.Forms.Button btnInicioSesion;
-        public System.Windows.Forms.Label lblInvitado;
-        private System.Windows.Forms.Label lblTraducir;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-    }
-}
-
+        }          #endregion         private System.Windows.Forms.Label lblBienvenido;         private System.Windows.Forms.Label lblEmpresa;         private System.Windows.Forms.Label lblIdioma;         private System.Windows.Forms.Label label6;         private System.Windows.Forms.Panel panInferior;         private System.Windows.Forms.Button btnCerrar;         private System.Windows.Forms.Panel plSuperior;         private System.Windows.Forms.TableLayoutPanel tlpHerramientas;         private System.Windows.Forms.PictureBox pbLogin;         private System.Windows.Forms.Button btnMin;         private System.Windows.Forms.TableLayoutPanel tlpOpciones;         private System.Windows.Forms.PictureBox pbFix;         private System.Windows.Forms.PictureBox pbEquipos;         private System.Windows.Forms.Button btnFixtures;         private System.Windows.Forms.Button btnJugadores;         private System.Windows.Forms.Button btnEquipos;         private System.Windows.Forms.PictureBox pbJugadores;         private System.Windows.Forms.Button btnTraducir;         private System.Windows.Forms.FlowLayoutPanel flpFix;         private System.Windows.Forms.Button btnH;         private System.Windows.Forms.Button btnF;         private System.Windows.Forms.Button btnB;         public System.Windows.Forms.Button btnInicioSesion;         public System.Windows.Forms.Label lblInvitado;         private System.Windows.Forms.Label lblContactos;         private System.Windows.Forms.Label label5;         private System.Windows.Forms.Label label2;         private System.Windows.Forms.Label label8;     } }  

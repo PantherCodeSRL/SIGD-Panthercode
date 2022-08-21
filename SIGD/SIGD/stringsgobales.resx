@@ -117,13 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bienvenido" xml:space="preserve">
+  <data name="basquetbol" xml:space="preserve">
+    <value>Basquetbol</value>
+  </data>
+  <data name="bienvenido" xml:space="preserve">
     <value>BIENVENIDO</value>
   </data>
-  <data name="Invitado" xml:space="preserve">
+  <data name="contactos" xml:space="preserve">
+    <value>Contactos</value>
+  </data>
+  <data name="equipos" xml:space="preserve">
+    <value>Equipos</value>
+  </data>
+  <data name="fixtures" xml:space="preserve">
+    <value>Encuentros</value>
+  </data>
+  <data name="futbol" xml:space="preserve">
+    <value>Futbol</value>
+  </data>
+  <data name="handbol" xml:space="preserve">
+    <value>Handbol</value>
+  </data>
+  <data name="idioma" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="iniciosesion" xml:space="preserve">
+    <value>Iniciar Sesion</value>
+  </data>
+  <data name="invitado" xml:space="preserve">
     <value>INVITADO</value>
   </data>
-  <data name="Recuperacion" xml:space="preserve">
-    <value>Contacte a un administrador para resetear la contraseña</value>
+  <data name="jugadores" xml:space="preserve">
+    <value>Jugadores</value>
+  </data>
+  <data name="recuperacion" xml:space="preserve">
+    <value>Contacte a un administrador para resetear su contraseña</value>
+  </data>
+  <data name="traducir" xml:space="preserve">
+    <value>Español</value>
   </data>
 </root>

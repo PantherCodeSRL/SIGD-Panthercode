@@ -19,14 +19,13 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Form formp = new FormP();
-            formp.Show();
+            this.Owner.Show();
             this.Close();
         }
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            Form frmjugadores = new FrmJugadores();
+            Form frmjugadores = new FrmJugadores() { Owner = this.Owner };
             frmjugadores.Show();
             this.Close();
         }
@@ -34,6 +33,16 @@ namespace SIGD
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCerrar_MouseEnter(object sender, EventArgs e)
+        {
+            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+        }
+
+        private void btnCerrar_MouseLeave(object sender, EventArgs e)
+        {
+            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
     }
 }

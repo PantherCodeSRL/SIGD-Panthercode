@@ -52,54 +52,82 @@
             // 
             this.txtUser.BackColor = System.Drawing.SystemColors.Window;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txtUser, "txtUser");
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.txtUser.Location = new System.Drawing.Point(81, 180);
             this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(154, 19);
+            this.txtUser.TabIndex = 2;
             this.txtUser.TabStop = false;
             // 
             // txtPwd
             // 
             this.txtPwd.BackColor = System.Drawing.SystemColors.Window;
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txtPwd, "txtPwd");
+            this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.txtPwd.Location = new System.Drawing.Point(81, 230);
             this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Size = new System.Drawing.Size(154, 19);
+            this.txtPwd.TabIndex = 2;
             this.txtPwd.TabStop = false;
             this.txtPwd.UseSystemPasswordChar = true;
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
+            this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(94, 207);
             this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Contraseña:";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(65, 157);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombre de usuario:";
             // 
             // lblPwd
             // 
-            resources.ApplyResources(this.lblPwd, "lblPwd");
+            this.lblPwd.AutoSize = true;
+            this.lblPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
+            this.lblPwd.Location = new System.Drawing.Point(78, 275);
             this.lblPwd.Name = "lblPwd";
+            this.lblPwd.Size = new System.Drawing.Size(134, 13);
+            this.lblPwd.TabIndex = 14;
+            this.lblPwd.Text = "¿Olvidaste tu contraseña? ";
             this.lblPwd.Click += new System.EventHandler(this.lblPwd_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
             this.panel1.Controls.Add(this.btnSalida);
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(304, 42);
+            this.panel1.TabIndex = 15;
             // 
             // btnSalida
             // 
             this.btnSalida.BackColor = System.Drawing.Color.Transparent;
             this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            resources.ApplyResources(this.btnSalida, "btnSalida");
+            this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSalida.FlatAppearance.BorderSize = 0;
             this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSalida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalida.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalida.Location = new System.Drawing.Point(264, 10);
             this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Size = new System.Drawing.Size(28, 23);
+            this.btnSalida.TabIndex = 13;
             this.btnSalida.TabStop = false;
             this.btnSalida.UseVisualStyleBackColor = false;
             this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
@@ -108,18 +136,29 @@
             // 
             // cbxMC
             // 
-            resources.ApplyResources(this.cbxMC, "cbxMC");
+            this.cbxMC.AutoSize = true;
+            this.cbxMC.Location = new System.Drawing.Point(81, 255);
             this.cbxMC.Name = "cbxMC";
+            this.cbxMC.Size = new System.Drawing.Size(118, 17);
+            this.cbxMC.TabIndex = 16;
+            this.cbxMC.Text = "Mostrar Contraseña";
+            this.cbxMC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbxMC.UseVisualStyleBackColor = true;
             this.cbxMC.CheckedChanged += new System.EventHandler(this.cbxMC_CheckedChanged);
             // 
             // btnInvitado
             // 
             this.btnInvitado.BackColor = System.Drawing.Color.SlateGray;
-            resources.ApplyResources(this.btnInvitado, "btnInvitado");
+            this.btnInvitado.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnInvitado.FlatAppearance.BorderSize = 0;
             this.btnInvitado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnInvitado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvitado.Location = new System.Drawing.Point(0, 333);
             this.btnInvitado.Name = "btnInvitado";
+            this.btnInvitado.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnInvitado.Size = new System.Drawing.Size(304, 49);
+            this.btnInvitado.TabIndex = 17;
+            this.btnInvitado.Text = "Invitado";
             this.btnInvitado.UseVisualStyleBackColor = false;
             this.btnInvitado.Click += new System.EventHandler(this.btnInvitado_Click);
             // 
@@ -128,8 +167,13 @@
             this.btnLogin.BackColor = System.Drawing.Color.SlateGray;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(225, 255);
             this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnLogin.Size = new System.Drawing.Size(70, 33);
+            this.btnLogin.TabIndex = 18;
+            this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -137,31 +181,41 @@
             // 
             this.pbUser.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbUser.Image = global::SIGD.Properties.Resources.user_solid;
-            resources.ApplyResources(this.pbUser, "pbUser");
+            this.pbUser.Location = new System.Drawing.Point(56, 176);
             this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(19, 32);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUser.TabIndex = 12;
             this.pbUser.TabStop = false;
             // 
             // pbPwd
             // 
             this.pbPwd.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbPwd.Image = global::SIGD.Properties.Resources.lock_solid;
-            resources.ApplyResources(this.pbPwd, "pbPwd");
+            this.pbPwd.Location = new System.Drawing.Point(56, 227);
             this.pbPwd.Name = "pbPwd";
+            this.pbPwd.Size = new System.Drawing.Size(19, 23);
+            this.pbPwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPwd.TabIndex = 12;
             this.pbPwd.TabStop = false;
             // 
             // pbLogin
             // 
             this.pbLogin.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbLogin.Image = global::SIGD.Properties.Resources.user_regular;
-            resources.ApplyResources(this.pbLogin, "pbLogin");
+            this.pbLogin.Location = new System.Drawing.Point(-1, 48);
             this.pbLogin.Name = "pbLogin";
+            this.pbLogin.Size = new System.Drawing.Size(305, 106);
+            this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogin.TabIndex = 12;
             this.pbLogin.TabStop = false;
             // 
             // InicioSesion
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(304, 382);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnInvitado);
             this.Controls.Add(this.cbxMC);
@@ -175,7 +229,12 @@
             this.Controls.Add(this.pbLogin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InicioSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio de Sesion";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).EndInit();

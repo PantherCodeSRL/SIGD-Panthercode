@@ -47,18 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FBI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FBI.Designer.cs">
-      <DependentUpon>FBI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FFI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FFI.Designer.cs">
-      <DependentUpon>FFI.cs</DependentUpon>
-    </Compile>
     <Compile Include="FF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,23 +59,11 @@
     <Compile Include="FB.Designer.cs">
       <DependentUpon>FB.cs</DependentUpon>
     </Compile>
-    <Compile Include="FHI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FHI.Designer.cs">
-      <DependentUpon>FHI.cs</DependentUpon>
-    </Compile>
     <Compile Include="FH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FH.Designer.cs">
       <DependentUpon>FH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1 I.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1 I.Designer.cs">
-      <DependentUpon>Form1 I.cs</DependentUpon>
     </Compile>
     <Compile Include="FormP.cs">
       <SubType>Form</SubType>
@@ -95,35 +71,17 @@
     <Compile Include="FormP.Designer.cs">
       <DependentUpon>FormP.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEquiposI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEquiposI.Designer.cs">
-      <DependentUpon>FrmEquiposI.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmEquipos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEquipos.Designer.cs">
       <DependentUpon>FrmEquipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmJugadoresI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmJugadoresI.Designer.cs">
-      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmJugadores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmJugadores.Designer.cs">
       <DependentUpon>FrmJugadores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InicioSesionI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InicioSesionI.Designer.cs">
-      <DependentUpon>InicioSesionI.cs</DependentUpon>
     </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
@@ -143,86 +101,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>stringsgobales.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FBI.en.resx">
-      <DependentUpon>FBI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FBI.resx">
-      <DependentUpon>FBI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FB.en.resx">
-      <DependentUpon>FB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FFI.en.resx">
-      <DependentUpon>FFI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FFI.resx">
-      <DependentUpon>FFI.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FF.resx">
       <DependentUpon>FF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FB.resx">
       <DependentUpon>FB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FHI.en.resx">
-      <DependentUpon>FHI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FHI.resx">
-      <DependentUpon>FHI.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FH.resx">
       <DependentUpon>FH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1 I.en-US.resx">
-      <DependentUpon>Form1 I.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1 I.en.resx">
-      <DependentUpon>Form1 I.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1 I.resx">
-      <DependentUpon>Form1 I.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormP.en-US.resx">
-      <DependentUpon>FormP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormP.en.resx">
-      <DependentUpon>FormP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormP.resx">
       <DependentUpon>FormP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEquiposI.en.resx">
-      <DependentUpon>FrmEquiposI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEquiposI.resx">
-      <DependentUpon>FrmEquiposI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEquipos.en.resx">
-      <DependentUpon>FrmEquipos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmEquipos.resx">
       <DependentUpon>FrmEquipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmJugadoresI.en.resx">
-      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmJugadoresI.resx">
-      <DependentUpon>FrmJugadoresI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmJugadores.en.resx">
-      <DependentUpon>FrmJugadores.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmJugadores.resx">
       <DependentUpon>FrmJugadores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesionI.en.resx">
-      <DependentUpon>InicioSesionI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesionI.resx">
-      <DependentUpon>InicioSesionI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesion.en.resx">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>

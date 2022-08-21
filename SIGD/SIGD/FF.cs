@@ -21,14 +21,14 @@ namespace SIGD
 
         private void btnH_Click(object sender, EventArgs e)
         {
-            Form fh = new FH();
+            Form fh = new FH() { Owner = this.Owner };
             fh.Show();
             this.Close();
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
-            Form fb = new FB();
+            Form fb = new FB() { Owner = this.Owner };
             fb.Show();
             this.Close();
         }
@@ -83,6 +83,12 @@ namespace SIGD
         private void btnMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
         }
     }
 }

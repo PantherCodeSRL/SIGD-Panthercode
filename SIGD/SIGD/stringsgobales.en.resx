@@ -117,40 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Basquetbol" xml:space="preserve">
-    <value>Basketball</value>
-  </data>
-  <data name="Bienvenido" xml:space="preserve">
+  <data name="bienvenido" xml:space="preserve">
     <value>WELCOME</value>
   </data>
-  <data name="Contactos" xml:space="preserve">
-    <value>Contacts</value>
+  <data name="contactos" xml:space="preserve">
+    <value>Contact us</value>
   </data>
-  <data name="Equipos" xml:space="preserve">
+  <data name="equipos" xml:space="preserve">
     <value>Teams</value>
   </data>
-  <data name="Español" xml:space="preserve">
-    <value>Spanish</value>
+  <data name="traducir" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="Fixtures" xml:space="preserve">
+  <data name="fixtures" xml:space="preserve">
     <value>Fixtures</value>
   </data>
-  <data name="Futbol" xml:space="preserve">
+  <data name="futbol" xml:space="preserve">
     <value>Football</value>
   </data>
-  <data name="Handbol" xml:space="preserve">
+  <data name="handbol" xml:space="preserve">
     <value>Handball</value>
   </data>
-  <data name="Idioma" xml:space="preserve">
+  <data name="idioma" xml:space="preserve">
     <value>Language:</value>
   </data>
-  <data name="Inicios" xml:space="preserve">
+  <data name="iniciosesion" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="Invitado" xml:space="preserve">
+  <data name="invitado" xml:space="preserve">
     <value>GUEST</value>
   </data>
-  <data name="Recuperacion" xml:space="preserve">
+  <data name="jugadores" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="recuperacion" xml:space="preserve">
     <value>Contact an administrator to reset the password</value>
+  </data>
+  <data name="basquetbol" xml:space="preserve">
+    <value>Basketball</value>
   </data>
 </root>

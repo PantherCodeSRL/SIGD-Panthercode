@@ -21,14 +21,14 @@ namespace SIGD
       
         private void btnF_Click(object sender, EventArgs e)
         {
-            FF ff = new FF();
+            FF ff = new FF() { Owner = this.Owner };
             ff.Show();
             this.Close();
         }
 
         private void btnH_Click(object sender, EventArgs e)
         {
-            FH fh = new FH();
+            FH fh = new FH() { Owner = this.Owner };
             fh.Show();
             this.Close();
         }
@@ -87,7 +87,8 @@ namespace SIGD
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-
+            this.Owner.Show();
+            this.Close();
         }
     }
 }

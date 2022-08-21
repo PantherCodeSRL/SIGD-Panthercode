@@ -15,12 +15,14 @@ namespace SIGD
         public FrmJugadores()
         {
             InitializeComponent();
+            
         }
+        
+        
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            FormP Form1 = new FormP();
-            Form1.Show();
+            this.Owner.Show();
             this.Hide();
 
         }
@@ -32,16 +34,19 @@ namespace SIGD
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            Form FrmEquipos = new FrmEquipos();
-            FrmEquipos.Show();
-            this.Hide();
+            Form frmequipos = new FrmEquipos() {Owner = this.Owner };
+            frmequipos.Show();
+            this.Close();
         }
 
-        private void btnJugadores_Click(object sender, EventArgs e)
+        private void btnCerrar_MouseEnter(object sender, EventArgs e)
         {
-            Form Form1 = new FormP();
-            Form1.Show();
-            this.Hide();
+            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+        }
+
+        private void btnCerrar_MouseLeave(object sender, EventArgs e)
+        {
+            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
     }
 }

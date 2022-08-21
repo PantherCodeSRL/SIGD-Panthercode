@@ -174,12 +174,22 @@
             this.plSuperior.BackColor = System.Drawing.Color.SlateGray;
             this.plSuperior.Controls.Add(this.tlpOpciones);
             this.plSuperior.Controls.Add(this.tlpHerramientas);
-            resources.ApplyResources(this.plSuperior, "plSuperior");
+            this.plSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plSuperior.Location = new System.Drawing.Point(0, 0);
             this.plSuperior.Name = "plSuperior";
+            this.plSuperior.Size = new System.Drawing.Size(961, 55);
+            this.plSuperior.TabIndex = 25;
             // 
             // tlpOpciones
             // 
-            resources.ApplyResources(this.tlpOpciones, "tlpOpciones");
+            this.tlpOpciones.ColumnCount = 7;
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpOpciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.tlpOpciones.Controls.Add(this.pbMenu, 1, 0);
             this.tlpOpciones.Controls.Add(this.btnF, 6, 0);
             this.tlpOpciones.Controls.Add(this.btnH, 4, 0);
@@ -187,21 +197,36 @@
             this.tlpOpciones.Controls.Add(this.pbF, 5, 0);
             this.tlpOpciones.Controls.Add(this.btnMenu, 2, 0);
             this.tlpOpciones.Controls.Add(this.pbB, 0, 0);
+            this.tlpOpciones.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tlpOpciones.Location = new System.Drawing.Point(0, 0);
             this.tlpOpciones.Name = "tlpOpciones";
+            this.tlpOpciones.RowCount = 1;
+            this.tlpOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpOpciones.Size = new System.Drawing.Size(444, 55);
+            this.tlpOpciones.TabIndex = 27;
             // 
             // pbMenu
             // 
             this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
-            resources.ApplyResources(this.pbMenu, "pbMenu");
+            this.pbMenu.Location = new System.Drawing.Point(40, 3);
             this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(22, 49);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenu.TabIndex = 16;
             this.pbMenu.TabStop = false;
             // 
             // btnF
             // 
             this.btnF.FlatAppearance.BorderSize = 0;
             this.btnF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.btnF, "btnF");
+            this.btnF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnF.Location = new System.Drawing.Point(316, 3);
             this.btnF.Name = "btnF";
+            this.btnF.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnF.Size = new System.Drawing.Size(93, 49);
+            this.btnF.TabIndex = 12;
+            this.btnF.Text = "Fútbol";
+            this.btnF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnF.UseVisualStyleBackColor = true;
             this.btnF.Click += new System.EventHandler(this.btnF_Click);
             // 
@@ -209,56 +234,90 @@
             // 
             this.btnH.FlatAppearance.BorderSize = 0;
             this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.btnH, "btnH");
+            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnH.Location = new System.Drawing.Point(189, 3);
             this.btnH.Name = "btnH";
+            this.btnH.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnH.Size = new System.Drawing.Size(93, 49);
+            this.btnH.TabIndex = 11;
+            this.btnH.Text = "Hándbol";
+            this.btnH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnH.UseVisualStyleBackColor = true;
             this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
             // pbH
             // 
             this.pbH.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
-            resources.ApplyResources(this.pbH, "pbH");
+            this.pbH.Location = new System.Drawing.Point(167, 3);
             this.pbH.Name = "pbH";
+            this.pbH.Size = new System.Drawing.Size(16, 49);
+            this.pbH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbH.TabIndex = 13;
             this.pbH.TabStop = false;
             // 
             // pbF
             // 
             this.pbF.Image = global::SIGD.Properties.Resources.futbol_solid;
-            resources.ApplyResources(this.pbF, "pbF");
+            this.pbF.Location = new System.Drawing.Point(288, 3);
             this.pbF.Name = "pbF";
+            this.pbF.Size = new System.Drawing.Size(22, 49);
+            this.pbF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbF.TabIndex = 15;
             this.pbF.TabStop = false;
             // 
             // btnMenu
             // 
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.btnMenu, "btnMenu");
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(68, 3);
             this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnMenu.Size = new System.Drawing.Size(93, 49);
+            this.btnMenu.TabIndex = 11;
+            this.btnMenu.Text = "Menú Principal";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // pbB
             // 
             this.pbB.Image = global::SIGD.Properties.Resources.basketball_solid;
-            resources.ApplyResources(this.pbB, "pbB");
+            this.pbB.Location = new System.Drawing.Point(3, 3);
             this.pbB.Name = "pbB";
+            this.pbB.Size = new System.Drawing.Size(31, 49);
+            this.pbB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbB.TabIndex = 14;
             this.pbB.TabStop = false;
             // 
             // tlpHerramientas
             // 
-            resources.ApplyResources(this.tlpHerramientas, "tlpHerramientas");
+            this.tlpHerramientas.ColumnCount = 2;
+            this.tlpHerramientas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpHerramientas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tlpHerramientas.Controls.Add(this.btnCerrar, 1, 0);
             this.tlpHerramientas.Controls.Add(this.btnMin, 0, 0);
+            this.tlpHerramientas.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tlpHerramientas.Location = new System.Drawing.Point(903, 0);
             this.tlpHerramientas.Name = "tlpHerramientas";
+            this.tlpHerramientas.RowCount = 1;
+            this.tlpHerramientas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpHerramientas.Size = new System.Drawing.Size(58, 55);
+            this.tlpHerramientas.TabIndex = 25;
             // 
             // btnCerrar
             // 
             this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            resources.ApplyResources(this.btnCerrar, "btnCerrar");
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(33, 6);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 31);
+            this.btnCerrar.TabIndex = 23;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -268,16 +327,20 @@
             // btnMin
             // 
             this.btnMin.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
-            resources.ApplyResources(this.btnMin, "btnMin");
+            this.btnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMin.FlatAppearance.BorderSize = 0;
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Location = new System.Drawing.Point(3, 3);
             this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(20, 35);
+            this.btnMin.TabIndex = 21;
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // panelI
             // 
-            resources.ApplyResources(this.panelI, "panelI");
+            this.panelI.AutoScrollMargin = new System.Drawing.Size(0, 80);
             this.panelI.BackColor = System.Drawing.Color.SlateGray;
             this.panelI.Controls.Add(this.pictureBox33);
             this.panelI.Controls.Add(this.label50);
@@ -304,152 +367,250 @@
             this.panelI.Controls.Add(this.label66);
             this.panelI.Controls.Add(this.label70);
             this.panelI.Controls.Add(this.label77);
+            this.panelI.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelI.Location = new System.Drawing.Point(0, 55);
             this.panelI.Name = "panelI";
+            this.panelI.Size = new System.Drawing.Size(0, 492);
+            this.panelI.TabIndex = 112;
             // 
             // pictureBox33
             // 
             this.pictureBox33.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox33, "pictureBox33");
+            this.pictureBox33.Location = new System.Drawing.Point(111, 220);
             this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 1;
             this.pictureBox33.TabStop = false;
             // 
             // label50
             // 
-            resources.ApplyResources(this.label50, "label50");
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(210, 115);
             this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(46, 15);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Fecha";
             // 
             // pictureBox36
             // 
             this.pictureBox36.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox36, "pictureBox36");
+            this.pictureBox36.Location = new System.Drawing.Point(290, 336);
             this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox36.TabIndex = 1;
             this.pictureBox36.TabStop = false;
             // 
             // label51
             // 
-            resources.ApplyResources(this.label51, "label51");
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(201, 139);
             this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(72, 15);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Resultado";
             // 
             // pictureBox42
             // 
             this.pictureBox42.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox42, "pictureBox42");
+            this.pictureBox42.Location = new System.Drawing.Point(290, 452);
             this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox42.TabIndex = 1;
             this.pictureBox42.TabStop = false;
             // 
             // label53
             // 
-            resources.ApplyResources(this.label53, "label53");
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(118, 172);
             this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(52, 15);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "Equipo";
             // 
             // pictureBox35
             // 
             this.pictureBox35.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox35, "pictureBox35");
+            this.pictureBox35.Location = new System.Drawing.Point(290, 220);
             this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox35.TabIndex = 1;
             this.pictureBox35.TabStop = false;
             // 
             // label55
             // 
-            resources.ApplyResources(this.label55, "label55");
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(210, 231);
             this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(46, 15);
+            this.label55.TabIndex = 0;
+            this.label55.Text = "Fecha";
             // 
             // label57
             // 
-            resources.ApplyResources(this.label57, "label57");
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(210, 347);
             this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(46, 15);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "Fecha";
             // 
             // pictureBox39
             // 
             this.pictureBox39.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox39, "pictureBox39");
+            this.pictureBox39.Location = new System.Drawing.Point(111, 452);
             this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox39.TabIndex = 1;
             this.pictureBox39.TabStop = false;
             // 
             // label58
             // 
-            resources.ApplyResources(this.label58, "label58");
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(201, 255);
             this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(72, 15);
+            this.label58.TabIndex = 0;
+            this.label58.Text = "Resultado";
             // 
             // pictureBox34
             // 
             this.pictureBox34.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox34, "pictureBox34");
+            this.pictureBox34.Location = new System.Drawing.Point(111, 336);
             this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 1;
             this.pictureBox34.TabStop = false;
             // 
             // label59
             // 
-            resources.ApplyResources(this.label59, "label59");
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(297, 172);
             this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(52, 15);
+            this.label59.TabIndex = 0;
+            this.label59.Text = "Equipo";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(201, 491);
             this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Resultado";
             // 
             // label60
             // 
-            resources.ApplyResources(this.label60, "label60");
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(201, 371);
             this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(72, 15);
+            this.label60.TabIndex = 0;
+            this.label60.Text = "Resultado";
             // 
             // label62
             // 
-            resources.ApplyResources(this.label62, "label62");
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(118, 288);
             this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(52, 15);
+            this.label62.TabIndex = 0;
+            this.label62.Text = "Equipo";
             // 
             // label81
             // 
-            resources.ApplyResources(this.label81, "label81");
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(297, 404);
             this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(52, 15);
+            this.label81.TabIndex = 0;
+            this.label81.Text = "Equipo";
             // 
             // pictureBox29
             // 
             this.pictureBox29.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox29, "pictureBox29");
+            this.pictureBox29.Location = new System.Drawing.Point(111, 104);
             this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox29.TabIndex = 1;
             this.pictureBox29.TabStop = false;
             // 
             // label63
             // 
-            resources.ApplyResources(this.label63, "label63");
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(118, 404);
             this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(52, 15);
+            this.label63.TabIndex = 0;
+            this.label63.Text = "Equipo";
             // 
             // label64
             // 
-            resources.ApplyResources(this.label64, "label64");
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(297, 288);
             this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(52, 15);
+            this.label64.TabIndex = 0;
+            this.label64.Text = "Equipo";
             // 
             // label80
             // 
-            resources.ApplyResources(this.label80, "label80");
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(297, 520);
             this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(52, 15);
+            this.label80.TabIndex = 0;
+            this.label80.Text = "Equipo";
             // 
             // pictureBox31
             // 
             this.pictureBox31.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox31, "pictureBox31");
+            this.pictureBox31.Location = new System.Drawing.Point(290, 104);
             this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox31.TabIndex = 1;
             this.pictureBox31.TabStop = false;
             // 
             // label66
             // 
-            resources.ApplyResources(this.label66, "label66");
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.label66.Location = new System.Drawing.Point(133, 40);
             this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(144, 29);
+            this.label66.TabIndex = 0;
+            this.label66.Text = "Resultados";
             // 
             // label70
             // 
-            resources.ApplyResources(this.label70, "label70");
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(210, 463);
             this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(46, 15);
+            this.label70.TabIndex = 0;
+            this.label70.Text = "Fecha";
             // 
             // label77
             // 
-            resources.ApplyResources(this.label77, "label77");
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(118, 520);
             this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(52, 15);
+            this.label77.TabIndex = 0;
+            this.label77.Text = "Equipo";
             // 
             // plFB
             // 
-            resources.ApplyResources(this.plFB, "plFB");
+            this.plFB.AutoScroll = true;
+            this.plFB.AutoScrollMargin = new System.Drawing.Size(80, 80);
             this.plFB.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.plFB.Controls.Add(this.pictureBox27);
             this.plFB.Controls.Add(this.pictureBox12);
@@ -510,365 +671,605 @@
             this.plFB.Controls.Add(this.label26);
             this.plFB.Controls.Add(this.label2);
             this.plFB.Controls.Add(this.label1);
+            this.plFB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plFB.Location = new System.Drawing.Point(20, 55);
             this.plFB.Name = "plFB";
+            this.plFB.Size = new System.Drawing.Size(941, 492);
+            this.plFB.TabIndex = 0;
             // 
             // pictureBox27
             // 
             this.pictureBox27.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox27, "pictureBox27");
+            this.pictureBox27.Location = new System.Drawing.Point(692, 336);
             this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox27.TabIndex = 1;
             this.pictureBox27.TabStop = false;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox12, "pictureBox12");
+            this.pictureBox12.Location = new System.Drawing.Point(308, 336);
             this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 1;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox26
             // 
             this.pictureBox26.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox26, "pictureBox26");
+            this.pictureBox26.Location = new System.Drawing.Point(692, 452);
             this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 1;
             this.pictureBox26.TabStop = false;
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox15, "pictureBox15");
+            this.pictureBox15.Location = new System.Drawing.Point(308, 452);
             this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 1;
             this.pictureBox15.TabStop = false;
             // 
             // pictureBox25
             // 
             this.pictureBox25.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox25, "pictureBox25");
+            this.pictureBox25.Location = new System.Drawing.Point(692, 220);
             this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox25.TabIndex = 1;
             this.pictureBox25.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.pictureBox10.Location = new System.Drawing.Point(308, 220);
             this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox23
             // 
             this.pictureBox23.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox23, "pictureBox23");
+            this.pictureBox23.Location = new System.Drawing.Point(513, 336);
             this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 1;
             this.pictureBox23.TabStop = false;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox11, "pictureBox11");
+            this.pictureBox11.Location = new System.Drawing.Point(129, 336);
             this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 1;
             this.pictureBox11.TabStop = false;
             // 
             // pictureBox22
             // 
             this.pictureBox22.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox22, "pictureBox22");
+            this.pictureBox22.Location = new System.Drawing.Point(513, 452);
             this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 1;
             this.pictureBox22.TabStop = false;
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox13, "pictureBox13");
+            this.pictureBox13.Location = new System.Drawing.Point(129, 452);
             this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 1;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox21
             // 
             this.pictureBox21.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox21, "pictureBox21");
+            this.pictureBox21.Location = new System.Drawing.Point(513, 220);
             this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 1;
             this.pictureBox21.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
+            this.pictureBox9.Location = new System.Drawing.Point(129, 220);
             this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
             // label48
             // 
-            resources.ApplyResources(this.label48, "label48");
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(699, 404);
             this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(52, 15);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "Equipo";
             // 
             // label17
             // 
-            resources.ApplyResources(this.label17, "label17");
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(315, 404);
             this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 15);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Equipo";
             // 
             // pictureBox20
             // 
             this.pictureBox20.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox20, "pictureBox20");
+            this.pictureBox20.Location = new System.Drawing.Point(692, 336);
             this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 1;
             this.pictureBox20.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Location = new System.Drawing.Point(308, 336);
             this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
             // 
             // label47
             // 
-            resources.ApplyResources(this.label47, "label47");
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(699, 520);
             this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(52, 15);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "Equipo";
             // 
             // label24
             // 
-            resources.ApplyResources(this.label24, "label24");
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(315, 520);
             this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(52, 15);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Equipo";
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox19, "pictureBox19");
+            this.pictureBox19.Location = new System.Drawing.Point(692, 104);
             this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 1;
             this.pictureBox19.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Location = new System.Drawing.Point(308, 104);
             this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
             // 
             // label45
             // 
-            resources.ApplyResources(this.label45, "label45");
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(699, 288);
             this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(52, 15);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Equipo";
             // 
             // pictureBox18
             // 
             this.pictureBox18.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox18, "pictureBox18");
+            this.pictureBox18.Location = new System.Drawing.Point(513, 336);
             this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 1;
             this.pictureBox18.TabStop = false;
             // 
             // label13
             // 
-            resources.ApplyResources(this.label13, "label13");
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(315, 288);
             this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 15);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Equipo";
             // 
             // label44
             // 
-            resources.ApplyResources(this.label44, "label44");
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(520, 404);
             this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(52, 15);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "Equipo";
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.pictureBox7.Location = new System.Drawing.Point(129, 336);
             this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
             // label43
             // 
-            resources.ApplyResources(this.label43, "label43");
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(520, 520);
             this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(52, 15);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "Equipo";
             // 
             // label16
             // 
-            resources.ApplyResources(this.label16, "label16");
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(136, 404);
             this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 15);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Equipo";
             // 
             // pictureBox17
             // 
             this.pictureBox17.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox17, "pictureBox17");
+            this.pictureBox17.Location = new System.Drawing.Point(513, 104);
             this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 1;
             this.pictureBox17.TabStop = false;
             // 
             // label22
             // 
-            resources.ApplyResources(this.label22, "label22");
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(136, 520);
             this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(52, 15);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Equipo";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SIGD.Properties.Resources.shield_solid;
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Location = new System.Drawing.Point(129, 104);
             this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
             // label41
             // 
-            resources.ApplyResources(this.label41, "label41");
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(520, 288);
             this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(52, 15);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Equipo";
             // 
             // label40
             // 
-            resources.ApplyResources(this.label40, "label40");
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(699, 404);
             this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(47, 15);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "label1";
             // 
             // label12
             // 
-            resources.ApplyResources(this.label12, "label12");
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(136, 288);
             this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 15);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Equipo";
             // 
             // label39
             // 
-            resources.ApplyResources(this.label39, "label39");
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label39.Location = new System.Drawing.Point(619, 378);
             this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(29, 18);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "VS";
             // 
             // label20
             // 
-            resources.ApplyResources(this.label20, "label20");
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(315, 404);
             this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(47, 15);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "label1";
             // 
             // label38
             // 
-            resources.ApplyResources(this.label38, "label38");
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label38.Location = new System.Drawing.Point(619, 494);
             this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(29, 18);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "VS";
             // 
             // label14
             // 
-            resources.ApplyResources(this.label14, "label14");
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(235, 378);
             this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 18);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "VS";
             // 
             // label37
             // 
-            resources.ApplyResources(this.label37, "label37");
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(699, 172);
             this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(52, 15);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Equipo";
             // 
             // label19
             // 
-            resources.ApplyResources(this.label19, "label19");
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(235, 494);
             this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(29, 18);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "VS";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(315, 172);
             this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Equipo";
             // 
             // label35
             // 
-            resources.ApplyResources(this.label35, "label35");
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label35.Location = new System.Drawing.Point(619, 262);
             this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(29, 18);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "VS";
             // 
             // label34
             // 
-            resources.ApplyResources(this.label34, "label34");
+            this.label34.AutoSize = true;
             this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label34.Location = new System.Drawing.Point(612, 347);
             this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(48, 17);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "Fecha";
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(235, 262);
             this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 18);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "VS";
             // 
             // label33
             // 
-            resources.ApplyResources(this.label33, "label33");
+            this.label33.AutoSize = true;
             this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Location = new System.Drawing.Point(612, 463);
             this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(48, 17);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Fecha";
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
+            this.label9.AutoSize = true;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Location = new System.Drawing.Point(228, 347);
             this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Fecha";
             // 
             // label15
             // 
-            resources.ApplyResources(this.label15, "label15");
+            this.label15.AutoSize = true;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.Location = new System.Drawing.Point(228, 463);
             this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 17);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Fecha";
             // 
             // label32
             // 
-            resources.ApplyResources(this.label32, "label32");
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(520, 404);
             this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(47, 15);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "label1";
             // 
             // lblFB
             // 
-            resources.ApplyResources(this.lblFB, "lblFB");
+            this.lblFB.AutoSize = true;
+            this.lblFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.lblFB.Location = new System.Drawing.Point(339, 40);
             this.lblFB.Name = "lblFB";
+            this.lblFB.Size = new System.Drawing.Size(245, 29);
+            this.lblFB.TabIndex = 0;
+            this.lblFB.Text = "Fixtures Básquetbol";
             // 
             // label31
             // 
-            resources.ApplyResources(this.label31, "label31");
+            this.label31.AutoSize = true;
             this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label31.Location = new System.Drawing.Point(612, 231);
             this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(48, 17);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Fecha";
             // 
             // label8
             // 
-            resources.ApplyResources(this.label8, "label8");
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(136, 404);
             this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(47, 15);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "label1";
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
+            this.label10.AutoSize = true;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Location = new System.Drawing.Point(228, 231);
             this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Fecha";
             // 
             // label29
             // 
-            resources.ApplyResources(this.label29, "label29");
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(520, 172);
             this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(52, 15);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Equipo";
             // 
             // label28
             // 
-            resources.ApplyResources(this.label28, "label28");
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(612, 347);
             this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(47, 15);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "label1";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(136, 172);
             this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Equipo";
             // 
             // label27
             // 
-            resources.ApplyResources(this.label27, "label27");
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(619, 146);
             this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(29, 18);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "VS";
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(228, 347);
             this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 15);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "label1";
             // 
             // label26
             // 
-            resources.ApplyResources(this.label26, "label26");
+            this.label26.AutoSize = true;
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Location = new System.Drawing.Point(612, 115);
             this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(48, 17);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Fecha";
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(235, 146);
             this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "VS";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Location = new System.Drawing.Point(228, 115);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fecha";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnResH);
-            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 55);
+            this.panel2.MinimumSize = new System.Drawing.Size(20, 0);
             this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(20, 492);
+            this.panel2.TabIndex = 14;
             // 
             // btnResH
             // 
             this.btnResH.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnResH.BackgroundImage = global::SIGD.Properties.Resources.caret_right_solid;
-            resources.ApplyResources(this.btnResH, "btnResH");
+            this.btnResH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResH.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnResH.FlatAppearance.BorderSize = 0;
             this.btnResH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnResH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResH.Location = new System.Drawing.Point(0, 0);
+            this.btnResH.MinimumSize = new System.Drawing.Size(20, 0);
             this.btnResH.Name = "btnResH";
+            this.btnResH.Size = new System.Drawing.Size(20, 492);
+            this.btnResH.TabIndex = 13;
+            this.btnResH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResH.UseVisualStyleBackColor = false;
             this.btnResH.Click += new System.EventHandler(this.btnResH_Click);
             // 
@@ -876,16 +1277,21 @@
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            resources.ApplyResources(this, "$this");
+            this.AutoScrollMargin = new System.Drawing.Size(0, 25);
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(961, 547);
             this.Controls.Add(this.plFB);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelI);
             this.Controls.Add(this.plSuperior);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FB";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.plSuperior.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);

@@ -61,29 +61,119 @@ namespace SIGD {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Basquetbol.
+        /// </summary>
+        internal static string basquetbol {
+            get {
+                return ResourceManager.GetString("basquetbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a BIENVENIDO.
         /// </summary>
-        internal static string Bienvenido {
+        internal static string bienvenido {
             get {
-                return ResourceManager.GetString("Bienvenido", resourceCulture);
+                return ResourceManager.GetString("bienvenido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contactos.
+        /// </summary>
+        internal static string contactos {
+            get {
+                return ResourceManager.GetString("contactos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Equipos.
+        /// </summary>
+        internal static string equipos {
+            get {
+                return ResourceManager.GetString("equipos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Encuentros.
+        /// </summary>
+        internal static string fixtures {
+            get {
+                return ResourceManager.GetString("fixtures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Futbol.
+        /// </summary>
+        internal static string futbol {
+            get {
+                return ResourceManager.GetString("futbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Handbol.
+        /// </summary>
+        internal static string handbol {
+            get {
+                return ResourceManager.GetString("handbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Idioma.
+        /// </summary>
+        internal static string idioma {
+            get {
+                return ResourceManager.GetString("idioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar Sesion.
+        /// </summary>
+        internal static string iniciosesion {
+            get {
+                return ResourceManager.GetString("iniciosesion", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Busca una cadena traducida similar a INVITADO.
         /// </summary>
-        internal static string Invitado {
+        internal static string invitado {
             get {
-                return ResourceManager.GetString("Invitado", resourceCulture);
+                return ResourceManager.GetString("invitado", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Contacte a un administrador para resetear la contraseña.
+        ///   Busca una cadena traducida similar a Jugadores.
         /// </summary>
-        internal static string Recuperacion {
+        internal static string jugadores {
             get {
-                return ResourceManager.GetString("Recuperacion", resourceCulture);
+                return ResourceManager.GetString("jugadores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contacte a un administrador para resetear su contraseña.
+        /// </summary>
+        internal static string recuperacion {
+            get {
+                return ResourceManager.GetString("recuperacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Español.
+        /// </summary>
+        internal static string traducir {
+            get {
+                return ResourceManager.GetString("traducir", resourceCulture);
             }
         }
     }

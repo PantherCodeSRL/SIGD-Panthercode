@@ -278,7 +278,7 @@
             this.btnMenu.Text = "Menú Principal";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnB_Click);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // pbF
             // 
