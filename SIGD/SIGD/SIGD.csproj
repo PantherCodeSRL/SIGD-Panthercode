@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Administrador.cs" />
+    <Compile Include="Modelo\Administrativo.cs" />
+    <Compile Include="Modelo\Analista.cs" />
+    <Compile Include="Modelo\Arbitro.cs" />
+    <Compile Include="Modelo\CT.cs" />
+    <Compile Include="Modelo\Equipo.cs" />
+    <Compile Include="Modelo\Seleccionador.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="FF.cs">
       <SubType>Form</SubType>
     </Compile>

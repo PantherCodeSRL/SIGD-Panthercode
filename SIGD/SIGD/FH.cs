@@ -17,41 +17,7 @@ namespace SIGD
             InitializeComponent();
         }
 
-        Rectangle panelIOriginalRect;
         public bool principal = false;
-
-        private void resizeControl(Rectangle OriginalControlRect, Control control)
-        {
-            int newX = (int)(OriginalControlRect.X);
-            int newY = (int)(OriginalControlRect.Y);
-
-            int newWidth = (int)(OriginalControlRect.Width);
-            int newHeight = (int)(OriginalControlRect.Height);
-
-            control.Location = new Point(newX, newY);
-            control.Size = new Size(newWidth, newHeight);
-        }
-
-        bool res = false;
-        private void btnResH_Click(object sender, EventArgs e)
-        {
-            if (res==false)
-            {
-                btnResH.BackgroundImage = SIGD.Properties.Resources.caret_left_solid;
-                panelIOriginalRect = new Rectangle(panelI.Location.X, panelI.Location.Y, this.Width / 2, panelI.Height);
-                resizeControl(panelIOriginalRect, panelI);
-                panelI.AutoScroll = true;
-                res = true;
-            }
-            else
-            {
-                btnResH.BackgroundImage = SIGD.Properties.Resources.caret_right_solid;
-                panelIOriginalRect = new Rectangle(panelI.Location.X, panelI.Location.Y, -(this.Width / 2) , panelI.Height);
-                resizeControl(panelIOriginalRect, panelI);
-                panelI.AutoScroll = false;
-                res = false;
-            }
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {

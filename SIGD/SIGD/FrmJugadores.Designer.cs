@@ -31,32 +31,31 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnEquipos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.cbxAltura = new System.Windows.Forms.ComboBox();
+            this.cbxPeso = new System.Windows.Forms.ComboBox();
+            this.cbxEdad = new System.Windows.Forms.ComboBox();
+            this.lblFP = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.lblApe = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
+            this.lblIngresarCi = new System.Windows.Forms.Label();
+            this.btnBuscarJ = new System.Windows.Forms.Button();
+            this.mtbCI = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblFechNac = new System.Windows.Forms.Label();
+            this.cbxDeporte = new System.Windows.Forms.ComboBox();
+            this.txtEquipo = new System.Windows.Forms.TextBox();
+            this.lblEquipo = new System.Windows.Forms.Label();
+            this.lblBJ = new System.Windows.Forms.Label();
             this.plFiltro = new System.Windows.Forms.Panel();
+            this.dtpFechF = new System.Windows.Forms.DateTimePicker();
             this.dgvJugadores = new System.Windows.Forms.DataGridView();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -80,19 +79,18 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 1, 0);
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnMinimizar, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(857, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(877, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(84, 81);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(64, 81);
             this.tableLayoutPanel1.TabIndex = 27;
             // 
             // btnCerrar
@@ -103,7 +101,7 @@
             this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(63, 6);
+            this.btnCerrar.Location = new System.Drawing.Point(35, 6);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 31);
@@ -114,31 +112,18 @@
             this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
             this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
             // 
-            // button5
+            // btnMinimizar
             // 
-            this.button5.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 35);
-            this.button5.TabIndex = 21;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::SIGD.Properties.Resources.window_maximize_solid;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(34, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(20, 35);
-            this.button7.TabIndex = 21;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnMinimizar.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
+            this.btnMinimizar.TabIndex = 21;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -224,118 +209,118 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.textBox1.Location = new System.Drawing.Point(124, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 22);
-            this.textBox1.TabIndex = 26;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtNombre.Location = new System.Drawing.Point(124, 40);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(195, 22);
+            this.txtNombre.TabIndex = 26;
             // 
-            // comboBox1
+            // cbxAltura
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(93, 21);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "Altura";
+            this.cbxAltura.FormattingEnabled = true;
+            this.cbxAltura.Location = new System.Drawing.Point(25, 41);
+            this.cbxAltura.Name = "cbxAltura";
+            this.cbxAltura.Size = new System.Drawing.Size(93, 21);
+            this.cbxAltura.TabIndex = 29;
+            this.cbxAltura.Text = "Altura";
             // 
-            // comboBox2
+            // cbxPeso
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(25, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(93, 21);
-            this.comboBox2.TabIndex = 29;
-            this.comboBox2.Text = "Peso";
+            this.cbxPeso.FormattingEnabled = true;
+            this.cbxPeso.Location = new System.Drawing.Point(25, 68);
+            this.cbxPeso.Name = "cbxPeso";
+            this.cbxPeso.Size = new System.Drawing.Size(93, 21);
+            this.cbxPeso.TabIndex = 29;
+            this.cbxPeso.Text = "Peso";
             // 
-            // comboBox3
+            // cbxEdad
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(25, 95);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(93, 21);
-            this.comboBox3.TabIndex = 29;
-            this.comboBox3.Text = "Edad";
+            this.cbxEdad.FormattingEnabled = true;
+            this.cbxEdad.Location = new System.Drawing.Point(25, 95);
+            this.cbxEdad.Name = "cbxEdad";
+            this.cbxEdad.Size = new System.Drawing.Size(93, 21);
+            this.cbxEdad.TabIndex = 29;
+            this.cbxEdad.Text = "Edad";
             // 
-            // label1
+            // lblFP
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(22, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 16);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Filtrar por:";
+            this.lblFP.AutoSize = true;
+            this.lblFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblFP.Location = new System.Drawing.Point(22, 21);
+            this.lblFP.Name = "lblFP";
+            this.lblFP.Size = new System.Drawing.Size(79, 16);
+            this.lblFP.TabIndex = 28;
+            this.lblFP.Text = "Filtrar por:";
             // 
-            // textBox2
+            // txtApellido
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.textBox2.Location = new System.Drawing.Point(124, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 22);
-            this.textBox2.TabIndex = 26;
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtApellido.Location = new System.Drawing.Point(124, 85);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(195, 22);
+            this.txtApellido.TabIndex = 26;
             // 
-            // label3
+            // lblApe
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(124, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 16);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Apellidos:";
+            this.lblApe.AutoSize = true;
+            this.lblApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblApe.Location = new System.Drawing.Point(124, 65);
+            this.lblApe.Name = "lblApe";
+            this.lblApe.Size = new System.Drawing.Size(78, 16);
+            this.lblApe.TabIndex = 28;
+            this.lblApe.Text = "Apellidos:";
             // 
-            // label4
+            // lblNom
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(124, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Nombres:";
+            this.lblNom.AutoSize = true;
+            this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblNom.Location = new System.Drawing.Point(124, 21);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(75, 16);
+            this.lblNom.TabIndex = 28;
+            this.lblNom.Text = "Nombres:";
             // 
-            // label5
+            // lblIngresarCi
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(22, 130);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 16);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Ingresar cédula:";
+            this.lblIngresarCi.AutoSize = true;
+            this.lblIngresarCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblIngresarCi.Location = new System.Drawing.Point(22, 130);
+            this.lblIngresarCi.Name = "lblIngresarCi";
+            this.lblIngresarCi.Size = new System.Drawing.Size(120, 16);
+            this.lblIngresarCi.TabIndex = 28;
+            this.lblIngresarCi.Text = "Ingresar cédula:";
             // 
-            // button1
+            // btnBuscarJ
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(25, 204);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(5);
-            this.button1.Size = new System.Drawing.Size(312, 23);
-            this.button1.TabIndex = 0;
-            this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarJ.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBuscarJ.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
+            this.btnBuscarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarJ.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscarJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarJ.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBuscarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuscarJ.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarJ.Location = new System.Drawing.Point(25, 204);
+            this.btnBuscarJ.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBuscarJ.Name = "btnBuscarJ";
+            this.btnBuscarJ.Padding = new System.Windows.Forms.Padding(5);
+            this.btnBuscarJ.Size = new System.Drawing.Size(312, 23);
+            this.btnBuscarJ.TabIndex = 0;
+            this.btnBuscarJ.TabStop = false;
+            this.btnBuscarJ.UseVisualStyleBackColor = false;
             // 
-            // maskedTextBox1
+            // mtbCI
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.maskedTextBox1.Location = new System.Drawing.Point(25, 159);
-            this.maskedTextBox1.Mask = "0000000-0";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(86, 26);
-            this.maskedTextBox1.TabIndex = 30;
+            this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.mtbCI.Location = new System.Drawing.Point(25, 159);
+            this.mtbCI.Mask = "0000000-0";
+            this.mtbCI.Name = "mtbCI";
+            this.mtbCI.Size = new System.Drawing.Size(86, 26);
+            this.mtbCI.TabIndex = 30;
             // 
             // panel1
             // 
@@ -346,87 +331,84 @@
             this.panel1.Size = new System.Drawing.Size(941, 42);
             this.panel1.TabIndex = 31;
             // 
-            // maskedTextBox2
+            // lblFechNac
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.maskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.maskedTextBox2.Location = new System.Drawing.Point(227, 165);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(92, 26);
-            this.maskedTextBox2.TabIndex = 30;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.lblFechNac.AutoSize = true;
+            this.lblFechNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblFechNac.Location = new System.Drawing.Point(82, 170);
+            this.lblFechNac.Name = "lblFechNac";
+            this.lblFechNac.Size = new System.Drawing.Size(129, 13);
+            this.lblFechNac.TabIndex = 28;
+            this.lblFechNac.Text = "Fecha de nacimiento:";
             // 
-            // label2
+            // cbxDeporte
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(92, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 13);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Fecha de nacimiento:";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbxDeporte.FormattingEnabled = true;
+            this.cbxDeporte.Items.AddRange(new object[] {
             "Basketball",
             "Football",
             "Handball"});
-            this.comboBox4.Location = new System.Drawing.Point(25, 122);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(93, 21);
-            this.comboBox4.TabIndex = 29;
-            this.comboBox4.Text = "Deporte";
+            this.cbxDeporte.Location = new System.Drawing.Point(25, 122);
+            this.cbxDeporte.Name = "cbxDeporte";
+            this.cbxDeporte.Size = new System.Drawing.Size(93, 21);
+            this.cbxDeporte.TabIndex = 29;
+            this.cbxDeporte.Text = "Deporte";
             // 
-            // textBox3
+            // txtEquipo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.textBox3.Location = new System.Drawing.Point(124, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 22);
-            this.textBox3.TabIndex = 26;
+            this.txtEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtEquipo.Location = new System.Drawing.Point(124, 129);
+            this.txtEquipo.Name = "txtEquipo";
+            this.txtEquipo.Size = new System.Drawing.Size(195, 22);
+            this.txtEquipo.TabIndex = 26;
             // 
-            // label6
+            // lblEquipo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(124, 110);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 16);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Equipo:";
+            this.lblEquipo.AutoSize = true;
+            this.lblEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblEquipo.Location = new System.Drawing.Point(124, 110);
+            this.lblEquipo.Name = "lblEquipo";
+            this.lblEquipo.Size = new System.Drawing.Size(61, 16);
+            this.lblEquipo.TabIndex = 28;
+            this.lblEquipo.Text = "Equipo:";
             // 
-            // label7
+            // lblBJ
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(21, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(233, 24);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Búsqueda de jugadores";
+            this.lblBJ.AutoSize = true;
+            this.lblBJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblBJ.Location = new System.Drawing.Point(21, 96);
+            this.lblBJ.Name = "lblBJ";
+            this.lblBJ.Size = new System.Drawing.Size(233, 24);
+            this.lblBJ.TabIndex = 32;
+            this.lblBJ.Text = "Búsqueda de jugadores";
             // 
             // plFiltro
             // 
-            this.plFiltro.Controls.Add(this.label2);
-            this.plFiltro.Controls.Add(this.maskedTextBox2);
-            this.plFiltro.Controls.Add(this.textBox3);
-            this.plFiltro.Controls.Add(this.comboBox1);
-            this.plFiltro.Controls.Add(this.label1);
-            this.plFiltro.Controls.Add(this.comboBox2);
-            this.plFiltro.Controls.Add(this.comboBox3);
-            this.plFiltro.Controls.Add(this.comboBox4);
-            this.plFiltro.Controls.Add(this.textBox2);
-            this.plFiltro.Controls.Add(this.textBox1);
-            this.plFiltro.Controls.Add(this.label4);
-            this.plFiltro.Controls.Add(this.label3);
-            this.plFiltro.Controls.Add(this.label6);
+            this.plFiltro.Controls.Add(this.dtpFechF);
+            this.plFiltro.Controls.Add(this.lblFechNac);
+            this.plFiltro.Controls.Add(this.txtEquipo);
+            this.plFiltro.Controls.Add(this.cbxAltura);
+            this.plFiltro.Controls.Add(this.lblFP);
+            this.plFiltro.Controls.Add(this.cbxPeso);
+            this.plFiltro.Controls.Add(this.cbxEdad);
+            this.plFiltro.Controls.Add(this.cbxDeporte);
+            this.plFiltro.Controls.Add(this.txtApellido);
+            this.plFiltro.Controls.Add(this.txtNombre);
+            this.plFiltro.Controls.Add(this.lblNom);
+            this.plFiltro.Controls.Add(this.lblApe);
+            this.plFiltro.Controls.Add(this.lblEquipo);
             this.plFiltro.Location = new System.Drawing.Point(0, 240);
             this.plFiltro.Name = "plFiltro";
             this.plFiltro.Size = new System.Drawing.Size(337, 204);
             this.plFiltro.TabIndex = 36;
+            // 
+            // dtpFechF
+            // 
+            this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechF.Location = new System.Drawing.Point(217, 167);
+            this.dtpFechF.Name = "dtpFechF";
+            this.dtpFechF.Size = new System.Drawing.Size(102, 20);
+            this.dtpFechF.TabIndex = 41;
             // 
             // dgvJugadores
             // 
@@ -445,11 +427,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(941, 492);
             this.Controls.Add(this.dgvJugadores);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblBJ);
+            this.Controls.Add(this.btnBuscarJ);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.mtbCI);
+            this.Controls.Add(this.lblIngresarCi);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.plFiltro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -475,31 +457,30 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnEquipos;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.ComboBox cbxAltura;
+        private System.Windows.Forms.ComboBox cbxPeso;
+        private System.Windows.Forms.ComboBox cbxEdad;
+        private System.Windows.Forms.Label lblFP;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.Label lblApe;
+        private System.Windows.Forms.Label lblNom;
+        private System.Windows.Forms.Label lblIngresarCi;
+        private System.Windows.Forms.Button btnBuscarJ;
+        private System.Windows.Forms.MaskedTextBox mtbCI;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Label lblFechNac;
+        private System.Windows.Forms.ComboBox cbxDeporte;
+        private System.Windows.Forms.TextBox txtEquipo;
+        private System.Windows.Forms.Label lblEquipo;
+        private System.Windows.Forms.Label lblBJ;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel plFiltro;
         private System.Windows.Forms.DataGridView dgvJugadores;
+        private System.Windows.Forms.DateTimePicker dtpFechF;
     }
 }

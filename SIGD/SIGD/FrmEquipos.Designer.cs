@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.plSuperior = new System.Windows.Forms.Panel();
-            this.tlpHerramientas = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnMin = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
             this.pbJugadores = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
@@ -48,88 +44,29 @@
             this.cbxDeporte = new System.Windows.Forms.ComboBox();
             this.lblBE = new System.Windows.Forms.Label();
             this.dgvJugadores = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBuscarE = new System.Windows.Forms.Button();
+            this.dtpFechF = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.plSuperior.SuspendLayout();
-            this.tlpHerramientas.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plSuperior
             // 
             this.plSuperior.BackColor = System.Drawing.Color.SlateGray;
-            this.plSuperior.Controls.Add(this.tlpHerramientas);
+            this.plSuperior.Controls.Add(this.tableLayoutPanel1);
             this.plSuperior.Controls.Add(this.tlpOpciones);
             this.plSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.plSuperior.Location = new System.Drawing.Point(0, 0);
             this.plSuperior.Name = "plSuperior";
             this.plSuperior.Size = new System.Drawing.Size(941, 81);
             this.plSuperior.TabIndex = 25;
-            // 
-            // tlpHerramientas
-            // 
-            this.tlpHerramientas.ColumnCount = 3;
-            this.tlpHerramientas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tlpHerramientas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tlpHerramientas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tlpHerramientas.Controls.Add(this.btnCerrar, 2, 0);
-            this.tlpHerramientas.Controls.Add(this.btnMin, 0, 0);
-            this.tlpHerramientas.Controls.Add(this.button7, 1, 0);
-            this.tlpHerramientas.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tlpHerramientas.Location = new System.Drawing.Point(857, 0);
-            this.tlpHerramientas.Name = "tlpHerramientas";
-            this.tlpHerramientas.RowCount = 1;
-            this.tlpHerramientas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tlpHerramientas.Size = new System.Drawing.Size(84, 81);
-            this.tlpHerramientas.TabIndex = 27;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(63, 6);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 31);
-            this.btnCerrar.TabIndex = 23;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
-            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
-            // 
-            // btnMin
-            // 
-            this.btnMin.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
-            this.btnMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMin.FlatAppearance.BorderSize = 0;
-            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Location = new System.Drawing.Point(3, 3);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(20, 35);
-            this.btnMin.TabIndex = 21;
-            this.btnMin.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::SIGD.Properties.Resources.window_maximize_solid;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(33, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(20, 35);
-            this.button7.TabIndex = 21;
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // tlpOpciones
             // 
@@ -218,15 +155,15 @@
             // txtFiltroNombre
             // 
             this.txtFiltroNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtFiltroNombre.Location = new System.Drawing.Point(119, 150);
+            this.txtFiltroNombre.Location = new System.Drawing.Point(121, 150);
             this.txtFiltroNombre.Name = "txtFiltroNombre";
-            this.txtFiltroNombre.Size = new System.Drawing.Size(213, 22);
+            this.txtFiltroNombre.Size = new System.Drawing.Size(211, 22);
             this.txtFiltroNombre.TabIndex = 26;
             // 
             // cbxTitulos
             // 
             this.cbxTitulos.FormattingEnabled = true;
-            this.cbxTitulos.Location = new System.Drawing.Point(20, 150);
+            this.cbxTitulos.Location = new System.Drawing.Point(22, 150);
             this.cbxTitulos.Name = "cbxTitulos";
             this.cbxTitulos.Size = new System.Drawing.Size(93, 21);
             this.cbxTitulos.TabIndex = 29;
@@ -236,7 +173,7 @@
             // 
             this.lblFP.AutoSize = true;
             this.lblFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFP.Location = new System.Drawing.Point(17, 131);
+            this.lblFP.Location = new System.Drawing.Point(19, 131);
             this.lblFP.Name = "lblFP";
             this.lblFP.Size = new System.Drawing.Size(79, 16);
             this.lblFP.TabIndex = 28;
@@ -246,7 +183,7 @@
             // 
             this.lblN.AutoSize = true;
             this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblN.Location = new System.Drawing.Point(119, 131);
+            this.lblN.Location = new System.Drawing.Point(121, 131);
             this.lblN.Name = "lblN";
             this.lblN.Size = new System.Drawing.Size(67, 16);
             this.lblN.TabIndex = 28;
@@ -285,7 +222,7 @@
             // 
             this.lblFdF.AutoSize = true;
             this.lblFdF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFdF.Location = new System.Drawing.Point(17, 208);
+            this.lblFdF.Location = new System.Drawing.Point(19, 208);
             this.lblFdF.Name = "lblFdF";
             this.lblFdF.Size = new System.Drawing.Size(153, 16);
             this.lblFdF.TabIndex = 28;
@@ -294,7 +231,7 @@
             // cbxDeporte
             // 
             this.cbxDeporte.FormattingEnabled = true;
-            this.cbxDeporte.Location = new System.Drawing.Point(20, 177);
+            this.cbxDeporte.Location = new System.Drawing.Point(22, 177);
             this.cbxDeporte.Name = "cbxDeporte";
             this.cbxDeporte.Size = new System.Drawing.Size(93, 21);
             this.cbxDeporte.TabIndex = 29;
@@ -304,7 +241,7 @@
             // 
             this.lblBE.AutoSize = true;
             this.lblBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblBE.Location = new System.Drawing.Point(12, 96);
+            this.lblBE.Location = new System.Drawing.Point(19, 96);
             this.lblBE.Name = "lblBE";
             this.lblBE.Size = new System.Drawing.Size(217, 24);
             this.lblBE.TabIndex = 32;
@@ -320,33 +257,78 @@
             this.dgvJugadores.Size = new System.Drawing.Size(583, 337);
             this.dgvJugadores.TabIndex = 38;
             // 
-            // button1
+            // btnBuscarE
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(20, 239);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(5);
-            this.button1.Size = new System.Drawing.Size(312, 23);
-            this.button1.TabIndex = 39;
-            this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarE.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBuscarE.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
+            this.btnBuscarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarE.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscarE.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarE.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuscarE.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarE.Location = new System.Drawing.Point(23, 239);
+            this.btnBuscarE.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBuscarE.Name = "btnBuscarE";
+            this.btnBuscarE.Padding = new System.Windows.Forms.Padding(5);
+            this.btnBuscarE.Size = new System.Drawing.Size(309, 23);
+            this.btnBuscarE.TabIndex = 39;
+            this.btnBuscarE.TabStop = false;
+            this.btnBuscarE.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // dtpFechF
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(176, 204);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(102, 20);
-            this.dateTimePicker1.TabIndex = 40;
+            this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechF.Location = new System.Drawing.Point(178, 204);
+            this.dtpFechF.Name = "dtpFechF";
+            this.dtpFechF.Size = new System.Drawing.Size(102, 20);
+            this.dtpFechF.TabIndex = 40;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnMinimizar, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(877, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(64, 81);
+            this.tableLayoutPanel1.TabIndex = 28;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(35, 6);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 31);
+            this.btnCerrar.TabIndex = 23;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
+            this.btnMinimizar.TabIndex = 21;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
             // 
             // FrmEquipos
             // 
@@ -354,8 +336,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(941, 492);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dtpFechF);
+            this.Controls.Add(this.btnBuscarE);
             this.Controls.Add(this.dgvJugadores);
             this.Controls.Add(this.lblBE);
             this.Controls.Add(this.plInferior);
@@ -372,11 +354,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEquipos";
             this.plSuperior.ResumeLayout(false);
-            this.tlpHerramientas.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,15 +378,14 @@
         private System.Windows.Forms.Label lblN;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel plInferior;
-        private System.Windows.Forms.TableLayoutPanel tlpHerramientas;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnMin;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label lblFdF;
         private System.Windows.Forms.ComboBox cbxDeporte;
         private System.Windows.Forms.Label lblBE;
         private System.Windows.Forms.DataGridView dgvJugadores;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnBuscarE;
+        private System.Windows.Forms.DateTimePicker dtpFechF;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnMinimizar;
     }
 }
