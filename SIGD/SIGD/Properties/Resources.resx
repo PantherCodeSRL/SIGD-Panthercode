@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Sin título-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sin título-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="anim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circle-xmark-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circle-xmark-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sin título-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sin título-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="af1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\af1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,23 +142,26 @@
   <data name="trophy-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trophy-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anim1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anim1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="window-maximize-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\window-maximize-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file-svg-handball-icon-1167717" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-svg-handball-icon-1167717.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="af1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\af1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circle-plus-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circle-plus-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-regular-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-regular-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="degradou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\degradou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendar-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,11 +169,14 @@
   <data name="shield-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shield-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pen-to-square-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pen-to-square-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="caret-right-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caret-right-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file-svg-handball-icon-1167717" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file-svg-handball-icon-1167717.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="degradou1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\degradou1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="basketball-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basketball-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,23 +187,26 @@
   <data name="lock-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anim1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anim1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minus-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minus-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnifying-glass-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifying-glass-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="af" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\af.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-regular-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-regular-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circle-plus-solid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circle-plus-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="people-group-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people-group-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sin título-6 - copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin título-6 - copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="degradou1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\degradou1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="caret-left-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caret-left-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +220,7 @@
   <data name="circle-xmark-solid-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circle-xmark-solid-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="magnifying-glass-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\magnifying-glass-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eraser-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraser-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -21,7 +21,7 @@ namespace SIGD
 
         private void btnH_Click(object sender, EventArgs e)
         {
-            Form fh = new FH() { Owner = this.Owner };
+            Form fh = new FrmFixtures() { Owner = this.Owner };
             fh.Show();
             this.Close();
         }

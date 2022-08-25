@@ -198,7 +198,6 @@ C:\Users\admin\Repos\SIGD\SIGD\bin\Debug\en\SIGD.resources.dll
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.csprojAssemblyReference.cache
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FF.resources
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FB.resources
-C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FH.resources
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmEquipos.resources
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmJugadores.resources
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.InicioSesion.resources
@@ -231,3 +230,4 @@ E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correcion
 E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correciones\SIGD\SIGD\bin\Debug\en\SIGD.resources.dll
 E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correciones\SIGD\SIGD\obj\Debug\SIGD.stringsgobales.en.resources
 E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correciones\SIGD\SIGD\obj\Debug\en\SIGD.resources.dll
+C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmFixtures.resources

@@ -67,11 +67,11 @@
     <Compile Include="FB.Designer.cs">
       <DependentUpon>FB.cs</DependentUpon>
     </Compile>
-    <Compile Include="FH.cs">
+    <Compile Include="FrmFixtures.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FH.Designer.cs">
-      <DependentUpon>FH.cs</DependentUpon>
+    <Compile Include="FrmFixtures.Designer.cs">
+      <DependentUpon>FrmFixtures.cs</DependentUpon>
     </Compile>
     <Compile Include="FormP.cs">
       <SubType>Form</SubType>
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="FB.resx">
       <DependentUpon>FB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FH.resx">
-      <DependentUpon>FH.cs</DependentUpon>
+    <EmbeddedResource Include="FrmFixtures.resx">
+      <DependentUpon>FrmFixtures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormP.resx">
       <DependentUpon>FormP.cs</DependentUpon>
@@ -256,6 +256,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\%24this.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-plus-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-to-square-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser-solid.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

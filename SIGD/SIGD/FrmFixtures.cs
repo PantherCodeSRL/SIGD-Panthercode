@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIGD
 {
-    public partial class FH : Form
+    public partial class FrmFixtures : Form
     {
-        public FH()
+        public FrmFixtures()
         {
             InitializeComponent();
         }

@@ -143,6 +143,26 @@ namespace SIGD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circle_plus_solid {
+            get {
+                object obj = ResourceManager.GetObject("circle-plus-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_plus_solid1 {
+            get {
+                object obj = ResourceManager.GetObject("circle-plus-solid1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_xmark_solid {
             get {
                 object obj = ResourceManager.GetObject("circle-xmark-solid", resourceCulture);
@@ -176,6 +196,16 @@ namespace SIGD.Properties {
         internal static System.Drawing.Bitmap degradou1 {
             get {
                 object obj = ResourceManager.GetObject("degradou1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eraser_solid {
+            get {
+                object obj = ResourceManager.GetObject("eraser-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +286,16 @@ namespace SIGD.Properties {
         internal static System.Drawing.Bitmap minus_solid {
             get {
                 object obj = ResourceManager.GetObject("minus-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pen_to_square_solid {
+            get {
+                object obj = ResourceManager.GetObject("pen-to-square-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,32 +29,38 @@
         private void InitializeComponent()
         {
             this.plSuperior = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
-            this.pbJugadores = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnJugadores = new System.Windows.Forms.Button();
-            this.pbMenu = new System.Windows.Forms.PictureBox();
             this.txtFiltroNombre = new System.Windows.Forms.TextBox();
             this.cbxTitulos = new System.Windows.Forms.ComboBox();
             this.lblFP = new System.Windows.Forms.Label();
             this.lblN = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.plInferior = new System.Windows.Forms.Panel();
             this.lblFdF = new System.Windows.Forms.Label();
             this.cbxDeporte = new System.Windows.Forms.ComboBox();
             this.lblBE = new System.Windows.Forms.Label();
             this.dgvJugadores = new System.Windows.Forms.DataGridView();
-            this.btnBuscarE = new System.Windows.Forms.Button();
             this.dtpFechF = new System.Windows.Forms.DateTimePicker();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBuscarE = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
+            this.pbJugadores = new System.Windows.Forms.PictureBox();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.plAdminEquipos = new System.Windows.Forms.Panel();
+            this.lblHAE = new System.Windows.Forms.Label();
+            this.btnCrearE = new System.Windows.Forms.Button();
+            this.btnBorrarE = new System.Windows.Forms.Button();
+            this.btnModificarE = new System.Windows.Forms.Button();
             this.plSuperior.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.plAdminEquipos.SuspendLayout();
             this.SuspendLayout();
             // 
             // plSuperior
@@ -67,6 +73,22 @@
             this.plSuperior.Name = "plSuperior";
             this.plSuperior.Size = new System.Drawing.Size(941, 81);
             this.plSuperior.TabIndex = 25;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnMinimizar, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(877, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(64, 81);
+            this.tableLayoutPanel1.TabIndex = 28;
             // 
             // tlpOpciones
             // 
@@ -91,16 +113,6 @@
             this.tlpOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.tlpOpciones.Size = new System.Drawing.Size(361, 81);
             this.tlpOpciones.TabIndex = 26;
-            // 
-            // pbJugadores
-            // 
-            this.pbJugadores.Image = global::SIGD.Properties.Resources.person_running_solid;
-            this.pbJugadores.Location = new System.Drawing.Point(188, 3);
-            this.pbJugadores.Name = "pbJugadores";
-            this.pbJugadores.Size = new System.Drawing.Size(36, 71);
-            this.pbJugadores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbJugadores.TabIndex = 25;
-            this.pbJugadores.TabStop = false;
             // 
             // btnMenu
             // 
@@ -142,16 +154,6 @@
             this.btnJugadores.UseVisualStyleBackColor = false;
             this.btnJugadores.Click += new System.EventHandler(this.btnJugadores_Click);
             // 
-            // pbMenu
-            // 
-            this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
-            this.pbMenu.Location = new System.Drawing.Point(65, 3);
-            this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(25, 71);
-            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMenu.TabIndex = 1;
-            this.pbMenu.TabStop = false;
-            // 
             // txtFiltroNombre
             // 
             this.txtFiltroNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -188,26 +190,6 @@
             this.lblN.Size = new System.Drawing.Size(67, 16);
             this.lblN.TabIndex = 28;
             this.lblN.Text = "Nombre:";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuscar.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(350, 204);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(5);
-            this.btnBuscar.Size = new System.Drawing.Size(33, 71);
-            this.btnBuscar.TabIndex = 0;
-            this.btnBuscar.TabStop = false;
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // plInferior
             // 
@@ -257,6 +239,14 @@
             this.dgvJugadores.Size = new System.Drawing.Size(583, 337);
             this.dgvJugadores.TabIndex = 38;
             // 
+            // dtpFechF
+            // 
+            this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechF.Location = new System.Drawing.Point(178, 204);
+            this.dtpFechF.Name = "dtpFechF";
+            this.dtpFechF.Size = new System.Drawing.Size(102, 20);
+            this.dtpFechF.TabIndex = 40;
+            // 
             // btnBuscarE
             // 
             this.btnBuscarE.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -276,30 +266,6 @@
             this.btnBuscarE.TabIndex = 39;
             this.btnBuscarE.TabStop = false;
             this.btnBuscarE.UseVisualStyleBackColor = false;
-            // 
-            // dtpFechF
-            // 
-            this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechF.Location = new System.Drawing.Point(178, 204);
-            this.dtpFechF.Name = "dtpFechF";
-            this.dtpFechF.Size = new System.Drawing.Size(102, 20);
-            this.dtpFechF.TabIndex = 40;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.btnCerrar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnMinimizar, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(877, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(64, 81);
-            this.tableLayoutPanel1.TabIndex = 28;
             // 
             // btnCerrar
             // 
@@ -330,12 +296,115 @@
             this.btnMinimizar.TabIndex = 21;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             // 
+            // pbJugadores
+            // 
+            this.pbJugadores.Image = global::SIGD.Properties.Resources.person_running_solid;
+            this.pbJugadores.Location = new System.Drawing.Point(188, 3);
+            this.pbJugadores.Name = "pbJugadores";
+            this.pbJugadores.Size = new System.Drawing.Size(36, 71);
+            this.pbJugadores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJugadores.TabIndex = 25;
+            this.pbJugadores.TabStop = false;
+            // 
+            // pbMenu
+            // 
+            this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
+            this.pbMenu.Location = new System.Drawing.Point(65, 3);
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(25, 71);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMenu.TabIndex = 1;
+            this.pbMenu.TabStop = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBuscar.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(350, 204);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(5);
+            this.btnBuscar.Size = new System.Drawing.Size(33, 71);
+            this.btnBuscar.TabIndex = 0;
+            this.btnBuscar.TabStop = false;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // plAdminEquipos
+            // 
+            this.plAdminEquipos.Controls.Add(this.lblHAE);
+            this.plAdminEquipos.Controls.Add(this.btnCrearE);
+            this.plAdminEquipos.Controls.Add(this.btnBorrarE);
+            this.plAdminEquipos.Controls.Add(this.btnModificarE);
+            this.plAdminEquipos.Location = new System.Drawing.Point(4, 327);
+            this.plAdminEquipos.Name = "plAdminEquipos";
+            this.plAdminEquipos.Size = new System.Drawing.Size(337, 106);
+            this.plAdminEquipos.TabIndex = 44;
+            // 
+            // lblHAE
+            // 
+            this.lblHAE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHAE.Location = new System.Drawing.Point(13, 2);
+            this.lblHAE.Name = "lblHAE";
+            this.lblHAE.Size = new System.Drawing.Size(306, 42);
+            this.lblHAE.TabIndex = 43;
+            this.lblHAE.Text = "Herramientas de Administración de Equipos";
+            // 
+            // btnCrearE
+            // 
+            this.btnCrearE.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrearE.BackgroundImage = global::SIGD.Properties.Resources.circle_plus_solid;
+            this.btnCrearE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCrearE.FlatAppearance.BorderSize = 0;
+            this.btnCrearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearE.Location = new System.Drawing.Point(25, 48);
+            this.btnCrearE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCrearE.Name = "btnCrearE";
+            this.btnCrearE.Size = new System.Drawing.Size(50, 50);
+            this.btnCrearE.TabIndex = 41;
+            this.btnCrearE.UseVisualStyleBackColor = false;
+            // 
+            // btnBorrarE
+            // 
+            this.btnBorrarE.BackColor = System.Drawing.Color.Transparent;
+            this.btnBorrarE.BackgroundImage = global::SIGD.Properties.Resources.eraser_solid;
+            this.btnBorrarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrarE.FlatAppearance.BorderSize = 0;
+            this.btnBorrarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarE.Location = new System.Drawing.Point(157, 48);
+            this.btnBorrarE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBorrarE.Name = "btnBorrarE";
+            this.btnBorrarE.Size = new System.Drawing.Size(50, 50);
+            this.btnBorrarE.TabIndex = 41;
+            this.btnBorrarE.UseVisualStyleBackColor = false;
+            // 
+            // btnModificarE
+            // 
+            this.btnModificarE.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificarE.BackgroundImage = global::SIGD.Properties.Resources.pen_to_square_solid;
+            this.btnModificarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificarE.FlatAppearance.BorderSize = 0;
+            this.btnModificarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarE.Location = new System.Drawing.Point(94, 48);
+            this.btnModificarE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnModificarE.Name = "btnModificarE";
+            this.btnModificarE.Size = new System.Drawing.Size(50, 50);
+            this.btnModificarE.TabIndex = 41;
+            this.btnModificarE.UseVisualStyleBackColor = false;
+            // 
             // FrmEquipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(941, 492);
+            this.Controls.Add(this.plAdminEquipos);
             this.Controls.Add(this.dtpFechF);
             this.Controls.Add(this.btnBuscarE);
             this.Controls.Add(this.dgvJugadores);
@@ -354,11 +423,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEquipos";
             this.plSuperior.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.plAdminEquipos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,5 +457,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Panel plAdminEquipos;
+        private System.Windows.Forms.Label lblHAE;
+        private System.Windows.Forms.Button btnCrearE;
+        private System.Windows.Forms.Button btnBorrarE;
+        private System.Windows.Forms.Button btnModificarE;
     }
 }

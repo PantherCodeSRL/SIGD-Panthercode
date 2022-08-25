@@ -72,7 +72,7 @@ namespace SIGD
              
         private void btnH_Click(object sender, EventArgs e)
         {
-            activo = new FH() { Owner = this };
+            activo = new FrmFixtures() { Owner = this };
             activo.Show();
             this.Hide();
         }

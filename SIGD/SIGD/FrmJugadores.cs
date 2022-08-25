@@ -14,15 +14,13 @@ namespace SIGD
     {
         public FrmJugadores()
         {
-            InitializeComponent();
-            
+            InitializeComponent();        
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Hide();
-
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

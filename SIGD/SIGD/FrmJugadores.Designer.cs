@@ -30,13 +30,9 @@
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnEquipos = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cbxAltura = new System.Windows.Forms.ComboBox();
             this.cbxPeso = new System.Windows.Forms.ComboBox();
@@ -46,7 +42,6 @@
             this.lblApe = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblIngresarCi = new System.Windows.Forms.Label();
-            this.btnBuscarJ = new System.Windows.Forms.Button();
             this.mtbCI = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblFechNac = new System.Windows.Forms.Label();
@@ -57,13 +52,24 @@
             this.plFiltro = new System.Windows.Forms.Panel();
             this.dtpFechF = new System.Windows.Forms.DateTimePicker();
             this.dgvJugadores = new System.Windows.Forms.DataGridView();
+            this.plAdminEquipos = new System.Windows.Forms.Panel();
+            this.lblHAJ = new System.Windows.Forms.Label();
+            this.btnCrearE = new System.Windows.Forms.Button();
+            this.btnBorrarE = new System.Windows.Forms.Button();
+            this.btnModificarE = new System.Windows.Forms.Button();
+            this.btnBuscarJ = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
+            this.plAdminEquipos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -93,38 +99,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(64, 81);
             this.tableLayoutPanel1.TabIndex = 27;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(35, 6);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 31);
-            this.btnCerrar.TabIndex = 23;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
-            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
-            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
-            this.btnMinimizar.TabIndex = 21;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 5;
@@ -148,16 +122,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(361, 81);
             this.tableLayoutPanel2.TabIndex = 26;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SIGD.Properties.Resources.people_group_solid;
-            this.pictureBox3.Location = new System.Drawing.Point(188, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 71);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
             // 
             // btnMenu
             // 
@@ -199,20 +163,10 @@
             this.btnEquipos.UseVisualStyleBackColor = false;
             this.btnEquipos.Click += new System.EventHandler(this.btnEquipos_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.house_solid;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtNombre.Location = new System.Drawing.Point(124, 40);
+            this.txtNombre.Location = new System.Drawing.Point(124, 27);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(195, 22);
             this.txtNombre.TabIndex = 26;
@@ -220,7 +174,7 @@
             // cbxAltura
             // 
             this.cbxAltura.FormattingEnabled = true;
-            this.cbxAltura.Location = new System.Drawing.Point(25, 41);
+            this.cbxAltura.Location = new System.Drawing.Point(25, 28);
             this.cbxAltura.Name = "cbxAltura";
             this.cbxAltura.Size = new System.Drawing.Size(93, 21);
             this.cbxAltura.TabIndex = 29;
@@ -229,7 +183,7 @@
             // cbxPeso
             // 
             this.cbxPeso.FormattingEnabled = true;
-            this.cbxPeso.Location = new System.Drawing.Point(25, 68);
+            this.cbxPeso.Location = new System.Drawing.Point(25, 57);
             this.cbxPeso.Name = "cbxPeso";
             this.cbxPeso.Size = new System.Drawing.Size(93, 21);
             this.cbxPeso.TabIndex = 29;
@@ -238,7 +192,7 @@
             // cbxEdad
             // 
             this.cbxEdad.FormattingEnabled = true;
-            this.cbxEdad.Location = new System.Drawing.Point(25, 95);
+            this.cbxEdad.Location = new System.Drawing.Point(25, 86);
             this.cbxEdad.Name = "cbxEdad";
             this.cbxEdad.Size = new System.Drawing.Size(93, 21);
             this.cbxEdad.TabIndex = 29;
@@ -248,7 +202,7 @@
             // 
             this.lblFP.AutoSize = true;
             this.lblFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFP.Location = new System.Drawing.Point(22, 21);
+            this.lblFP.Location = new System.Drawing.Point(22, 8);
             this.lblFP.Name = "lblFP";
             this.lblFP.Size = new System.Drawing.Size(79, 16);
             this.lblFP.TabIndex = 28;
@@ -257,7 +211,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtApellido.Location = new System.Drawing.Point(124, 85);
+            this.txtApellido.Location = new System.Drawing.Point(124, 72);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(195, 22);
             this.txtApellido.TabIndex = 26;
@@ -266,57 +220,37 @@
             // 
             this.lblApe.AutoSize = true;
             this.lblApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblApe.Location = new System.Drawing.Point(124, 65);
+            this.lblApe.Location = new System.Drawing.Point(124, 52);
             this.lblApe.Name = "lblApe";
-            this.lblApe.Size = new System.Drawing.Size(78, 16);
+            this.lblApe.Size = new System.Drawing.Size(70, 16);
             this.lblApe.TabIndex = 28;
-            this.lblApe.Text = "Apellidos:";
+            this.lblApe.Text = "Apellido:";
             // 
             // lblNom
             // 
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNom.Location = new System.Drawing.Point(124, 21);
+            this.lblNom.Location = new System.Drawing.Point(124, 8);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(75, 16);
+            this.lblNom.Size = new System.Drawing.Size(67, 16);
             this.lblNom.TabIndex = 28;
-            this.lblNom.Text = "Nombres:";
+            this.lblNom.Text = "Nombre:";
             // 
             // lblIngresarCi
             // 
             this.lblIngresarCi.AutoSize = true;
             this.lblIngresarCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblIngresarCi.Location = new System.Drawing.Point(22, 130);
+            this.lblIngresarCi.Location = new System.Drawing.Point(22, 124);
             this.lblIngresarCi.Name = "lblIngresarCi";
             this.lblIngresarCi.Size = new System.Drawing.Size(120, 16);
             this.lblIngresarCi.TabIndex = 28;
             this.lblIngresarCi.Text = "Ingresar cédula:";
             // 
-            // btnBuscarJ
-            // 
-            this.btnBuscarJ.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuscarJ.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
-            this.btnBuscarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscarJ.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscarJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnBuscarJ.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnBuscarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBuscarJ.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarJ.Location = new System.Drawing.Point(25, 204);
-            this.btnBuscarJ.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBuscarJ.Name = "btnBuscarJ";
-            this.btnBuscarJ.Padding = new System.Windows.Forms.Padding(5);
-            this.btnBuscarJ.Size = new System.Drawing.Size(312, 23);
-            this.btnBuscarJ.TabIndex = 0;
-            this.btnBuscarJ.TabStop = false;
-            this.btnBuscarJ.UseVisualStyleBackColor = false;
-            // 
             // mtbCI
             // 
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.mtbCI.Location = new System.Drawing.Point(25, 159);
+            this.mtbCI.Location = new System.Drawing.Point(148, 118);
             this.mtbCI.Mask = "0000000-0";
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(86, 26);
@@ -335,7 +269,7 @@
             // 
             this.lblFechNac.AutoSize = true;
             this.lblFechNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblFechNac.Location = new System.Drawing.Point(82, 170);
+            this.lblFechNac.Location = new System.Drawing.Point(82, 157);
             this.lblFechNac.Name = "lblFechNac";
             this.lblFechNac.Size = new System.Drawing.Size(129, 13);
             this.lblFechNac.TabIndex = 28;
@@ -348,7 +282,7 @@
             "Basketball",
             "Football",
             "Handball"});
-            this.cbxDeporte.Location = new System.Drawing.Point(25, 122);
+            this.cbxDeporte.Location = new System.Drawing.Point(25, 116);
             this.cbxDeporte.Name = "cbxDeporte";
             this.cbxDeporte.Size = new System.Drawing.Size(93, 21);
             this.cbxDeporte.TabIndex = 29;
@@ -357,7 +291,7 @@
             // txtEquipo
             // 
             this.txtEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtEquipo.Location = new System.Drawing.Point(124, 129);
+            this.txtEquipo.Location = new System.Drawing.Point(124, 116);
             this.txtEquipo.Name = "txtEquipo";
             this.txtEquipo.Size = new System.Drawing.Size(195, 22);
             this.txtEquipo.TabIndex = 26;
@@ -366,7 +300,7 @@
             // 
             this.lblEquipo.AutoSize = true;
             this.lblEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblEquipo.Location = new System.Drawing.Point(124, 110);
+            this.lblEquipo.Location = new System.Drawing.Point(124, 97);
             this.lblEquipo.Name = "lblEquipo";
             this.lblEquipo.Size = new System.Drawing.Size(61, 16);
             this.lblEquipo.TabIndex = 28;
@@ -376,7 +310,7 @@
             // 
             this.lblBJ.AutoSize = true;
             this.lblBJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblBJ.Location = new System.Drawing.Point(21, 96);
+            this.lblBJ.Location = new System.Drawing.Point(21, 84);
             this.lblBJ.Name = "lblBJ";
             this.lblBJ.Size = new System.Drawing.Size(233, 24);
             this.lblBJ.TabIndex = 32;
@@ -397,15 +331,15 @@
             this.plFiltro.Controls.Add(this.lblNom);
             this.plFiltro.Controls.Add(this.lblApe);
             this.plFiltro.Controls.Add(this.lblEquipo);
-            this.plFiltro.Location = new System.Drawing.Point(0, 240);
+            this.plFiltro.Location = new System.Drawing.Point(0, 150);
             this.plFiltro.Name = "plFiltro";
-            this.plFiltro.Size = new System.Drawing.Size(337, 204);
+            this.plFiltro.Size = new System.Drawing.Size(337, 187);
             this.plFiltro.TabIndex = 36;
             // 
             // dtpFechF
             // 
             this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechF.Location = new System.Drawing.Point(217, 167);
+            this.dtpFechF.Location = new System.Drawing.Point(217, 154);
             this.dtpFechF.Name = "dtpFechF";
             this.dtpFechF.Size = new System.Drawing.Size(102, 20);
             this.dtpFechF.TabIndex = 41;
@@ -420,12 +354,147 @@
             this.dgvJugadores.Size = new System.Drawing.Size(564, 337);
             this.dgvJugadores.TabIndex = 37;
             // 
+            // plAdminEquipos
+            // 
+            this.plAdminEquipos.Controls.Add(this.lblHAJ);
+            this.plAdminEquipos.Controls.Add(this.btnCrearE);
+            this.plAdminEquipos.Controls.Add(this.btnBorrarE);
+            this.plAdminEquipos.Controls.Add(this.btnModificarE);
+            this.plAdminEquipos.Location = new System.Drawing.Point(0, 338);
+            this.plAdminEquipos.Name = "plAdminEquipos";
+            this.plAdminEquipos.Size = new System.Drawing.Size(337, 106);
+            this.plAdminEquipos.TabIndex = 43;
+            // 
+            // lblHAJ
+            // 
+            this.lblHAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHAJ.Location = new System.Drawing.Point(13, 2);
+            this.lblHAJ.Name = "lblHAJ";
+            this.lblHAJ.Size = new System.Drawing.Size(306, 42);
+            this.lblHAJ.TabIndex = 43;
+            this.lblHAJ.Text = "Herramientas de Administración de Jugadores";
+            // 
+            // btnCrearE
+            // 
+            this.btnCrearE.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrearE.BackgroundImage = global::SIGD.Properties.Resources.circle_plus_solid;
+            this.btnCrearE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCrearE.FlatAppearance.BorderSize = 0;
+            this.btnCrearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearE.Location = new System.Drawing.Point(25, 48);
+            this.btnCrearE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCrearE.Name = "btnCrearE";
+            this.btnCrearE.Size = new System.Drawing.Size(50, 50);
+            this.btnCrearE.TabIndex = 41;
+            this.btnCrearE.UseVisualStyleBackColor = false;
+            // 
+            // btnBorrarE
+            // 
+            this.btnBorrarE.BackColor = System.Drawing.Color.Transparent;
+            this.btnBorrarE.BackgroundImage = global::SIGD.Properties.Resources.eraser_solid;
+            this.btnBorrarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrarE.FlatAppearance.BorderSize = 0;
+            this.btnBorrarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarE.Location = new System.Drawing.Point(157, 48);
+            this.btnBorrarE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBorrarE.Name = "btnBorrarE";
+            this.btnBorrarE.Size = new System.Drawing.Size(50, 50);
+            this.btnBorrarE.TabIndex = 41;
+            this.btnBorrarE.UseVisualStyleBackColor = false;
+            // 
+            // btnModificarE
+            // 
+            this.btnModificarE.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificarE.BackgroundImage = global::SIGD.Properties.Resources.pen_to_square_solid;
+            this.btnModificarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificarE.FlatAppearance.BorderSize = 0;
+            this.btnModificarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarE.Location = new System.Drawing.Point(94, 48);
+            this.btnModificarE.Margin = new System.Windows.Forms.Padding(0);
+            this.btnModificarE.Name = "btnModificarE";
+            this.btnModificarE.Size = new System.Drawing.Size(50, 50);
+            this.btnModificarE.TabIndex = 41;
+            this.btnModificarE.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscarJ
+            // 
+            this.btnBuscarJ.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBuscarJ.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
+            this.btnBuscarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarJ.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscarJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarJ.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBuscarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuscarJ.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarJ.Location = new System.Drawing.Point(244, 118);
+            this.btnBuscarJ.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBuscarJ.Name = "btnBuscarJ";
+            this.btnBuscarJ.Padding = new System.Windows.Forms.Padding(5);
+            this.btnBuscarJ.Size = new System.Drawing.Size(75, 26);
+            this.btnBuscarJ.TabIndex = 0;
+            this.btnBuscarJ.TabStop = false;
+            this.btnBuscarJ.UseVisualStyleBackColor = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(35, 6);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 31);
+            this.btnCerrar.TabIndex = 23;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
+            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
+            this.btnMinimizar.TabIndex = 21;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SIGD.Properties.Resources.people_group_solid;
+            this.pictureBox3.Location = new System.Drawing.Point(188, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 71);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SIGD.Properties.Resources.house_solid;
+            this.pictureBox1.Location = new System.Drawing.Point(65, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmJugadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(941, 492);
+            this.Controls.Add(this.plAdminEquipos);
             this.Controls.Add(this.dgvJugadores);
             this.Controls.Add(this.lblBJ);
             this.Controls.Add(this.btnBuscarJ);
@@ -441,11 +510,12 @@
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.plFiltro.ResumeLayout(false);
             this.plFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
+            this.plAdminEquipos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,5 +552,10 @@
         private System.Windows.Forms.Panel plFiltro;
         private System.Windows.Forms.DataGridView dgvJugadores;
         private System.Windows.Forms.DateTimePicker dtpFechF;
+        private System.Windows.Forms.Panel plAdminEquipos;
+        private System.Windows.Forms.Label lblHAJ;
+        private System.Windows.Forms.Button btnCrearE;
+        private System.Windows.Forms.Button btnBorrarE;
+        private System.Windows.Forms.Button btnModificarE;
     }
 }
