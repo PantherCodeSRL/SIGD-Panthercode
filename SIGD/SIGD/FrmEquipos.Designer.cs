@@ -342,7 +342,7 @@
             this.plAdminEquipos.Controls.Add(this.btnCrearE);
             this.plAdminEquipos.Controls.Add(this.btnBorrarE);
             this.plAdminEquipos.Controls.Add(this.btnModificarE);
-            this.plAdminEquipos.Location = new System.Drawing.Point(4, 327);
+            this.plAdminEquipos.Location = new System.Drawing.Point(4, 338);
             this.plAdminEquipos.Name = "plAdminEquipos";
             this.plAdminEquipos.Size = new System.Drawing.Size(337, 106);
             this.plAdminEquipos.TabIndex = 44;

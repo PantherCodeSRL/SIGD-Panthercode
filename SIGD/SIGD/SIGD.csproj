@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAMBJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAMBJugador.Designer.cs">
+      <DependentUpon>FrmAMBJugador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Administrador.cs" />
     <Compile Include="Modelo\Administrativo.cs" />
     <Compile Include="Modelo\Analista.cs" />
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FB.resx">
       <DependentUpon>FB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAMBJugador.resx">
+      <DependentUpon>FrmAMBJugador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFixtures.resx">
       <DependentUpon>FrmFixtures.cs</DependentUpon>

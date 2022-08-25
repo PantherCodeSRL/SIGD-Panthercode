@@ -166,7 +166,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtNombre.Location = new System.Drawing.Point(124, 27);
+            this.txtNombre.Location = new System.Drawing.Point(124, 28);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(195, 22);
             this.txtNombre.TabIndex = 26;
@@ -174,7 +174,7 @@
             // cbxAltura
             // 
             this.cbxAltura.FormattingEnabled = true;
-            this.cbxAltura.Location = new System.Drawing.Point(25, 28);
+            this.cbxAltura.Location = new System.Drawing.Point(25, 29);
             this.cbxAltura.Name = "cbxAltura";
             this.cbxAltura.Size = new System.Drawing.Size(93, 21);
             this.cbxAltura.TabIndex = 29;
@@ -183,7 +183,7 @@
             // cbxPeso
             // 
             this.cbxPeso.FormattingEnabled = true;
-            this.cbxPeso.Location = new System.Drawing.Point(25, 57);
+            this.cbxPeso.Location = new System.Drawing.Point(25, 58);
             this.cbxPeso.Name = "cbxPeso";
             this.cbxPeso.Size = new System.Drawing.Size(93, 21);
             this.cbxPeso.TabIndex = 29;
@@ -192,7 +192,7 @@
             // cbxEdad
             // 
             this.cbxEdad.FormattingEnabled = true;
-            this.cbxEdad.Location = new System.Drawing.Point(25, 86);
+            this.cbxEdad.Location = new System.Drawing.Point(25, 87);
             this.cbxEdad.Name = "cbxEdad";
             this.cbxEdad.Size = new System.Drawing.Size(93, 21);
             this.cbxEdad.TabIndex = 29;
@@ -202,7 +202,7 @@
             // 
             this.lblFP.AutoSize = true;
             this.lblFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFP.Location = new System.Drawing.Point(22, 8);
+            this.lblFP.Location = new System.Drawing.Point(22, 9);
             this.lblFP.Name = "lblFP";
             this.lblFP.Size = new System.Drawing.Size(79, 16);
             this.lblFP.TabIndex = 28;
@@ -211,7 +211,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtApellido.Location = new System.Drawing.Point(124, 72);
+            this.txtApellido.Location = new System.Drawing.Point(124, 73);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(195, 22);
             this.txtApellido.TabIndex = 26;
@@ -220,7 +220,7 @@
             // 
             this.lblApe.AutoSize = true;
             this.lblApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblApe.Location = new System.Drawing.Point(124, 52);
+            this.lblApe.Location = new System.Drawing.Point(124, 53);
             this.lblApe.Name = "lblApe";
             this.lblApe.Size = new System.Drawing.Size(70, 16);
             this.lblApe.TabIndex = 28;
@@ -230,7 +230,7 @@
             // 
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNom.Location = new System.Drawing.Point(124, 8);
+            this.lblNom.Location = new System.Drawing.Point(124, 9);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(67, 16);
             this.lblNom.TabIndex = 28;
@@ -240,7 +240,7 @@
             // 
             this.lblIngresarCi.AutoSize = true;
             this.lblIngresarCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblIngresarCi.Location = new System.Drawing.Point(22, 124);
+            this.lblIngresarCi.Location = new System.Drawing.Point(22, 139);
             this.lblIngresarCi.Name = "lblIngresarCi";
             this.lblIngresarCi.Size = new System.Drawing.Size(120, 16);
             this.lblIngresarCi.TabIndex = 28;
@@ -250,7 +250,7 @@
             // 
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.mtbCI.Location = new System.Drawing.Point(148, 118);
+            this.mtbCI.Location = new System.Drawing.Point(148, 133);
             this.mtbCI.Mask = "0000000-0";
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(86, 26);
@@ -269,7 +269,7 @@
             // 
             this.lblFechNac.AutoSize = true;
             this.lblFechNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblFechNac.Location = new System.Drawing.Point(82, 157);
+            this.lblFechNac.Location = new System.Drawing.Point(82, 149);
             this.lblFechNac.Name = "lblFechNac";
             this.lblFechNac.Size = new System.Drawing.Size(129, 13);
             this.lblFechNac.TabIndex = 28;
@@ -282,7 +282,7 @@
             "Basketball",
             "Football",
             "Handball"});
-            this.cbxDeporte.Location = new System.Drawing.Point(25, 116);
+            this.cbxDeporte.Location = new System.Drawing.Point(25, 117);
             this.cbxDeporte.Name = "cbxDeporte";
             this.cbxDeporte.Size = new System.Drawing.Size(93, 21);
             this.cbxDeporte.TabIndex = 29;
@@ -291,7 +291,7 @@
             // txtEquipo
             // 
             this.txtEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtEquipo.Location = new System.Drawing.Point(124, 116);
+            this.txtEquipo.Location = new System.Drawing.Point(124, 117);
             this.txtEquipo.Name = "txtEquipo";
             this.txtEquipo.Size = new System.Drawing.Size(195, 22);
             this.txtEquipo.TabIndex = 26;
@@ -300,7 +300,7 @@
             // 
             this.lblEquipo.AutoSize = true;
             this.lblEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblEquipo.Location = new System.Drawing.Point(124, 97);
+            this.lblEquipo.Location = new System.Drawing.Point(124, 98);
             this.lblEquipo.Name = "lblEquipo";
             this.lblEquipo.Size = new System.Drawing.Size(61, 16);
             this.lblEquipo.TabIndex = 28;
@@ -310,7 +310,7 @@
             // 
             this.lblBJ.AutoSize = true;
             this.lblBJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblBJ.Location = new System.Drawing.Point(21, 84);
+            this.lblBJ.Location = new System.Drawing.Point(21, 99);
             this.lblBJ.Name = "lblBJ";
             this.lblBJ.Size = new System.Drawing.Size(233, 24);
             this.lblBJ.TabIndex = 32;
@@ -331,15 +331,15 @@
             this.plFiltro.Controls.Add(this.lblNom);
             this.plFiltro.Controls.Add(this.lblApe);
             this.plFiltro.Controls.Add(this.lblEquipo);
-            this.plFiltro.Location = new System.Drawing.Point(0, 150);
+            this.plFiltro.Location = new System.Drawing.Point(0, 167);
             this.plFiltro.Name = "plFiltro";
-            this.plFiltro.Size = new System.Drawing.Size(337, 187);
+            this.plFiltro.Size = new System.Drawing.Size(337, 170);
             this.plFiltro.TabIndex = 36;
             // 
             // dtpFechF
             // 
             this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechF.Location = new System.Drawing.Point(217, 154);
+            this.dtpFechF.Location = new System.Drawing.Point(217, 146);
             this.dtpFechF.Name = "dtpFechF";
             this.dtpFechF.Size = new System.Drawing.Size(102, 20);
             this.dtpFechF.TabIndex = 41;
@@ -427,7 +427,7 @@
             this.btnBuscarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuscarJ.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarJ.Location = new System.Drawing.Point(244, 118);
+            this.btnBuscarJ.Location = new System.Drawing.Point(244, 133);
             this.btnBuscarJ.Margin = new System.Windows.Forms.Padding(6);
             this.btnBuscarJ.Name = "btnBuscarJ";
             this.btnBuscarJ.Padding = new System.Windows.Forms.Padding(5);
