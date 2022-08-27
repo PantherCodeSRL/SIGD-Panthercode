@@ -93,7 +93,6 @@ namespace SIGD
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-           
             activo = new FrmJugadores() { Owner = this };
             activo.Show();
             this.Hide();

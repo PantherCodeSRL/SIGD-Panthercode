@@ -231,3 +231,6 @@ E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correcion
 E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correciones\SIGD\SIGD\obj\Debug\SIGD.stringsgobales.en.resources
 E:\Users\nicolas\Desktop\SIGD-Panthercode-Correciones\SIGD-Panthercode-Correciones\SIGD\SIGD\obj\Debug\en\SIGD.resources.dll
 C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmFixtures.resources
+C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmABMEquipo.resources
+C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmABMUsuario.resources
+C:\Users\admin\Repos\SIGD\SIGD\obj\Debug\SIGD.FrmABMJugador.resources

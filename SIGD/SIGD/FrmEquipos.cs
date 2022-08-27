@@ -44,5 +44,10 @@ namespace SIGD
         {
             btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
         }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

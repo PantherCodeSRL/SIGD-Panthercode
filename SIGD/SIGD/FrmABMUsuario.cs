@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIGD
 {
-    public partial class FrmAMBJugador : Form
+    public partial class FrmABMUsuario : Form
     {
-        public FrmAMBJugador()
+        public FrmABMUsuario()
         {
             InitializeComponent();
         }

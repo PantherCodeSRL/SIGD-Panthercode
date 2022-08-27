@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAMBJugador.cs">
+    <Compile Include="FrmABMEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAMBJugador.Designer.cs">
-      <DependentUpon>FrmAMBJugador.cs</DependentUpon>
+    <Compile Include="FrmABMEquipo.Designer.cs">
+      <DependentUpon>FrmABMEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmABMUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABMUsuario.Designer.cs">
+      <DependentUpon>FrmABMUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmABMJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABMJugador.Designer.cs">
+      <DependentUpon>FrmABMJugador.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Administrador.cs" />
     <Compile Include="Modelo\Administrativo.cs" />
@@ -121,8 +133,14 @@
     <EmbeddedResource Include="FB.resx">
       <DependentUpon>FB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAMBJugador.resx">
-      <DependentUpon>FrmAMBJugador.cs</DependentUpon>
+    <EmbeddedResource Include="FrmABMEquipo.resx">
+      <DependentUpon>FrmABMEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABMUsuario.resx">
+      <DependentUpon>FrmABMUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABMJugador.resx">
+      <DependentUpon>FrmABMJugador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFixtures.resx">
       <DependentUpon>FrmFixtures.cs</DependentUpon>
