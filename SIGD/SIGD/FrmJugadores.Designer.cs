@@ -510,6 +510,7 @@
             this.Name = "FrmJugadores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmJugador";
+            this.Load += new System.EventHandler(this.FrmJugadores_Load);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

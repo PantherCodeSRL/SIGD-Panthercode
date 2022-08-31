@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\SIGD",
-    "\\SIGD\\SIGD",
-    "\\SIGD\\SIGD\\Modelo"
+    "\\SIGD\\SIGD"
   ],
+  "SelectedNode": "\\SIGD\\SIGD\\FrmABMJugador.cs",
   "PreviewInSolutionExplorer": false
 }
