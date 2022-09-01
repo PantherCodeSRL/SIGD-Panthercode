@@ -52,18 +52,21 @@ namespace SIGD
         {
             activo = new FrmABMJugador('A') { Owner = this };
             activo.Show();
+            this.Enabled = false;
         }
 
         private void btnModificarE_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('M') { Owner = this };
             activo.Show();
+            this.Enabled = false;
         }
 
         private void btnBorrarE_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('B') { Owner = this };
             activo.Show();
+            this.Enabled = false;
         }
 
         private void FrmJugadores_Load(object sender, EventArgs e)
@@ -73,22 +76,22 @@ namespace SIGD
                 //Conexion
                 MySqlConnection conexion = new MySqlConnection();
                 conexion.ConnectionString =
-                //"Server=192.168.2.195;Database=agenda;Uid=prueba;Pwd=prueba";
-                "Server=localhost;Database=Panthercode;Uid=jirigoin;Pwd=54233708";
+                //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=jirigoin";
+                "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
                 conexion.Open();
                 //Sentencia
                 MySqlCommand comando = new MySqlCommand();
                 comando.Connection = conexion;
-                comando.CommandText = "select * from jugadores";
+                comando.CommandText = "select * from jugador";
                 comando.ExecuteNonQuery();
                 //Adaptador
                 MySqlDataAdapter adaptador = new MySqlDataAdapter();
                 adaptador.SelectCommand = comando;
                 //Conjunto de resultados
                 DataSet ds = new DataSet();
-                adaptador.Fill(ds, "datos");
+                adaptador.Fill(ds, "jugador");
                 //Cargar los resultados en el Data Grid View
-                dgvJugadores.DataSource = ds.Tables["datos"];
+                dgvJugadores.DataSource = ds.Tables["jugador"];
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

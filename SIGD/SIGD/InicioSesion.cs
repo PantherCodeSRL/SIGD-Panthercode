@@ -18,6 +18,8 @@ namespace SIGD
             InitializeComponent();
         }
 
+        bool unavez = false;
+
         private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
             btnSalida.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
@@ -78,7 +80,7 @@ namespace SIGD
                     comando.Connection = conexion;
                     comando.CommandText =
                         "select * from usuarios where usuario ='" + txtUser.Text
-                        + "' AND contra = PASSWORD('" + txtPwd.Text + "')";
+                        + "' AND contraseña = PASSWORD('" + txtPwd.Text + "')";
 
                     MySqlDataReader lector = comando.ExecuteReader();
 
@@ -118,6 +120,17 @@ namespace SIGD
         private void InicioSesion_Load(object sender, EventArgs e)
         {
             this.Owner.Enabled = false;
+            cbxRol.SelectedIndex = 6;
+            unavez = false;
+        }
+
+        private void cbxRol_Click(object sender, EventArgs e)
+        {
+            if (unavez == false)
+            {
+                cbxRol.Items.RemoveAt(6);
+            }
+            unavez = true;
         }
     }
 }

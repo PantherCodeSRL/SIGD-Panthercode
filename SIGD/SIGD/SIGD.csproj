@@ -294,5 +294,8 @@
   <ItemGroup>
     <None Include="Resources\eraser-solid.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-group-solid.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

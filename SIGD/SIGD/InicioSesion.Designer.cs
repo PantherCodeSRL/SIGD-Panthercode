@@ -39,10 +39,14 @@
             this.cbxMC = new System.Windows.Forms.CheckBox();
             this.btnInvitado = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.pbPwd = new System.Windows.Forms.PictureBox();
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
@@ -53,7 +57,7 @@
             this.txtUser.BackColor = System.Drawing.SystemColors.Window;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtUser.Location = new System.Drawing.Point(81, 180);
+            this.txtUser.Location = new System.Drawing.Point(84, 149);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(154, 19);
             this.txtUser.TabIndex = 2;
@@ -64,7 +68,7 @@
             this.txtPwd.BackColor = System.Drawing.SystemColors.Window;
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtPwd.Location = new System.Drawing.Point(81, 230);
+            this.txtPwd.Location = new System.Drawing.Point(84, 199);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(154, 19);
             this.txtPwd.TabIndex = 2;
@@ -76,7 +80,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(94, 207);
+            this.label5.Location = new System.Drawing.Point(97, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 2;
@@ -87,7 +91,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(65, 157);
+            this.label1.Location = new System.Drawing.Point(68, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 20);
             this.label1.TabIndex = 2;
@@ -97,7 +101,7 @@
             // 
             this.lblPwd.AutoSize = true;
             this.lblPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
-            this.lblPwd.Location = new System.Drawing.Point(78, 275);
+            this.lblPwd.Location = new System.Drawing.Point(85, 306);
             this.lblPwd.Name = "lblPwd";
             this.lblPwd.Size = new System.Drawing.Size(134, 13);
             this.lblPwd.TabIndex = 14;
@@ -137,7 +141,7 @@
             // cbxMC
             // 
             this.cbxMC.AutoSize = true;
-            this.cbxMC.Location = new System.Drawing.Point(81, 255);
+            this.cbxMC.Location = new System.Drawing.Point(92, 286);
             this.cbxMC.Name = "cbxMC";
             this.cbxMC.Size = new System.Drawing.Size(118, 17);
             this.cbxMC.TabIndex = 16;
@@ -168,7 +172,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(225, 255);
+            this.btnLogin.Location = new System.Drawing.Point(225, 287);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnLogin.Size = new System.Drawing.Size(70, 33);
@@ -177,13 +181,55 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // cbxRol
+            // 
+            this.cbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.IntegralHeight = false;
+            this.cbxRol.Items.AddRange(new object[] {
+            "Administrador",
+            "Administrativo",
+            "Analista",
+            "Árbitro",
+            "C.T.",
+            "Seleccionador",
+            "(seleccione)"});
+            this.cbxRol.Location = new System.Drawing.Point(84, 249);
+            this.cbxRol.MaxDropDownItems = 6;
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(154, 21);
+            this.cbxRol.TabIndex = 19;
+            this.cbxRol.Click += new System.EventHandler(this.cbxRol_Click);
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.BackColor = System.Drawing.Color.Transparent;
+            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblRol.Location = new System.Drawing.Point(133, 227);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(41, 20);
+            this.lblRol.TabIndex = 20;
+            this.lblRol.Text = "Rol:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
+            this.pictureBox1.Image = global::SIGD.Properties.Resources.user_group_solid;
+            this.pictureBox1.Location = new System.Drawing.Point(59, 247);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // pbUser
             // 
             this.pbUser.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbUser.Image = global::SIGD.Properties.Resources.user_solid;
-            this.pbUser.Location = new System.Drawing.Point(56, 176);
+            this.pbUser.Location = new System.Drawing.Point(59, 145);
             this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(19, 32);
+            this.pbUser.Size = new System.Drawing.Size(19, 23);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUser.TabIndex = 12;
             this.pbUser.TabStop = false;
@@ -192,7 +238,7 @@
             // 
             this.pbPwd.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbPwd.Image = global::SIGD.Properties.Resources.lock_solid;
-            this.pbPwd.Location = new System.Drawing.Point(56, 227);
+            this.pbPwd.Location = new System.Drawing.Point(59, 196);
             this.pbPwd.Name = "pbPwd";
             this.pbPwd.Size = new System.Drawing.Size(19, 23);
             this.pbPwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -205,7 +251,7 @@
             this.pbLogin.Image = global::SIGD.Properties.Resources.user_regular;
             this.pbLogin.Location = new System.Drawing.Point(-1, 48);
             this.pbLogin.Name = "pbLogin";
-            this.pbLogin.Size = new System.Drawing.Size(305, 106);
+            this.pbLogin.Size = new System.Drawing.Size(305, 75);
             this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogin.TabIndex = 12;
             this.pbLogin.TabStop = false;
@@ -216,6 +262,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(304, 382);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblRol);
+            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnInvitado);
             this.Controls.Add(this.cbxMC);
@@ -236,6 +285,7 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
@@ -258,5 +308,8 @@
         private System.Windows.Forms.Button btnLogin;
         public System.Windows.Forms.TextBox txtUser;
         public System.Windows.Forms.TextBox txtPwd;
+        private System.Windows.Forms.ComboBox cbxRol;
+        private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

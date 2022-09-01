@@ -58,38 +58,22 @@ namespace SIGD
                     sentencia += ci;
                     break;
             }
-            //try
-            //{
-            //    //Conexion
-            //    MySqlConnection conexion = new MySqlConnection();
-            //    conexion.ConnectionString =
-            //    "Server=192.168.2.195;Database=agenda;Uid=prueba;Pwd=prueba";
-            //    conexion.Open();
-            //    //Sentencia
-            //    MySqlCommand comando = new MySqlCommand();
-            //    comando.Connection = conexion;
-            //    comando.CommandText = sentencia;
-            //    comando.ExecuteNonQuery();
-            //}
-            //catch (MySql.Data.MySqlClient.MySqlException ex)
-            //{
-            //    switch (ex.Number)
-            //    {
-            //        case 0:
-            //            MessageBox.Show("Imposible abrir una conexión el servidor de BD");
-            //            break;
-            //        case 1045:
-            //            MessageBox.Show("Usuario y/o contraseña incorrectas");
-            //            break;
-            //    }
-            //}
             Owner.Show();
+            this.Owner.Enabled = true;
+            this.Close();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Owner.Enabled = true;
             this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
+            this.Owner.Enabled = true;
             this.Close();
         }
 
