@@ -18,7 +18,7 @@ namespace SIGD
             InitializeComponent();        
         }
 
-        public Form activo;
+        public FrmABMJugador activo;
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -58,6 +58,13 @@ namespace SIGD
         private void btnModificarE_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('M') { Owner = this };
+            activo.ci= dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
+            activo.nombre = dgvJugadores.SelectedRows[0].Cells[1].Value.ToString();
+            activo.apellidoP = dgvJugadores.SelectedRows[0].Cells[2].Value.ToString();
+            activo.apellidoS = dgvJugadores.SelectedRows[0].Cells[3].Value.ToString();
+            activo.telefono = dgvJugadores.SelectedRows[0].Cells[4].Value.ToString();
+            activo.correoElec = dgvJugadores.SelectedRows[0].Cells[5].Value.ToString();
+            activo.fnac = dgvJugadores.SelectedRows[0].Cells[6].Value.ToString();
             activo.Show();
             this.Enabled = false;
         }
@@ -65,6 +72,13 @@ namespace SIGD
         private void btnBorrarE_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('B') { Owner = this };
+            activo.ci = dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
+            activo.nombre = dgvJugadores.SelectedRows[0].Cells[1].Value.ToString();
+            activo.apellidoP = dgvJugadores.SelectedRows[0].Cells[2].Value.ToString();
+            activo.apellidoS = dgvJugadores.SelectedRows[0].Cells[3].Value.ToString();
+            activo.telefono = dgvJugadores.SelectedRows[0].Cells[4].Value.ToString();
+            activo.correoElec = dgvJugadores.SelectedRows[0].Cells[5].Value.ToString();
+            activo.fnac = dgvJugadores.SelectedRows[0].Cells[6].Value.ToString();
             activo.Show();
             this.Enabled = false;
         }
@@ -82,16 +96,16 @@ namespace SIGD
                 //Sentencia
                 MySqlCommand comando = new MySqlCommand();
                 comando.Connection = conexion;
-                comando.CommandText = "select * from jugador";
+                comando.CommandText = "select * from Jugador";
                 comando.ExecuteNonQuery();
                 //Adaptador
                 MySqlDataAdapter adaptador = new MySqlDataAdapter();
                 adaptador.SelectCommand = comando;
                 //Conjunto de resultados
                 DataSet ds = new DataSet();
-                adaptador.Fill(ds, "jugador");
+                adaptador.Fill(ds, "Jugador");
                 //Cargar los resultados en el Data Grid View
-                dgvJugadores.DataSource = ds.Tables["jugador"];
+                dgvJugadores.DataSource = ds.Tables["Jugador"];
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -103,7 +117,7 @@ namespace SIGD
                             MessageBox.Show("No se ha podido conectar a la base de datos, pruebe de vuelta en un minuto o contacte a un administrador.");
                             break;
                         case 1045:
-                            MessageBox.Show("Usuario y/o contraseña incorrectas");
+                            MessageBox.Show("A ocurrido un error con las credenciales a la hora de entrar a la base de batos.");
                             break;
                     }
                 }

@@ -20,7 +20,7 @@ namespace SIGD
         }
 
         char abm;
-        public String ci, nombre, apellidoP, apellidoS, fnac;
+        public String ci, nombre, apellidoP, apellidoS, telefono, correoElec, fnac;
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace SIGD
             {
                 case 'A':
                     //Falta validar datos antes de ingresar
-                    sentencia = "INSERT INTO datos(ci,nombre,apellidoP,apellidoS,fechaNac) VALUES (ci = '";
+                    sentencia = "INSERT INTO Jugador(ci,nombre,apellidoP,apellidoS,telefono,correoElec,fechaNac) VALUES (ci = '";
                     sentencia += mtbCI.Text;
                     sentencia += ", nombre = '";
                     sentencia += txtNombre.Text;
@@ -37,26 +37,61 @@ namespace SIGD
                     sentencia += txtPApellido.Text;
                     sentencia += "', apellidoS = '";
                     sentencia += txtSApellido.Text;
+                    sentencia += "', telefono = '";
+                    sentencia += mtbTelefonoJ.Text;
+                    sentencia += "', correoElec = '";
+                    sentencia += txtMailJ.Text;
                     sentencia += "', fechaNac = '";
                     sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
                     sentencia += "');";
                     break;
                 case 'M':
-                    sentencia = "UPDATE datos SET nombre = ";
+                    sentencia = "UPDATE Jugador SET nombre = ";
                     sentencia += txtNombre.Text;
-                    sentencia += ", apellidoP = '";
+                    sentencia += "', apellidoP = '";
                     sentencia += txtPApellido.Text;
                     sentencia += "', apellidoS = '";
                     sentencia += txtSApellido.Text;
+                    sentencia += "', telefono = '";
+                    sentencia += mtbTelefonoJ.Text;
+                    sentencia += "', correoElec = '";
+                    sentencia += txtMailJ.Text;
                     sentencia += "', fechaNac = '";
                     sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
                     sentencia += "' WHERE ci = ";
                     sentencia += ci;
                     break;
                 case 'B':
-                    sentencia = "DELETE FROM datos WHERE ci = ";
+                    sentencia = "DELETE FROM Jugador WHERE ci = ";
                     sentencia += ci;
                     break;
+            }
+            try
+            {
+                //Conexion
+                MySqlConnection conexion = new MySqlConnection();
+                conexion.ConnectionString =
+                "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
+                //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=jirigoin";
+                conexion.Open();
+                //Sentencia
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = conexion;
+                comando.CommandText = sentencia;
+                comando.ExecuteNonQuery();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 0:
+                        MessageBox.Show("Imposible abrir una conexión el servidor de BD");
+                        break;
+                    case 1045:
+                        MessageBox.Show("Usuario y/o contraseña incorrectas");
+                        break;
+
+                }
             }
             Owner.Show();
             this.Owner.Enabled = true;
@@ -102,23 +137,28 @@ namespace SIGD
                     txtNombre.Text = nombre;
                     txtPApellido.Text = apellidoP;
                     txtSApellido.Text = apellidoS;
+                    mtbTelefonoJ.Text = telefono;
+                    txtMailJ.Text = correoElec;
                     dtpFechN.Text = fnac;         
                     break;
 
                 case 'B':
-                    this.Text = "Eliminar un contacto";
                     btnAceptar.Text = "Eliminar";
 
                     mtbCI.Text = ci;
                     txtNombre.Text = nombre;
                     txtPApellido.Text = apellidoP;
                     txtSApellido.Text = apellidoS;
+                    mtbTelefonoJ.Text = telefono;
+                    txtMailJ.Text = correoElec;
                     dtpFechN.Text = fnac;
 
                     mtbCI.Enabled = false;
                     txtNombre.Enabled = false;
                     txtPApellido.Enabled = false;
                     txtSApellido.Enabled = false;
+                    mtbTelefonoJ.Enabled = false;
+                    txtMailJ.Enabled = false;
                     dtpFechN.Enabled = false;
                     break;
             }

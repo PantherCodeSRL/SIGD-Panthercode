@@ -39,7 +39,7 @@
             this.dtpFechF = new System.Windows.Forms.DateTimePicker();
             this.cbxDeporte = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnSalida = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.plTop.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // plTop
             // 
             this.plTop.BackColor = System.Drawing.Color.SlateGray;
-            this.plTop.Controls.Add(this.btnSalida);
+            this.plTop.Controls.Add(this.btnCerrar);
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
@@ -167,26 +167,26 @@
             this.label5.Text = "Deporte:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnSalida
+            // btnCerrar
             // 
-            this.btnSalida.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSalida.FlatAppearance.BorderSize = 0;
-            this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalida.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalida.Location = new System.Drawing.Point(340, 0);
-            this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.btnSalida.Size = new System.Drawing.Size(24, 42);
-            this.btnSalida.TabIndex = 13;
-            this.btnSalida.TabStop = false;
-            this.btnSalida.UseVisualStyleBackColor = false;
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.Location = new System.Drawing.Point(340, 0);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.btnCerrar.Size = new System.Drawing.Size(24, 42);
+            this.btnCerrar.TabIndex = 15;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             // 
-            // FrmAMBEquipo
+            // FrmABMEquipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,7 +202,7 @@
             this.Controls.Add(this.plTop);
             this.Controls.Add(this.tlpOpciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmAMBEquipo";
+            this.Name = "FrmABMEquipo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAMBJugador";
             this.plTop.ResumeLayout(false);
@@ -225,6 +225,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechF;
         private System.Windows.Forms.ComboBox cbxDeporte;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnSalida;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

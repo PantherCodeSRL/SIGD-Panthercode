@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblBienvenido.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblInvitado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -166,13 +166,13 @@
     <value>-1, 437</value>
   </data>
   <data name="lblInvitado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 55</value>
+    <value>286, 55</value>
   </data>
   <data name="lblInvitado.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
   <data name="lblInvitado.Text" xml:space="preserve">
-    <value> INVITADO  </value>
+    <value>INVITADO  </value>
   </data>
   <data name="lblInvitado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -187,13 +187,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblInvitado.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lblEmpresa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblEmpresa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 18</value>
+    <value>167, 14</value>
   </data>
   <data name="lblEmpresa.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 15</value>
@@ -276,6 +276,90 @@
   <data name="panInferior.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblContactos.Name" xml:space="preserve">
+    <value>lblContactos</value>
+  </data>
+  <data name="&gt;&gt;lblContactos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblContactos.Parent" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;lblContactos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnTraducir.Name" xml:space="preserve">
+    <value>btnTraducir</value>
+  </data>
+  <data name="&gt;&gt;btnTraducir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTraducir.Parent" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;btnTraducir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panInferior.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panInferior.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 505</value>
+  </data>
+  <data name="panInferior.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 42</value>
+  </data>
+  <data name="panInferior.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;panInferior.Name" xml:space="preserve">
+    <value>panInferior</value>
+  </data>
+  <data name="&gt;&gt;panInferior.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panInferior.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panInferior.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -349,7 +433,7 @@
     <value>18</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>V 1.0.0</value>
+    <value>V 1.2.0</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -422,30 +506,6 @@
   </data>
   <data name="&gt;&gt;btnTraducir.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="panInferior.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panInferior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 505</value>
-  </data>
-  <data name="panInferior.Size" type="System.Drawing.Size, System.Drawing">
-    <value>961, 42</value>
-  </data>
-  <data name="panInferior.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;panInferior.Name" xml:space="preserve">
-    <value>panInferior</value>
-  </data>
-  <data name="&gt;&gt;panInferior.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panInferior.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panInferior.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="btnCerrar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -523,8 +583,188 @@ Sesión</value>
   <data name="&gt;&gt;btnInicioSesion.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;tlpOpciones.Name" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.Parent" xml:space="preserve">
+    <value>plSuperior</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpOpciones.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbFix" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="pbEquipos" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnFixtures" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnJugadores" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnEquipos" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pbJugadores" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBox1" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="btnAgregarUser" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,62,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,38,Absolute,12,Absolute,20" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Name" xml:space="preserve">
+    <value>tlpHerramientas</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Parent" xml:space="preserve">
+    <value>plSuperior</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpHerramientas.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbLogin" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnInicioSesion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnMin" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCerrar" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,73,Percent,70,22222,Absolute,26,Absolute,26" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="plSuperior.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="plSuperior.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="plSuperior.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 77</value>
+  </data>
+  <data name="plSuperior.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;plSuperior.Name" xml:space="preserve">
+    <value>plSuperior</value>
+  </data>
+  <data name="&gt;&gt;plSuperior.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plSuperior.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;plSuperior.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tlpOpciones.ColumnCount" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pbFix.Name" xml:space="preserve">
+    <value>pbFix</value>
+  </data>
+  <data name="&gt;&gt;pbFix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbFix.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;pbFix.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pbEquipos.Name" xml:space="preserve">
+    <value>pbEquipos</value>
+  </data>
+  <data name="&gt;&gt;pbEquipos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbEquipos.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;pbEquipos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnFixtures.Name" xml:space="preserve">
+    <value>btnFixtures</value>
+  </data>
+  <data name="&gt;&gt;btnFixtures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFixtures.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;btnFixtures.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnJugadores.Name" xml:space="preserve">
+    <value>btnJugadores</value>
+  </data>
+  <data name="&gt;&gt;btnJugadores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnJugadores.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;btnJugadores.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnEquipos.Name" xml:space="preserve">
+    <value>btnEquipos</value>
+  </data>
+  <data name="&gt;&gt;btnEquipos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEquipos.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;btnEquipos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pbJugadores.Name" xml:space="preserve">
+    <value>pbJugadores</value>
+  </data>
+  <data name="&gt;&gt;pbJugadores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbJugadores.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;pbJugadores.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Name" xml:space="preserve">
+    <value>btnAgregarUser</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="tlpOpciones.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="tlpOpciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlpOpciones.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpOpciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 77</value>
+  </data>
+  <data name="tlpOpciones.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.Name" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.Parent" xml:space="preserve">
+    <value>plSuperior</value>
+  </data>
+  <data name="&gt;&gt;tlpOpciones.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpOpciones.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbFix" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="pbEquipos" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnFixtures" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnJugadores" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnEquipos" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pbJugadores" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBox1" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="btnAgregarUser" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,62,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,38,Absolute,12,Absolute,20" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="pbFix.Location" type="System.Drawing.Point, System.Drawing">
     <value>363, 3</value>
@@ -688,38 +928,89 @@ Sesión</value>
   <data name="&gt;&gt;pbJugadores.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="tlpOpciones.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="tlpOpciones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 3</value>
   </data>
-  <data name="tlpOpciones.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 71</value>
   </data>
-  <data name="tlpOpciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>544, 77</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="tlpOpciones.TabIndex" type="System.Int32, mscorlib">
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;tlpOpciones.Name" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>tlpOpciones</value>
   </data>
-  <data name="&gt;&gt;tlpOpciones.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpOpciones.Parent" xml:space="preserve">
-    <value>plSuperior</value>
-  </data>
-  <data name="&gt;&gt;tlpOpciones.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tlpOpciones.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbFix" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="pbEquipos" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnFixtures" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnJugadores" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnEquipos" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pbJugadores" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,62,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="tlpHerramientas.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;pbLogin.Name" xml:space="preserve">
+    <value>pbLogin</value>
+  </data>
+  <data name="&gt;&gt;pbLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbLogin.Parent" xml:space="preserve">
+    <value>tlpHerramientas</value>
+  </data>
+  <data name="&gt;&gt;pbLogin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnMin.Name" xml:space="preserve">
+    <value>btnMin</value>
+  </data>
+  <data name="&gt;&gt;btnMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMin.Parent" xml:space="preserve">
+    <value>tlpHerramientas</value>
+  </data>
+  <data name="&gt;&gt;btnMin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlpHerramientas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="tlpHerramientas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 0</value>
+  </data>
+  <data name="tlpHerramientas.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpHerramientas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 77</value>
+  </data>
+  <data name="tlpHerramientas.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Name" xml:space="preserve">
+    <value>tlpHerramientas</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.Parent" xml:space="preserve">
+    <value>plSuperior</value>
+  </data>
+  <data name="&gt;&gt;tlpHerramientas.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpHerramientas.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbLogin" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnInicioSesion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnMin" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCerrar" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,73,Percent,70,22222,Absolute,26,Absolute,26" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="pbLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -772,59 +1063,65 @@ Sesión</value>
   <data name="&gt;&gt;btnMin.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tlpHerramientas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;btnF.Name" xml:space="preserve">
+    <value>btnF</value>
   </data>
-  <data name="tlpHerramientas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 0</value>
+  <data name="&gt;&gt;btnF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tlpHerramientas.RowCount" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnF.Parent" xml:space="preserve">
+    <value>flpFix</value>
+  </data>
+  <data name="&gt;&gt;btnF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnB.Name" xml:space="preserve">
+    <value>btnB</value>
+  </data>
+  <data name="&gt;&gt;btnB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnB.Parent" xml:space="preserve">
+    <value>flpFix</value>
+  </data>
+  <data name="&gt;&gt;btnB.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tlpHerramientas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 77</value>
+  <data name="&gt;&gt;btnH.Name" xml:space="preserve">
+    <value>btnH</value>
   </data>
-  <data name="tlpHerramientas.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="&gt;&gt;btnH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tlpHerramientas.Name" xml:space="preserve">
-    <value>tlpHerramientas</value>
+  <data name="&gt;&gt;btnH.Parent" xml:space="preserve">
+    <value>flpFix</value>
   </data>
-  <data name="&gt;&gt;tlpHerramientas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnH.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;tlpHerramientas.Parent" xml:space="preserve">
-    <value>plSuperior</value>
+  <data name="flpFix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 77</value>
   </data>
-  <data name="&gt;&gt;tlpHerramientas.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="flpFix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 85</value>
   </data>
-  <data name="tlpHerramientas.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbLogin" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnInicioSesion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnMin" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnCerrar" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,73,Percent,70,22222,Absolute,26,Absolute,26" /&gt;&lt;Rows Styles="Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="flpFix.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="plSuperior.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="flpFix.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="plSuperior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;flpFix.Name" xml:space="preserve">
+    <value>flpFix</value>
   </data>
-  <data name="plSuperior.Size" type="System.Drawing.Size, System.Drawing">
-    <value>961, 77</value>
+  <data name="&gt;&gt;flpFix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="plSuperior.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;plSuperior.Name" xml:space="preserve">
-    <value>plSuperior</value>
-  </data>
-  <data name="&gt;&gt;plSuperior.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;plSuperior.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flpFix.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;plSuperior.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;flpFix.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnF.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -925,29 +1222,170 @@ Sesión</value>
   <data name="&gt;&gt;btnH.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="flpFix.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 77</value>
+  <data name="btnAgregarUser.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="flpFix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 85</value>
+  <data name="btnAgregarUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="flpFix.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAgregarUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAgregarUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 3</value>
+  </data>
+  <data name="btnAgregarUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 71</value>
+  </data>
+  <data name="btnAgregarUser.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnAgregarUser.Text" xml:space="preserve">
+    <value>Administración de usuarios</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Name" xml:space="preserve">
+    <value>btnAgregarUser</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.Parent" xml:space="preserve">
+    <value>tlpOpciones</value>
+  </data>
+  <data name="&gt;&gt;btnAgregarUser.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnA.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnA.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="btnA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="btnA.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="flpFix.Visible" type="System.Boolean, mscorlib">
+  <data name="btnA.Text" xml:space="preserve">
+    <value>Agregar un usuario</value>
+  </data>
+  <data name="btnA.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btnA.Name" xml:space="preserve">
+    <value>btnA</value>
+  </data>
+  <data name="&gt;&gt;btnA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnA.Parent" xml:space="preserve">
+    <value>flpUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnA.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnM.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 31</value>
+  </data>
+  <data name="btnM.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="btnM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="btnM.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnM.Text" xml:space="preserve">
+    <value>Editar un usuario</value>
+  </data>
+  <data name="btnM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btnM.Name" xml:space="preserve">
+    <value>btnM</value>
+  </data>
+  <data name="&gt;&gt;btnM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnM.Parent" xml:space="preserve">
+    <value>flpUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnE.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="btnE.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="btnE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="btnE.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnE.Text" xml:space="preserve">
+    <value>Eliminar un usuario</value>
+  </data>
+  <data name="btnE.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btnE.Name" xml:space="preserve">
+    <value>btnE</value>
+  </data>
+  <data name="&gt;&gt;btnE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnE.Parent" xml:space="preserve">
+    <value>flpUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="flpUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 78</value>
+  </data>
+  <data name="flpUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 85</value>
+  </data>
+  <data name="flpUsuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="flpUsuarios.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;flpFix.Name" xml:space="preserve">
-    <value>flpFix</value>
+  <data name="&gt;&gt;flpUsuarios.Name" xml:space="preserve">
+    <value>flpUsuarios</value>
   </data>
-  <data name="&gt;&gt;flpFix.Type" xml:space="preserve">
+  <data name="&gt;&gt;flpUsuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flpFix.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flpUsuarios.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;flpFix.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;flpUsuarios.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -20,6 +20,7 @@
             this.btnJugadores = new System.Windows.Forms.Button();
             this.btnEquipos = new System.Windows.Forms.Button();
             this.pbJugadores = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tlpHerramientas = new System.Windows.Forms.TableLayoutPanel();
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.Button();
@@ -27,15 +28,22 @@
             this.btnF = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnH = new System.Windows.Forms.Button();
+            this.btnAgregarUser = new System.Windows.Forms.Button();
+            this.flpUsuarios = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnA = new System.Windows.Forms.Button();
+            this.btnM = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
             this.panInferior.SuspendLayout();
             this.plSuperior.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEquipos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tlpHerramientas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.flpFix.SuspendLayout();
+            this.flpUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBienvenido
@@ -166,6 +174,8 @@
             this.tlpOpciones.Controls.Add(this.btnJugadores, 2, 0);
             this.tlpOpciones.Controls.Add(this.btnEquipos, 4, 0);
             this.tlpOpciones.Controls.Add(this.pbJugadores, 1, 0);
+            this.tlpOpciones.Controls.Add(this.pictureBox1, 7, 0);
+            this.tlpOpciones.Controls.Add(this.btnAgregarUser, 8, 0);
             this.tlpOpciones.Name = "tlpOpciones";
             // 
             // pbFix
@@ -232,6 +242,13 @@
             resources.ApplyResources(this.pbJugadores, "pbJugadores");
             this.pbJugadores.Name = "pbJugadores";
             this.pbJugadores.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SIGD.Properties.Resources.user_plus_solid;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // tlpHerramientas
             // 
@@ -304,6 +321,62 @@
             this.btnH.UseVisualStyleBackColor = true;
             this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
+            // btnAgregarUser
+            // 
+            this.btnAgregarUser.BackColor = System.Drawing.Color.SlateGray;
+            this.btnAgregarUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarUser.FlatAppearance.BorderSize = 0;
+            this.btnAgregarUser.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnAgregarUser, "btnAgregarUser");
+            this.btnAgregarUser.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarUser.Name = "btnAgregarUser";
+            this.btnAgregarUser.TabStop = false;
+            this.btnAgregarUser.UseVisualStyleBackColor = false;
+            this.btnAgregarUser.Click += new System.EventHandler(this.btnAgregarUser_Click);
+            // 
+            // flpUsuarios
+            // 
+            this.flpUsuarios.BackColor = System.Drawing.Color.SlateGray;
+            this.flpUsuarios.Controls.Add(this.btnA);
+            this.flpUsuarios.Controls.Add(this.btnM);
+            this.flpUsuarios.Controls.Add(this.btnE);
+            resources.ApplyResources(this.flpUsuarios, "flpUsuarios");
+            this.flpUsuarios.Name = "flpUsuarios";
+            // 
+            // btnA
+            // 
+            this.btnA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnA.FlatAppearance.BorderSize = 0;
+            this.btnA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnA, "btnA");
+            this.btnA.Name = "btnA";
+            this.btnA.TabStop = false;
+            this.btnA.UseVisualStyleBackColor = true;
+            this.btnA.Click += new System.EventHandler(this.btnA_Click);
+            // 
+            // btnM
+            // 
+            this.btnM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnM.FlatAppearance.BorderSize = 0;
+            this.btnM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnM, "btnM");
+            this.btnM.Name = "btnM";
+            this.btnM.TabStop = false;
+            this.btnM.UseVisualStyleBackColor = true;
+            this.btnM.Click += new System.EventHandler(this.btnM_Click);
+            // 
+            // btnE
+            // 
+            this.btnE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnE.FlatAppearance.BorderSize = 0;
+            this.btnE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnE, "btnE");
+            this.btnE.Name = "btnE";
+            this.btnE.TabStop = false;
+            this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.btnE_Click);
+            // 
             // FormP
             // 
             this.AllowDrop = true;
@@ -314,6 +387,7 @@
             this.Controls.Add(this.plSuperior);
             this.Controls.Add(this.flpFix);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.flpUsuarios);
             this.Controls.Add(this.lblInvitado);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.panInferior);
@@ -332,12 +406,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEquipos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tlpHerramientas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.flpFix.ResumeLayout(false);
+            this.flpUsuarios.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }          #endregion         private System.Windows.Forms.Label lblBienvenido;         private System.Windows.Forms.Label lblEmpresa;         private System.Windows.Forms.Label lblIdioma;         private System.Windows.Forms.Label label6;         private System.Windows.Forms.Panel panInferior;         private System.Windows.Forms.Button btnCerrar;         private System.Windows.Forms.Panel plSuperior;         private System.Windows.Forms.TableLayoutPanel tlpHerramientas;         private System.Windows.Forms.PictureBox pbLogin;         private System.Windows.Forms.Button btnMin;         private System.Windows.Forms.TableLayoutPanel tlpOpciones;         private System.Windows.Forms.PictureBox pbFix;         private System.Windows.Forms.PictureBox pbEquipos;         private System.Windows.Forms.Button btnFixtures;         private System.Windows.Forms.Button btnJugadores;         private System.Windows.Forms.Button btnEquipos;         private System.Windows.Forms.PictureBox pbJugadores;         private System.Windows.Forms.Button btnTraducir;         private System.Windows.Forms.FlowLayoutPanel flpFix;         private System.Windows.Forms.Button btnH;         private System.Windows.Forms.Button btnF;         private System.Windows.Forms.Button btnB;         public System.Windows.Forms.Button btnInicioSesion;         private System.Windows.Forms.Label lblContactos;         private System.Windows.Forms.Label label5;         private System.Windows.Forms.Label label2;         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblInvitado;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAgregarUser;
+        private System.Windows.Forms.FlowLayoutPanel flpUsuarios;
+        private System.Windows.Forms.Button btnA;
+        private System.Windows.Forms.Button btnM;
+        private System.Windows.Forms.Button btnE;
     } }  

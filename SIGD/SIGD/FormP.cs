@@ -132,5 +132,37 @@ namespace SIGD
             }
         }
 
+        private void btnAgregarUser_Click(object sender, EventArgs e)
+        {
+            if (flpFix.Visible)
+            {
+                flpFix.Visible = false;
+            }
+            else
+            {
+                flpFix.Visible = true;
+            }
+        }
+
+        private void btnA_Click(object sender, EventArgs e)
+        {
+            activo = new FrmABMUsuario('A') { Owner = this };
+            activo.Show();
+            this.Hide();
+        }
+
+        private void btnM_Click(object sender, EventArgs e)
+        {
+            activo = new FrmABMUsuario('M') { Owner = this };
+            activo.Show();
+            this.Hide();
+        }
+
+        private void btnE_Click(object sender, EventArgs e)
+        {
+            activo = new FrmABMUsuario('B') { Owner = this };
+            activo.Show();
+            this.Hide();
+        }
     }
 }

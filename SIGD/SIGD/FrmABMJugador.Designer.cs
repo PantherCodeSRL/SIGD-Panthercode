@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmABMJugador));
             this.plTop = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
@@ -44,6 +45,10 @@
             this.txtSApellido = new System.Windows.Forms.TextBox();
             this.dtpFechN = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.mtbTelefonoJ = new System.Windows.Forms.MaskedTextBox();
+            this.lblTel = new System.Windows.Forms.Label();
+            this.lblMailU = new System.Windows.Forms.Label();
+            this.txtMailJ = new System.Windows.Forms.TextBox();
             this.plTop.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
             this.SuspendLayout();
@@ -154,7 +159,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(21, 168);
+            this.label1.Location = new System.Drawing.Point(21, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 36;
@@ -163,7 +168,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtNombre.Location = new System.Drawing.Point(21, 187);
+            this.txtNombre.Location = new System.Drawing.Point(21, 180);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(343, 22);
             this.txtNombre.TabIndex = 35;
@@ -172,7 +177,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(24, 226);
+            this.label2.Location = new System.Drawing.Point(21, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 16);
             this.label2.TabIndex = 38;
@@ -181,9 +186,9 @@
             // txtPApellido
             // 
             this.txtPApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtPApellido.Location = new System.Drawing.Point(24, 245);
+            this.txtPApellido.Location = new System.Drawing.Point(21, 232);
             this.txtPApellido.Name = "txtPApellido";
-            this.txtPApellido.Size = new System.Drawing.Size(340, 22);
+            this.txtPApellido.Size = new System.Drawing.Size(343, 22);
             this.txtPApellido.TabIndex = 37;
             // 
             // mtbCI
@@ -201,7 +206,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(24, 286);
+            this.label3.Location = new System.Drawing.Point(21, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 16);
             this.label3.TabIndex = 41;
@@ -210,28 +215,67 @@
             // txtSApellido
             // 
             this.txtSApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtSApellido.Location = new System.Drawing.Point(24, 305);
+            this.txtSApellido.Location = new System.Drawing.Point(21, 284);
             this.txtSApellido.Name = "txtSApellido";
-            this.txtSApellido.Size = new System.Drawing.Size(340, 22);
+            this.txtSApellido.Size = new System.Drawing.Size(343, 22);
             this.txtSApellido.TabIndex = 40;
             // 
             // dtpFechN
             // 
-            this.dtpFechN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechN.Location = new System.Drawing.Point(24, 371);
+            this.dtpFechN.CustomFormat = "yyyy-MM-dd";
+            this.dtpFechN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechN.Location = new System.Drawing.Point(21, 340);
+            this.dtpFechN.MaxDate = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
             this.dtpFechN.Name = "dtpFechN";
-            this.dtpFechN.Size = new System.Drawing.Size(102, 20);
+            this.dtpFechN.Size = new System.Drawing.Size(83, 20);
             this.dtpFechN.TabIndex = 42;
+            this.dtpFechN.Value = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(24, 352);
+            this.label4.Location = new System.Drawing.Point(21, 319);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 16);
             this.label4.TabIndex = 43;
             this.label4.Text = "Fecha de nacimiento:";
+            // 
+            // mtbTelefonoJ
+            // 
+            this.mtbTelefonoJ.Location = new System.Drawing.Point(293, 340);
+            this.mtbTelefonoJ.Mask = "000 000 000";
+            this.mtbTelefonoJ.Name = "mtbTelefonoJ";
+            this.mtbTelefonoJ.Size = new System.Drawing.Size(71, 20);
+            this.mtbTelefonoJ.TabIndex = 58;
+            // 
+            // lblTel
+            // 
+            this.lblTel.AutoSize = true;
+            this.lblTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblTel.Location = new System.Drawing.Point(290, 319);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(74, 16);
+            this.lblTel.TabIndex = 57;
+            this.lblTel.Text = "Teléfono:";
+            // 
+            // lblMailU
+            // 
+            this.lblMailU.AutoSize = true;
+            this.lblMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblMailU.Location = new System.Drawing.Point(21, 375);
+            this.lblMailU.Name = "lblMailU";
+            this.lblMailU.Size = new System.Drawing.Size(141, 16);
+            this.lblMailU.TabIndex = 56;
+            this.lblMailU.Text = "Correo Electrónico:";
+            // 
+            // txtMailJ
+            // 
+            this.txtMailJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtMailJ.Location = new System.Drawing.Point(21, 394);
+            this.txtMailJ.Name = "txtMailJ";
+            this.txtMailJ.Size = new System.Drawing.Size(343, 22);
+            this.txtMailJ.TabIndex = 55;
             // 
             // FrmABMJugador
             // 
@@ -239,6 +283,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(385, 492);
+            this.Controls.Add(this.mtbTelefonoJ);
+            this.Controls.Add(this.lblTel);
+            this.Controls.Add(this.lblMailU);
+            this.Controls.Add(this.txtMailJ);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFechN);
             this.Controls.Add(this.label3);
@@ -253,6 +301,7 @@
             this.Controls.Add(this.plTop);
             this.Controls.Add(this.tlpOpciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmABMJugador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAMBJugador";
@@ -282,5 +331,9 @@
         private System.Windows.Forms.DateTimePicker dtpFechN;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.MaskedTextBox mtbTelefonoJ;
+        private System.Windows.Forms.Label lblTel;
+        private System.Windows.Forms.Label lblMailU;
+        private System.Windows.Forms.TextBox txtMailJ;
     }
 }

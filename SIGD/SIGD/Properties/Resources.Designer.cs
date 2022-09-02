@@ -183,6 +183,16 @@ namespace SIGD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circle_xmark_solid1 {
+            get {
+                object obj = ResourceManager.GetObject("circle-xmark-solid1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap degradou {
             get {
                 object obj = ResourceManager.GetObject("degradou", resourceCulture);
@@ -376,6 +386,16 @@ namespace SIGD.Properties {
         internal static System.Drawing.Bitmap user_group_solid {
             get {
                 object obj = ResourceManager.GetObject("user-group-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_plus_solid {
+            get {
+                object obj = ResourceManager.GetObject("user-plus-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

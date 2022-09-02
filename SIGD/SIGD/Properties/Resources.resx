@@ -163,6 +163,9 @@
   <data name="degradou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\degradou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user-group-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-group-solid.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,6 +183,9 @@
   </data>
   <data name="degradou1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\degradou1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circle-xmark-solid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circle-xmark-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="basketball-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basketball-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +229,7 @@
   <data name="Sin título-6 - copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin título-6 - copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-group-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-group-solid.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-plus-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\user-plus-solid.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

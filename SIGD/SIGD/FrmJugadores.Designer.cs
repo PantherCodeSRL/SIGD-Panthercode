@@ -403,6 +403,7 @@
             this.dgvJugadores.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvJugadores.Location = new System.Drawing.Point(360, 99);
             this.dgvJugadores.Name = "dgvJugadores";
+            this.dgvJugadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvJugadores.Size = new System.Drawing.Size(564, 337);
             this.dgvJugadores.TabIndex = 37;
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmABMUsuario));
             this.plTop = new System.Windows.Forms.Panel();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.lblFechNacU = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbxRol = new System.Windows.Forms.ComboBox();
-            this.btnSalida = new System.Windows.Forms.Button();
             this.lblMailU = new System.Windows.Forms.Label();
             this.txtMailU = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,8 +54,12 @@
             this.mtbTelefonoU = new System.Windows.Forms.MaskedTextBox();
             this.txtRCU = new System.Windows.Forms.TextBox();
             this.txtCU = new System.Windows.Forms.TextBox();
+            this.btnSalida = new System.Windows.Forms.Button();
+            this.gbContra = new System.Windows.Forms.GroupBox();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.plTop.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // plTop
@@ -65,7 +69,7 @@
             this.plTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.plTop.Location = new System.Drawing.Point(0, 0);
             this.plTop.Name = "plTop";
-            this.plTop.Size = new System.Drawing.Size(739, 42);
+            this.plTop.Size = new System.Drawing.Size(971, 42);
             this.plTop.TabIndex = 16;
             // 
             // tlpOpciones
@@ -83,7 +87,7 @@
             this.tlpOpciones.Name = "tlpOpciones";
             this.tlpOpciones.RowCount = 1;
             this.tlpOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tlpOpciones.Size = new System.Drawing.Size(739, 55);
+            this.tlpOpciones.Size = new System.Drawing.Size(971, 55);
             this.tlpOpciones.TabIndex = 27;
             // 
             // btnAceptar
@@ -93,10 +97,10 @@
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Location = new System.Drawing.Point(372, 3);
+            this.btnAceptar.Location = new System.Drawing.Point(488, 3);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnAceptar.Size = new System.Drawing.Size(364, 49);
+            this.btnAceptar.Size = new System.Drawing.Size(480, 49);
             this.btnAceptar.TabIndex = 19;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -111,7 +115,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(3, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(363, 49);
+            this.btnCancelar.Size = new System.Drawing.Size(479, 49);
             this.btnCancelar.TabIndex = 18;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -120,7 +124,7 @@
             // 
             this.lblBE.AutoSize = true;
             this.lblBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblBE.Location = new System.Drawing.Point(20, 65);
+            this.lblBE.Location = new System.Drawing.Point(20, 57);
             this.lblBE.Name = "lblBE";
             this.lblBE.Size = new System.Drawing.Size(344, 24);
             this.lblBE.TabIndex = 33;
@@ -130,7 +134,7 @@
             // 
             this.lblN.AutoSize = true;
             this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblN.Location = new System.Drawing.Point(21, 110);
+            this.lblN.Location = new System.Drawing.Point(24, 91);
             this.lblN.Name = "lblN";
             this.lblN.Size = new System.Drawing.Size(233, 16);
             this.lblN.TabIndex = 34;
@@ -140,7 +144,7 @@
             // 
             this.lblNomU.AutoSize = true;
             this.lblNomU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNomU.Location = new System.Drawing.Point(21, 168);
+            this.lblNomU.Location = new System.Drawing.Point(24, 141);
             this.lblNomU.Name = "lblNomU";
             this.lblNomU.Size = new System.Drawing.Size(67, 16);
             this.lblNomU.TabIndex = 36;
@@ -149,16 +153,16 @@
             // txtNombreU
             // 
             this.txtNombreU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtNombreU.Location = new System.Drawing.Point(21, 187);
+            this.txtNombreU.Location = new System.Drawing.Point(21, 160);
             this.txtNombreU.Name = "txtNombreU";
-            this.txtNombreU.Size = new System.Drawing.Size(343, 22);
+            this.txtNombreU.Size = new System.Drawing.Size(344, 22);
             this.txtNombreU.TabIndex = 35;
             // 
             // lblPAU
             // 
             this.lblPAU.AutoSize = true;
             this.lblPAU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblPAU.Location = new System.Drawing.Point(24, 226);
+            this.lblPAU.Location = new System.Drawing.Point(24, 190);
             this.lblPAU.Name = "lblPAU";
             this.lblPAU.Size = new System.Drawing.Size(118, 16);
             this.lblPAU.TabIndex = 38;
@@ -167,9 +171,9 @@
             // txtPApellidoU
             // 
             this.txtPApellidoU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtPApellidoU.Location = new System.Drawing.Point(24, 245);
+            this.txtPApellidoU.Location = new System.Drawing.Point(21, 209);
             this.txtPApellidoU.Name = "txtPApellidoU";
-            this.txtPApellidoU.Size = new System.Drawing.Size(340, 22);
+            this.txtPApellidoU.Size = new System.Drawing.Size(344, 22);
             this.txtPApellidoU.TabIndex = 37;
             // 
             // mtbCI
@@ -177,7 +181,7 @@
             this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.mtbCI.Location = new System.Drawing.Point(21, 129);
+            this.mtbCI.Location = new System.Drawing.Point(21, 110);
             this.mtbCI.Mask = "0000000-0";
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(86, 26);
@@ -187,7 +191,7 @@
             // 
             this.lblSAU.AutoSize = true;
             this.lblSAU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblSAU.Location = new System.Drawing.Point(24, 286);
+            this.lblSAU.Location = new System.Drawing.Point(24, 238);
             this.lblSAU.Name = "lblSAU";
             this.lblSAU.Size = new System.Drawing.Size(135, 16);
             this.lblSAU.TabIndex = 41;
@@ -196,34 +200,34 @@
             // txtSApellidoU
             // 
             this.txtSApellidoU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtSApellidoU.Location = new System.Drawing.Point(24, 305);
+            this.txtSApellidoU.Location = new System.Drawing.Point(21, 257);
             this.txtSApellidoU.Name = "txtSApellidoU";
-            this.txtSApellidoU.Size = new System.Drawing.Size(340, 22);
+            this.txtSApellidoU.Size = new System.Drawing.Size(344, 22);
             this.txtSApellidoU.TabIndex = 40;
             // 
             // dtpFechNU
             // 
             this.dtpFechNU.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechNU.Location = new System.Drawing.Point(24, 371);
+            this.dtpFechNU.Location = new System.Drawing.Point(397, 227);
             this.dtpFechNU.Name = "dtpFechNU";
             this.dtpFechNU.Size = new System.Drawing.Size(102, 20);
             this.dtpFechNU.TabIndex = 42;
             // 
             // lblFechNacU
             // 
-            this.lblFechNacU.AutoSize = true;
             this.lblFechNacU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFechNacU.Location = new System.Drawing.Point(24, 352);
+            this.lblFechNacU.Location = new System.Drawing.Point(399, 190);
             this.lblFechNacU.Name = "lblFechNacU";
-            this.lblFechNacU.Size = new System.Drawing.Size(156, 16);
+            this.lblFechNacU.Size = new System.Drawing.Size(100, 34);
             this.lblFechNacU.TabIndex = 43;
             this.lblFechNacU.Text = "Fecha de nacimiento:";
+            this.lblFechNacU.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(247, 352);
+            this.label5.Location = new System.Drawing.Point(382, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 16);
             this.label5.TabIndex = 44;
@@ -233,10 +237,86 @@
             // cbxRol
             // 
             this.cbxRol.FormattingEnabled = true;
-            this.cbxRol.Location = new System.Drawing.Point(243, 371);
+            this.cbxRol.Location = new System.Drawing.Point(378, 115);
             this.cbxRol.Name = "cbxRol";
             this.cbxRol.Size = new System.Drawing.Size(121, 21);
             this.cbxRol.TabIndex = 45;
+            // 
+            // lblMailU
+            // 
+            this.lblMailU.AutoSize = true;
+            this.lblMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblMailU.Location = new System.Drawing.Point(25, 288);
+            this.lblMailU.Name = "lblMailU";
+            this.lblMailU.Size = new System.Drawing.Size(141, 16);
+            this.lblMailU.TabIndex = 47;
+            this.lblMailU.Text = "Correo Electrónico:";
+            // 
+            // txtMailU
+            // 
+            this.txtMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtMailU.Location = new System.Drawing.Point(22, 307);
+            this.txtMailU.Name = "txtMailU";
+            this.txtMailU.Size = new System.Drawing.Size(343, 22);
+            this.txtMailU.TabIndex = 46;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(425, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Teléfono:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.SlateGray;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(24, 385);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 16);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Repetir contraseña:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.SlateGray;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(24, 338);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 16);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Contraseña del usuario:";
+            // 
+            // mtbTelefonoU
+            // 
+            this.mtbTelefonoU.Location = new System.Drawing.Point(428, 162);
+            this.mtbTelefonoU.Mask = "000 000 000";
+            this.mtbTelefonoU.Name = "mtbTelefonoU";
+            this.mtbTelefonoU.Size = new System.Drawing.Size(71, 20);
+            this.mtbTelefonoU.TabIndex = 54;
+            // 
+            // txtRCU
+            // 
+            this.txtRCU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtRCU.Location = new System.Drawing.Point(22, 404);
+            this.txtRCU.Name = "txtRCU";
+            this.txtRCU.PasswordChar = '*';
+            this.txtRCU.Size = new System.Drawing.Size(343, 22);
+            this.txtRCU.TabIndex = 52;
+            // 
+            // txtCU
+            // 
+            this.txtCU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtCU.Location = new System.Drawing.Point(22, 357);
+            this.txtCU.Name = "txtCU";
+            this.txtCU.PasswordChar = '*';
+            this.txtCU.Size = new System.Drawing.Size(343, 22);
+            this.txtCU.TabIndex = 50;
             // 
             // btnSalida
             // 
@@ -248,7 +328,7 @@
             this.btnSalida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalida.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalida.Location = new System.Drawing.Point(695, 0);
+            this.btnSalida.Location = new System.Drawing.Point(935, 0);
             this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -257,86 +337,30 @@
             this.btnSalida.TabStop = false;
             this.btnSalida.UseVisualStyleBackColor = false;
             // 
-            // lblMailU
+            // gbContra
             // 
-            this.lblMailU.AutoSize = true;
-            this.lblMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblMailU.Location = new System.Drawing.Point(375, 110);
-            this.lblMailU.Name = "lblMailU";
-            this.lblMailU.Size = new System.Drawing.Size(141, 16);
-            this.lblMailU.TabIndex = 47;
-            this.lblMailU.Text = "Correo Electrónico:";
+            this.gbContra.BackColor = System.Drawing.Color.SlateGray;
+            this.gbContra.Location = new System.Drawing.Point(12, 338);
+            this.gbContra.Name = "gbContra";
+            this.gbContra.Size = new System.Drawing.Size(361, 94);
+            this.gbContra.TabIndex = 55;
+            this.gbContra.TabStop = false;
             // 
-            // txtMailU
+            // dgvUsuarios
             // 
-            this.txtMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtMailU.Location = new System.Drawing.Point(376, 132);
-            this.txtMailU.Name = "txtMailU";
-            this.txtMailU.Size = new System.Drawing.Size(343, 22);
-            this.txtMailU.TabIndex = 46;
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(519, 57);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(440, 375);
+            this.dgvUsuarios.TabIndex = 56;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(375, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 16);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Teléfono:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(375, 286);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 16);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "Repetir contraseña:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(375, 223);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 16);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "Contraseña del usuario:";
-            // 
-            // mtbTelefonoU
-            // 
-            this.mtbTelefonoU.Location = new System.Drawing.Point(378, 189);
-            this.mtbTelefonoU.Mask = "000 000 000";
-            this.mtbTelefonoU.Name = "mtbTelefonoU";
-            this.mtbTelefonoU.Size = new System.Drawing.Size(71, 20);
-            this.mtbTelefonoU.TabIndex = 54;
-            // 
-            // txtRCU
-            // 
-            this.txtRCU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtRCU.Location = new System.Drawing.Point(376, 305);
-            this.txtRCU.Name = "txtRCU";
-            this.txtRCU.PasswordChar = '*';
-            this.txtRCU.Size = new System.Drawing.Size(343, 22);
-            this.txtRCU.TabIndex = 52;
-            // 
-            // txtCU
-            // 
-            this.txtCU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtCU.Location = new System.Drawing.Point(376, 245);
-            this.txtCU.Name = "txtCU";
-            this.txtCU.PasswordChar = '*';
-            this.txtCU.Size = new System.Drawing.Size(343, 22);
-            this.txtCU.TabIndex = 50;
-            // 
-            // FrmAMBUsuario
+            // FrmABMUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(739, 492);
+            this.ClientSize = new System.Drawing.Size(971, 492);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.mtbTelefonoU);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtRCU);
@@ -360,12 +384,15 @@
             this.Controls.Add(this.lblBE);
             this.Controls.Add(this.plTop);
             this.Controls.Add(this.tlpOpciones);
+            this.Controls.Add(this.gbContra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmAMBUsuario";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmABMUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAMBJugador";
             this.plTop.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,5 +426,7 @@
         private System.Windows.Forms.MaskedTextBox mtbTelefonoU;
         private System.Windows.Forms.TextBox txtRCU;
         private System.Windows.Forms.TextBox txtCU;
+        private System.Windows.Forms.GroupBox gbContra;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
     }
 }
