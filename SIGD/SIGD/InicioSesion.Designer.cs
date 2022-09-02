@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
-            this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCiUser = new System.Windows.Forms.Label();
             this.lblPwd = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSalida = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.pbPwd = new System.Windows.Forms.PictureBox();
             this.pbLogin = new System.Windows.Forms.PictureBox();
+            this.mtbCI = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
@@ -52,23 +52,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.SystemColors.Window;
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtUser.Location = new System.Drawing.Point(84, 149);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(154, 19);
-            this.txtUser.TabIndex = 2;
-            this.txtUser.TabStop = false;
-            // 
             // txtPwd
             // 
             this.txtPwd.BackColor = System.Drawing.SystemColors.Window;
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtPwd.Location = new System.Drawing.Point(84, 199);
+            this.txtPwd.Location = new System.Drawing.Point(84, 202);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(154, 19);
             this.txtPwd.TabIndex = 2;
@@ -80,22 +69,22 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(97, 176);
+            this.label5.Location = new System.Drawing.Point(97, 179);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Contraseña:";
             // 
-            // label1
+            // lblCiUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(68, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre de usuario:";
+            this.lblCiUser.AutoSize = true;
+            this.lblCiUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblCiUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblCiUser.Location = new System.Drawing.Point(118, 121);
+            this.lblCiUser.Name = "lblCiUser";
+            this.lblCiUser.Size = new System.Drawing.Size(70, 20);
+            this.lblCiUser.TabIndex = 2;
+            this.lblCiUser.Text = "Cédula:";
             // 
             // lblPwd
             // 
@@ -227,7 +216,7 @@
             // 
             this.pbUser.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbUser.Image = global::SIGD.Properties.Resources.user_solid;
-            this.pbUser.Location = new System.Drawing.Point(59, 145);
+            this.pbUser.Location = new System.Drawing.Point(84, 143);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(19, 23);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,7 +227,7 @@
             // 
             this.pbPwd.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
             this.pbPwd.Image = global::SIGD.Properties.Resources.lock_solid;
-            this.pbPwd.Location = new System.Drawing.Point(59, 196);
+            this.pbPwd.Location = new System.Drawing.Point(59, 199);
             this.pbPwd.Name = "pbPwd";
             this.pbPwd.Size = new System.Drawing.Size(19, 23);
             this.pbPwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,10 +240,22 @@
             this.pbLogin.Image = global::SIGD.Properties.Resources.user_regular;
             this.pbLogin.Location = new System.Drawing.Point(-1, 48);
             this.pbLogin.Name = "pbLogin";
-            this.pbLogin.Size = new System.Drawing.Size(305, 75);
+            this.pbLogin.Size = new System.Drawing.Size(305, 63);
             this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogin.TabIndex = 12;
             this.pbLogin.TabStop = false;
+            // 
+            // mtbCI
+            // 
+            this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.mtbCI.Location = new System.Drawing.Point(108, 143);
+            this.mtbCI.Mask = "0000000-0";
+            this.mtbCI.Name = "mtbCI";
+            this.mtbCI.Size = new System.Drawing.Size(86, 26);
+            this.mtbCI.TabIndex = 40;
+            this.mtbCI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
             // InicioSesion
             // 
@@ -262,6 +263,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(304, 382);
+            this.Controls.Add(this.mtbCI);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.cbxRol);
@@ -272,9 +274,8 @@
             this.Controls.Add(this.pbUser);
             this.Controls.Add(this.pbPwd);
             this.Controls.Add(this.txtPwd);
-            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCiUser);
             this.Controls.Add(this.pbLogin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -296,7 +297,7 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCiUser;
         private System.Windows.Forms.PictureBox pbPwd;
         private System.Windows.Forms.PictureBox pbUser;
         private System.Windows.Forms.Button btnSalida;
@@ -306,10 +307,10 @@
         private System.Windows.Forms.CheckBox cbxMC;
         private System.Windows.Forms.Button btnInvitado;
         private System.Windows.Forms.Button btnLogin;
-        public System.Windows.Forms.TextBox txtUser;
         public System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.ComboBox cbxRol;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox mtbCI;
     }
 }

@@ -19,6 +19,7 @@ namespace SIGD
         }
 
         bool unavez = false;
+        String ci, rol;
 
         private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
@@ -61,7 +62,7 @@ namespace SIGD
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "" || txtPwd.Text == "")
+            if (mtbCI.Text == "" || txtPwd.Text == "" || cbxRol.Text == "(seleccione)")
             {
                 MessageBox.Show("Complete correctamente los campos de ingreso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -69,34 +70,59 @@ namespace SIGD
             {
                 try
                 {
+
                     //Conexion
                     MySqlConnection conexion = new MySqlConnection();
                     conexion.ConnectionString =
-                    "Server=192.168.2.195;Database=Panthercode;Uid=jirigoin;Pwd=jirigoin";
+                    //"Server=192.168.2.195;Database=Panthercode;Uid=jirigoin;Pwd=jirigoin";
+                    "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
                     conexion.Open();
 
+                    switch (cbxRol.SelectedIndex)
+                    {
+                        case 0:
+                            rol = "Administrador";
+                            break;
+                        case 1:
+                            rol = "Administrativo";
+                            break;
+                        case 2:
+                            rol = "Analista";
+                            break;
+                        case 3:
+                            rol = "Arbitro";
+                            break;
+                        case 4:
+                            rol = "CT";
+                            break;
+                        case 5:
+                            rol = "Seleccionador";
+                            break;
+                    }
                     //Sentencia
                     MySqlCommand comando = new MySqlCommand();
                     comando.Connection = conexion;
                     comando.CommandText =
-                        "select * from usuarios where usuario ='" + txtUser.Text
-                        + "' AND contraseña = PASSWORD('" + txtPwd.Text + "')";
+                        "SELECT " + rol + ".ci, PASSWORD(Usuario.contraseña), Usuario.nombre, Usuario.apellidoP," +
+                        " Usuario.apellidoS, Usuario.telefono, Usuario.CorreoElec, Usuario.fechaNac FROM Usuario" +
+                        " JOIN " + rol + " ON Usuario.ci = " + rol + ".ci" +
+                        " WHERE Usuario.ci = '" + mtbCI.Text + "' AND contraseña = PASSWORD('" + txtPwd.Text + "')";
 
                     MySqlDataReader lector = comando.ExecuteReader();
 
                     if (lector.HasRows)
                     {
-                        String nombre, rol;
                         lector.Read();
-                        nombre = lector.GetString("nombre");
-                        rol = lector.GetString("rol");
+                        String nombre = lector.GetString("nombre");
+                        //rol = lector.GetString("rol");
                         MessageBox.Show("Hola: " + nombre + ", sos: " + rol);
+                        
                         this.Owner.Show();
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Usuario y/o contraseña incorrectos");
+                        MessageBox.Show("Cédula, contraseña y/o rol incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (MySql.Data.MySqlClient.MySqlException ex)
@@ -106,10 +132,13 @@ namespace SIGD
                         switch (ex.Number)
                         {
                             case 0:
-                                MessageBox.Show("Imposible abrir una conexión el servidor de BD");
+                                MessageBox.Show("Imposible abrir una conexión el servidor de BD", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 break;
                             case 1045:
-                                MessageBox.Show("Usuario y/o contraseña incorrectas");
+                                MessageBox.Show("Usuario y/o contraseña incorrectas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                            default:
+                                MessageBox.Show("Ha ocurrido un error, verifique los datos o contacte a un Administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 break;
                         }
                     }

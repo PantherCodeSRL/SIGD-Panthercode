@@ -134,13 +134,13 @@ namespace SIGD
 
         private void btnAgregarUser_Click(object sender, EventArgs e)
         {
-            if (flpFix.Visible)
+            if (flpUsuarios.Visible)
             {
-                flpFix.Visible = false;
+                flpUsuarios.Visible = false;
             }
             else
             {
-                flpFix.Visible = true;
+                flpUsuarios.Visible = true;
             }
         }
 
