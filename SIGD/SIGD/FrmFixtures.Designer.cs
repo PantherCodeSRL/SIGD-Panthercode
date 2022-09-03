@@ -580,7 +580,7 @@
             this.lblFixture.TabIndex = 118;
             this.lblFixture.Text = "Proximas fechas";
             // 
-            // FH
+            // FrmFixtures
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -600,7 +600,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "FH";
+            this.Name = "FrmFixtures";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.panel4.ResumeLayout(false);
