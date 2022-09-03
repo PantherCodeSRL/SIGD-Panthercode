@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmABMUsuario));
             this.plTop = new System.Windows.Forms.Panel();
+            this.btnSalida = new System.Windows.Forms.Button();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -42,21 +43,20 @@
             this.mtbCI = new System.Windows.Forms.MaskedTextBox();
             this.lblSAU = new System.Windows.Forms.Label();
             this.txtSApellidoU = new System.Windows.Forms.TextBox();
-            this.dtpFechNU = new System.Windows.Forms.DateTimePicker();
             this.lblFechNacU = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbxRol = new System.Windows.Forms.ComboBox();
             this.lblMailU = new System.Windows.Forms.Label();
             this.txtMailU = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.mtbTelefonoU = new System.Windows.Forms.MaskedTextBox();
             this.txtRCU = new System.Windows.Forms.TextBox();
             this.txtCU = new System.Windows.Forms.TextBox();
-            this.btnSalida = new System.Windows.Forms.Button();
             this.gbContra = new System.Windows.Forms.GroupBox();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.mtbTelefonoU = new System.Windows.Forms.MaskedTextBox();
+            this.dtpFechNU = new System.Windows.Forms.DateTimePicker();
             this.plTop.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
@@ -71,6 +71,26 @@
             this.plTop.Name = "plTop";
             this.plTop.Size = new System.Drawing.Size(971, 42);
             this.plTop.TabIndex = 16;
+            // 
+            // btnSalida
+            // 
+            this.btnSalida.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalida.FlatAppearance.BorderSize = 0;
+            this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSalida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalida.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalida.Location = new System.Drawing.Point(935, 0);
+            this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.btnSalida.Size = new System.Drawing.Size(24, 42);
+            this.btnSalida.TabIndex = 14;
+            this.btnSalida.TabStop = false;
+            this.btnSalida.UseVisualStyleBackColor = false;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
             // 
             // tlpOpciones
             // 
@@ -104,6 +124,7 @@
             this.btnAceptar.TabIndex = 19;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -119,6 +140,7 @@
             this.btnCancelar.TabIndex = 18;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblBE
             // 
@@ -186,6 +208,7 @@
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(86, 26);
             this.mtbCI.TabIndex = 39;
+            this.mtbCI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
             // lblSAU
             // 
@@ -205,18 +228,10 @@
             this.txtSApellidoU.Size = new System.Drawing.Size(344, 22);
             this.txtSApellidoU.TabIndex = 40;
             // 
-            // dtpFechNU
-            // 
-            this.dtpFechNU.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechNU.Location = new System.Drawing.Point(397, 227);
-            this.dtpFechNU.Name = "dtpFechNU";
-            this.dtpFechNU.Size = new System.Drawing.Size(102, 20);
-            this.dtpFechNU.TabIndex = 42;
-            // 
             // lblFechNacU
             // 
             this.lblFechNacU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFechNacU.Location = new System.Drawing.Point(399, 190);
+            this.lblFechNacU.Location = new System.Drawing.Point(370, 190);
             this.lblFechNacU.Name = "lblFechNacU";
             this.lblFechNacU.Size = new System.Drawing.Size(100, 34);
             this.lblFechNacU.TabIndex = 43;
@@ -227,20 +242,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(382, 91);
+            this.label5.Location = new System.Drawing.Point(353, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 16);
             this.label5.TabIndex = 44;
             this.label5.Text = "Rol del usuario:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // cbxRol
-            // 
-            this.cbxRol.FormattingEnabled = true;
-            this.cbxRol.Location = new System.Drawing.Point(378, 115);
-            this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(121, 21);
-            this.cbxRol.TabIndex = 45;
             // 
             // lblMailU
             // 
@@ -264,7 +271,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(425, 141);
+            this.label1.Location = new System.Drawing.Point(396, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 16);
             this.label1.TabIndex = 49;
@@ -292,14 +299,6 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Contraseña del usuario:";
             // 
-            // mtbTelefonoU
-            // 
-            this.mtbTelefonoU.Location = new System.Drawing.Point(428, 162);
-            this.mtbTelefonoU.Mask = "000 000 000";
-            this.mtbTelefonoU.Name = "mtbTelefonoU";
-            this.mtbTelefonoU.Size = new System.Drawing.Size(71, 20);
-            this.mtbTelefonoU.TabIndex = 54;
-            // 
             // txtRCU
             // 
             this.txtRCU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -318,25 +317,6 @@
             this.txtCU.Size = new System.Drawing.Size(343, 22);
             this.txtCU.TabIndex = 50;
             // 
-            // btnSalida
-            // 
-            this.btnSalida.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
-            this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSalida.FlatAppearance.BorderSize = 0;
-            this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalida.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalida.Location = new System.Drawing.Point(935, 0);
-            this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.btnSalida.Size = new System.Drawing.Size(24, 42);
-            this.btnSalida.TabIndex = 14;
-            this.btnSalida.TabStop = false;
-            this.btnSalida.UseVisualStyleBackColor = false;
-            // 
             // gbContra
             // 
             this.gbContra.BackColor = System.Drawing.Color.SlateGray;
@@ -349,10 +329,52 @@
             // dgvUsuarios
             // 
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(519, 57);
+            this.dgvUsuarios.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvUsuarios.Location = new System.Drawing.Point(488, 57);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(440, 375);
+            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuarios.Size = new System.Drawing.Size(471, 375);
             this.dgvUsuarios.TabIndex = 56;
+            this.dgvUsuarios.Click += new System.EventHandler(this.dgvUsuarios_Click);
+            // 
+            // cbxRol
+            // 
+            this.cbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.IntegralHeight = false;
+            this.cbxRol.Items.AddRange(new object[] {
+            "Administrador",
+            "Administrativo",
+            "Analista",
+            "Árbitro",
+            "C.T.",
+            "Seleccionador",
+            "(seleccione)"});
+            this.cbxRol.Location = new System.Drawing.Point(316, 110);
+            this.cbxRol.MaxDropDownItems = 6;
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(154, 21);
+            this.cbxRol.TabIndex = 57;
+            // 
+            // mtbTelefonoU
+            // 
+            this.mtbTelefonoU.Location = new System.Drawing.Point(399, 167);
+            this.mtbTelefonoU.Mask = "000 000 000";
+            this.mtbTelefonoU.Name = "mtbTelefonoU";
+            this.mtbTelefonoU.Size = new System.Drawing.Size(71, 20);
+            this.mtbTelefonoU.TabIndex = 60;
+            this.mtbTelefonoU.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
+            // 
+            // dtpFechNU
+            // 
+            this.dtpFechNU.CustomFormat = "yyyy-MM-dd";
+            this.dtpFechNU.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechNU.Location = new System.Drawing.Point(387, 234);
+            this.dtpFechNU.MaxDate = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
+            this.dtpFechNU.Name = "dtpFechNU";
+            this.dtpFechNU.Size = new System.Drawing.Size(83, 20);
+            this.dtpFechNU.TabIndex = 59;
+            this.dtpFechNU.Value = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
             // 
             // FrmABMUsuario
             // 
@@ -360,8 +382,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(971, 492);
-            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.mtbTelefonoU);
+            this.Controls.Add(this.dtpFechNU);
+            this.Controls.Add(this.cbxRol);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtRCU);
             this.Controls.Add(this.label3);
@@ -369,10 +393,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMailU);
             this.Controls.Add(this.txtMailU);
-            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblFechNacU);
-            this.Controls.Add(this.dtpFechNU);
             this.Controls.Add(this.lblSAU);
             this.Controls.Add(this.txtSApellidoU);
             this.Controls.Add(this.mtbCI);
@@ -390,6 +412,8 @@
             this.Name = "FrmABMUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAMBJugador";
+            this.Activated += new System.EventHandler(this.FrmABMUsuario_Activated);
+            this.Load += new System.EventHandler(this.FrmABMUsuario_Load);
             this.plTop.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
@@ -413,20 +437,20 @@
         private System.Windows.Forms.MaskedTextBox mtbCI;
         private System.Windows.Forms.Label lblSAU;
         private System.Windows.Forms.TextBox txtSApellidoU;
-        private System.Windows.Forms.DateTimePicker dtpFechNU;
         private System.Windows.Forms.Label lblFechNacU;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbxRol;
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.Label lblMailU;
         private System.Windows.Forms.TextBox txtMailU;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox mtbTelefonoU;
         private System.Windows.Forms.TextBox txtRCU;
         private System.Windows.Forms.TextBox txtCU;
         private System.Windows.Forms.GroupBox gbContra;
         private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.ComboBox cbxRol;
+        private System.Windows.Forms.MaskedTextBox mtbTelefonoU;
+        private System.Windows.Forms.DateTimePicker dtpFechNU;
     }
 }

@@ -29,24 +29,24 @@ namespace SIGD
             {
                 case 'A':
                     //Falta validar datos antes de ingresar
-                    sentencia = "INSERT INTO Jugador(ci,nombre,apellidoP,apellidoS,telefono,correoElec,fechaNac) VALUES (ci = '";
+                    sentencia = "INSERT INTO Jugador(ci,nombre,apellidoP,apellidoS,telefono,correoElec,fechaNac) VALUES (";
                     sentencia += mtbCI.Text;
-                    sentencia += ", nombre = '";
+                    sentencia += ",'";
                     sentencia += txtNombre.Text;
-                    sentencia += "', apellidoP = '";
+                    sentencia += "','";
                     sentencia += txtPApellido.Text;
-                    sentencia += "', apellidoS = '";
+                    sentencia += "','";
                     sentencia += txtSApellido.Text;
-                    sentencia += "', telefono = '";
+                    sentencia += "','";
                     sentencia += mtbTelefonoJ.Text;
-                    sentencia += "', correoElec = '";
+                    sentencia += "','";
                     sentencia += txtMailJ.Text;
-                    sentencia += "', fechaNac = '";
+                    sentencia += "','";
                     sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
                     sentencia += "');";
                     break;
                 case 'M':
-                    sentencia = "UPDATE Jugador SET nombre = ";
+                    sentencia = "UPDATE Jugador SET nombre = '";
                     sentencia += txtNombre.Text;
                     sentencia += "', apellidoP = '";
                     sentencia += txtPApellido.Text;
@@ -59,11 +59,11 @@ namespace SIGD
                     sentencia += "', fechaNac = '";
                     sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
                     sentencia += "' WHERE ci = ";
-                    sentencia += ci;
+                    sentencia += ci + ";";
                     break;
                 case 'B':
                     sentencia = "DELETE FROM Jugador WHERE ci = ";
-                    sentencia += ci;
+                    sentencia += ci + ";";
                     break;
             }
             try
@@ -82,6 +82,7 @@ namespace SIGD
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
+                MessageBox.Show("Error: " + ex.Message);
                 switch (ex.Number)
                 {
                     case 0:
@@ -90,7 +91,9 @@ namespace SIGD
                     case 1045:
                         MessageBox.Show("Usuario y/o contraseña incorrectas");
                         break;
-
+                    default:
+                        MessageBox.Show("Ha ocurrido un error, verifique sus datos o contacte a un administrador.");
+                        break;
                 }
             }
             Owner.Show();

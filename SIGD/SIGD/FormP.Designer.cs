@@ -20,7 +20,8 @@
             this.btnJugadores = new System.Windows.Forms.Button();
             this.btnEquipos = new System.Windows.Forms.Button();
             this.pbJugadores = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbAddUser = new System.Windows.Forms.PictureBox();
+            this.btnAgregarUser = new System.Windows.Forms.Button();
             this.tlpHerramientas = new System.Windows.Forms.TableLayoutPanel();
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.Button();
@@ -28,7 +29,6 @@
             this.btnF = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnH = new System.Windows.Forms.Button();
-            this.btnAgregarUser = new System.Windows.Forms.Button();
             this.flpUsuarios = new System.Windows.Forms.FlowLayoutPanel();
             this.btnA = new System.Windows.Forms.Button();
             this.btnM = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEquipos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddUser)).BeginInit();
             this.tlpHerramientas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.flpFix.SuspendLayout();
@@ -174,7 +174,7 @@
             this.tlpOpciones.Controls.Add(this.btnJugadores, 2, 0);
             this.tlpOpciones.Controls.Add(this.btnEquipos, 4, 0);
             this.tlpOpciones.Controls.Add(this.pbJugadores, 1, 0);
-            this.tlpOpciones.Controls.Add(this.pictureBox1, 7, 0);
+            this.tlpOpciones.Controls.Add(this.pbAddUser, 7, 0);
             this.tlpOpciones.Controls.Add(this.btnAgregarUser, 8, 0);
             this.tlpOpciones.Name = "tlpOpciones";
             // 
@@ -243,12 +243,26 @@
             this.pbJugadores.Name = "pbJugadores";
             this.pbJugadores.TabStop = false;
             // 
-            // pictureBox1
+            // pbAddUser
             // 
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.user_plus_solid;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.pbAddUser.Image = global::SIGD.Properties.Resources.user_plus_solid;
+            resources.ApplyResources(this.pbAddUser, "pbAddUser");
+            this.pbAddUser.Name = "pbAddUser";
+            this.pbAddUser.TabStop = false;
+            // 
+            // btnAgregarUser
+            // 
+            this.btnAgregarUser.BackColor = System.Drawing.Color.SlateGray;
+            this.btnAgregarUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarUser.FlatAppearance.BorderSize = 0;
+            this.btnAgregarUser.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            resources.ApplyResources(this.btnAgregarUser, "btnAgregarUser");
+            this.btnAgregarUser.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarUser.Name = "btnAgregarUser";
+            this.btnAgregarUser.TabStop = false;
+            this.btnAgregarUser.UseVisualStyleBackColor = false;
+            this.btnAgregarUser.Click += new System.EventHandler(this.btnAgregarUser_Click);
             // 
             // tlpHerramientas
             // 
@@ -321,20 +335,6 @@
             this.btnH.UseVisualStyleBackColor = true;
             this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
-            // btnAgregarUser
-            // 
-            this.btnAgregarUser.BackColor = System.Drawing.Color.SlateGray;
-            this.btnAgregarUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarUser.FlatAppearance.BorderSize = 0;
-            this.btnAgregarUser.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            resources.ApplyResources(this.btnAgregarUser, "btnAgregarUser");
-            this.btnAgregarUser.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarUser.Name = "btnAgregarUser";
-            this.btnAgregarUser.TabStop = false;
-            this.btnAgregarUser.UseVisualStyleBackColor = false;
-            this.btnAgregarUser.Click += new System.EventHandler(this.btnAgregarUser_Click);
-            // 
             // flpUsuarios
             // 
             this.flpUsuarios.BackColor = System.Drawing.Color.SlateGray;
@@ -398,6 +398,7 @@
             this.MinimizeBox = false;
             this.Name = "FormP";
             this.TransparencyKey = System.Drawing.Color.Peru;
+            this.Activated += new System.EventHandler(this.FormP_Activated);
             this.Load += new System.EventHandler(this.FormP_Load);
             this.panInferior.ResumeLayout(false);
             this.panInferior.PerformLayout();
@@ -406,7 +407,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEquipos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddUser)).EndInit();
             this.tlpHerramientas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.flpFix.ResumeLayout(false);
@@ -416,7 +417,7 @@
 
         }          #endregion         private System.Windows.Forms.Label lblBienvenido;         private System.Windows.Forms.Label lblEmpresa;         private System.Windows.Forms.Label lblIdioma;         private System.Windows.Forms.Label label6;         private System.Windows.Forms.Panel panInferior;         private System.Windows.Forms.Button btnCerrar;         private System.Windows.Forms.Panel plSuperior;         private System.Windows.Forms.TableLayoutPanel tlpHerramientas;         private System.Windows.Forms.PictureBox pbLogin;         private System.Windows.Forms.Button btnMin;         private System.Windows.Forms.TableLayoutPanel tlpOpciones;         private System.Windows.Forms.PictureBox pbFix;         private System.Windows.Forms.PictureBox pbEquipos;         private System.Windows.Forms.Button btnFixtures;         private System.Windows.Forms.Button btnJugadores;         private System.Windows.Forms.Button btnEquipos;         private System.Windows.Forms.PictureBox pbJugadores;         private System.Windows.Forms.Button btnTraducir;         private System.Windows.Forms.FlowLayoutPanel flpFix;         private System.Windows.Forms.Button btnH;         private System.Windows.Forms.Button btnF;         private System.Windows.Forms.Button btnB;         public System.Windows.Forms.Button btnInicioSesion;         private System.Windows.Forms.Label lblContactos;         private System.Windows.Forms.Label label5;         private System.Windows.Forms.Label label2;         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblInvitado;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbAddUser;
         private System.Windows.Forms.Button btnAgregarUser;
         private System.Windows.Forms.FlowLayoutPanel flpUsuarios;
         private System.Windows.Forms.Button btnA;

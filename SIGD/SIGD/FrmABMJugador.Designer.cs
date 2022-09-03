@@ -201,6 +201,7 @@
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(86, 26);
             this.mtbCI.TabIndex = 39;
+            this.mtbCI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
             // label3
             // 
@@ -248,6 +249,7 @@
             this.mtbTelefonoJ.Name = "mtbTelefonoJ";
             this.mtbTelefonoJ.Size = new System.Drawing.Size(71, 20);
             this.mtbTelefonoJ.TabIndex = 58;
+            this.mtbTelefonoJ.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
             // lblTel
             // 

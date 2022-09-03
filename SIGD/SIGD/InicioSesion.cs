@@ -19,7 +19,8 @@ namespace SIGD
         }
 
         bool unavez = false;
-        String ci, rol;
+        public String rol;
+        public FormP principal;
 
         private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
@@ -33,7 +34,7 @@ namespace SIGD
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
-            this.Owner.Enabled = true;
+            principal.Enabled = true;
             this.Close();
         }
 
@@ -56,7 +57,7 @@ namespace SIGD
 
         private void btnInvitado_Click(object sender, EventArgs e)
         {
-            this.Owner.Enabled = true;
+            principal.Enabled = true;
             this.Close();
         }
         
@@ -70,7 +71,6 @@ namespace SIGD
             {
                 try
                 {
-
                     //Conexion
                     MySqlConnection conexion = new MySqlConnection();
                     conexion.ConnectionString =
@@ -116,8 +116,11 @@ namespace SIGD
                         String nombre = lector.GetString("nombre");
                         //rol = lector.GetString("rol");
                         MessageBox.Show("Hola: " + nombre + ", sos: " + rol);
-                        
-                        this.Owner.Show();
+                        //this.Owner.Enabled = true;
+                        //this.Owner.Show();
+                        principal.Enabled = true;
+                        principal.Show();
+                        principal.rol = rol;
                         this.Close();
                     }
                     else
@@ -148,7 +151,8 @@ namespace SIGD
 
         private void InicioSesion_Load(object sender, EventArgs e)
         {
-            this.Owner.Enabled = false;
+            //this.Owner.Enabled = false;
+            principal.Enabled = false;
             cbxRol.SelectedIndex = 6;
             unavez = false;
         }

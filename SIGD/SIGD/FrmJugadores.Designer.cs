@@ -387,6 +387,7 @@
             this.plFiltro.Name = "plFiltro";
             this.plFiltro.Size = new System.Drawing.Size(337, 170);
             this.plFiltro.TabIndex = 36;
+            this.plFiltro.Visible = false;
             // 
             // dtpFechF
             // 
@@ -417,6 +418,7 @@
             this.plAdminEquipos.Name = "plAdminEquipos";
             this.plAdminEquipos.Size = new System.Drawing.Size(337, 106);
             this.plAdminEquipos.TabIndex = 43;
+            this.plAdminEquipos.Visible = false;
             // 
             // lblHAJ
             // 
@@ -511,6 +513,7 @@
             this.Name = "FrmJugadores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmJugador";
+            this.Activated += new System.EventHandler(this.FrmJugadores_Activated);
             this.Load += new System.EventHandler(this.FrmJugadores_Load);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

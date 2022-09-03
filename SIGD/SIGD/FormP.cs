@@ -23,9 +23,10 @@ namespace SIGD
         {
             cambioIdioma();
         }
-
+        
         public Form activo;
         bool idioma;
+        public String rol = "INVITADO";
 
         private void cambioIdioma()
         {
@@ -46,8 +47,10 @@ namespace SIGD
 
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
-            activo = new InicioSesion() { Owner = this };
-            activo.Show();
+            InicioSesion iniSesion = new InicioSesion();
+            iniSesion.principal = this;
+            //activo = new InicioSesion() { Owner = this };
+            iniSesion.Show();
         }
         
         private void btnTraducir_click(object sender, EventArgs e)
@@ -93,7 +96,7 @@ namespace SIGD
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            activo = new FrmJugadores() { Owner = this };
+            activo = new FrmJugadores(rol) { Owner = this };
             activo.Show();
             this.Hide();
         }
@@ -115,7 +118,7 @@ namespace SIGD
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            activo = new FrmEquipos() { Owner = this };
+            activo = new FrmEquipos(rol) { Owner = this };
             activo.Show();
             this.Hide();
         }
@@ -163,6 +166,17 @@ namespace SIGD
             activo = new FrmABMUsuario('B') { Owner = this };
             activo.Show();
             this.Hide();
+        }
+
+        private void FormP_Activated(object sender, EventArgs e)
+        {
+            lblInvitado.Text = rol.ToUpper();
+            if (rol == "Administrador" || rol == "Administrativo")
+            {
+                btnAgregarUser.Visible = true;
+                pbAddUser.Visible = true;
+            }
+            else { btnAgregarUser.Visible = false; pbAddUser.Visible = false; }
         }
     }
 }

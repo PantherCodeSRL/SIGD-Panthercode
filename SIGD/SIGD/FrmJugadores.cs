@@ -13,12 +13,14 @@ namespace SIGD
 {
     public partial class FrmJugadores : Form
     {
-        public FrmJugadores()
+        public FrmJugadores(String ROL)
         {
-            InitializeComponent();        
+            InitializeComponent();
+            rol = ROL;
         }
 
         public FrmABMJugador activo;
+        public String rol;
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -33,7 +35,7 @@ namespace SIGD
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            Form frmequipos = new FrmEquipos() {Owner = this.Owner };
+            Form frmequipos = new FrmEquipos(rol) {Owner = this.Owner };
             frmequipos.Show();
             this.Close();
         }
@@ -83,7 +85,7 @@ namespace SIGD
             this.Enabled = false;
         }
 
-        private void FrmJugadores_Load(object sender, EventArgs e)
+        public void Cargar()
         {
             try
             {
@@ -119,9 +121,32 @@ namespace SIGD
                         case 1045:
                             MessageBox.Show("A ocurrido un error con las credenciales a la hora de entrar a la base de batos.");
                             break;
+                        default:
+                            MessageBox.Show("Ha ocurrido un error inesperado, contacte a un administrador.");
+                            break;
                     }
                 }
             }
+        }
+
+        private void FrmJugadores_Load(object sender, EventArgs e)
+        {
+            Cargar();
+        }
+
+        private void FrmJugadores_Activated(object sender, EventArgs e)
+        {
+            Cargar();
+            if (rol == "Administrador" || rol == "Administrativo")
+            {
+                plAdminEquipos.Visible = true;
+            }
+            else { plAdminEquipos.Visible = false; }
+            if (rol == "Administrador" || rol == "Seleccionador")
+            {
+                plFiltro.Visible = true;
+            }
+            else { plFiltro.Visible = false; }          
         }
     }
 }

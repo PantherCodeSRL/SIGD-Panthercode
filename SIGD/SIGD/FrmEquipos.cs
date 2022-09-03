@@ -12,10 +12,13 @@ namespace SIGD
 {
     public partial class FrmEquipos : Form
     {
-        public FrmEquipos()
+        public FrmEquipos(String ROL)
         {
             InitializeComponent();
+            rol = ROL;
         }
+
+        public String rol;
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -25,7 +28,7 @@ namespace SIGD
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            Form frmjugadores = new FrmJugadores() { Owner = this.Owner };
+            Form frmjugadores = new FrmJugadores(rol) { Owner = this.Owner };
             frmjugadores.Show();
             this.Close();
         }
