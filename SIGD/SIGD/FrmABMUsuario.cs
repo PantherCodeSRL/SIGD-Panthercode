@@ -81,7 +81,7 @@ namespace SIGD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            String sentencia = "";
+            String sentencia = "", sentencia2 = "";
             switch (cbxRol.SelectedIndex)
                 {
                     case 0:
@@ -107,6 +107,7 @@ namespace SIGD
             {
                 case 'A':
                     //Falta validar datos antes de ingresar
+                    //Falta agregar usuarios según el tipo de usuario
                     sentencia = "INSERT INTO Usuario VALUES (";
                     sentencia += mtbCI.Text;
                     sentencia += ",PASSWORD('";
@@ -126,6 +127,7 @@ namespace SIGD
                     sentencia += "');";
                     break;
                 case 'M':
+                    //Falta agregar modificaciones según el tipo de usuario
                     sentencia = "UPDATE Usuario SET contraseña = PASSWORD('";
                     sentencia += txtCU.Text;
                     sentencia += "'), nombre = '";
@@ -140,14 +142,16 @@ namespace SIGD
                     sentencia += txtMailU.Text;
                     sentencia += "', fechaNac = '";
                     sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
-                    sentencia += "' WHERE ci = ";
-                    sentencia += ci + ";";
+                    sentencia += "' WHERE (ci = '";
+                    sentencia += mtbCI.Text + "');";
                     break;
                 case 'B':
-                    sentencia = "DELETE FROM " + rol + "WHERE ci = ";
-                    sentencia += ci + ";";
-                    sentencia += "DELETE FROM Usuario WHERE ci = ";
-                    sentencia += ci + ";";
+                    //Para tener multiples sentencias se tienen que separar en dos variables
+                    sentencia = "DELETE FROM " + rol + " WHERE (ci = '";
+                    sentencia += mtbCI.Text + "'); ";
+
+                    sentencia2 = "DELETE FROM Usuario WHERE (ci = '";
+                    sentencia2 += mtbCI.Text + "');";
                     break;
             }
             try
@@ -155,8 +159,8 @@ namespace SIGD
                 //Conexion
                 MySqlConnection conexion = new MySqlConnection();
                 conexion.ConnectionString =
-                "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=jirigoin";
+                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
+                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
                 conexion.Open();
 
                 //Sentencia
@@ -164,6 +168,12 @@ namespace SIGD
                 comando.Connection = conexion;
                 comando.CommandText = sentencia;
                 comando.ExecuteNonQuery();
+                if (sentencia2 != "")
+                {
+                    comando.CommandText = sentencia2;
+                    comando.ExecuteNonQuery();
+                }
+                
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -200,8 +210,10 @@ namespace SIGD
                 //Conexion
                 MySqlConnection conexion = new MySqlConnection();
                 conexion.ConnectionString =
-                //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=jirigoin";
-                "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
+                //El string de conexión, mejor dicho, el nombre del usuario y su respectiva contraseña 
+                //deberían cambiarse según el rol del usuario
+                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
+                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
                 conexion.Open();
                 //Sentencia
                 MySqlCommand comando = new MySqlCommand();

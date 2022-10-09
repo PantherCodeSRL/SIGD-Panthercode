@@ -200,7 +200,7 @@
             // 
             // mtbCI
             // 
-            this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
             this.mtbCI.Location = new System.Drawing.Point(21, 110);

@@ -74,8 +74,8 @@ namespace SIGD
                     //Conexion
                     MySqlConnection conexion = new MySqlConnection();
                     conexion.ConnectionString =
-                    //"Server=192.168.2.195;Database=Panthercode;Uid=jirigoin;Pwd=jirigoin";
-                    "Server=localhost;Database=Panthercode;Uid=root;Pwd=";
+                    "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
+                    //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
                     conexion.Open();
 
                     switch (cbxRol.SelectedIndex)
