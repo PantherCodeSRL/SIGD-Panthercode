@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SIGD
+namespace CapaPresentacion
 {
     public partial class FrmFixtures : Form
     {
@@ -26,12 +26,12 @@ namespace SIGD
 
         private void btnCerrar_MouseEnter(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid_red;
         }
 
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

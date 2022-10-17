@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SIGD
+namespace CapaPresentacion
 {
     public partial class FB : Form
     {
@@ -49,7 +49,7 @@ namespace SIGD
         {
             if (res==false)
             {
-                btnResH.BackgroundImage = SIGD.Properties.Resources.caret_left_solid;
+                btnResH.BackgroundImage = CapaPresentacion.Properties.Resources.caret_left_solid;
                 panelIOriginalRect = new Rectangle(panelI.Location.X, panelI.Location.Y, this.Width / 2, panelI.Height);
                 resizeControl(panelIOriginalRect, panelI);
                 panelI.AutoScroll = true;
@@ -57,7 +57,7 @@ namespace SIGD
             }
             else
             {
-                btnResH.BackgroundImage = SIGD.Properties.Resources.caret_right_solid;
+                btnResH.BackgroundImage = CapaPresentacion.Properties.Resources.caret_right_solid;
                 panelIOriginalRect = new Rectangle(panelI.Location.X, panelI.Location.Y, -(this.Width / 2) , panelI.Height);
                 resizeControl(panelIOriginalRect, panelI);
                 panelI.AutoScroll = false;
@@ -72,12 +72,12 @@ namespace SIGD
 
         private void btnCerrar_MouseEnter(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid_red;
         }
 
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid;
         }
 
         private void btnMin_Click(object sender, EventArgs e)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace SIGD
+namespace CapaPresentacion
 {
     public partial class FrmABMJugador : Form
     {
@@ -117,12 +117,12 @@ namespace SIGD
 
         private void btnCerrar_MouseLeave(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid;
         }
 
         private void btnCerrar_MouseEnter(object sender, EventArgs e)
         {
-            btnCerrar.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+            btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid_red;
         }
 
         private void FrmAMBJugador_Load(object sender, EventArgs e)

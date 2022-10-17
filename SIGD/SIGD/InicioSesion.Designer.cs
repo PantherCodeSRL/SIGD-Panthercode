@@ -1,4 +1,4 @@
-﻿namespace SIGD
+﻿namespace CapaPresentacion
 {
     partial class InicioSesion
     {
@@ -110,7 +110,7 @@
             // btnSalida
             // 
             this.btnSalida.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnSalida.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_xmark_solid;
             this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSalida.FlatAppearance.BorderSize = 0;
             this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -203,8 +203,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.user_group_solid;
+            this.pictureBox1.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.user_group_solid;
             this.pictureBox1.Location = new System.Drawing.Point(59, 247);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(19, 23);
@@ -214,8 +214,8 @@
             // 
             // pbUser
             // 
-            this.pbUser.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
-            this.pbUser.Image = global::SIGD.Properties.Resources.user_solid;
+            this.pbUser.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
+            this.pbUser.Image = global::CapaPresentacion.Properties.Resources.user_solid;
             this.pbUser.Location = new System.Drawing.Point(84, 143);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(19, 23);
@@ -225,8 +225,8 @@
             // 
             // pbPwd
             // 
-            this.pbPwd.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
-            this.pbPwd.Image = global::SIGD.Properties.Resources.lock_solid;
+            this.pbPwd.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
+            this.pbPwd.Image = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbPwd.Location = new System.Drawing.Point(59, 199);
             this.pbPwd.Name = "pbPwd";
             this.pbPwd.Size = new System.Drawing.Size(19, 23);
@@ -236,8 +236,8 @@
             // 
             // pbLogin
             // 
-            this.pbLogin.ErrorImage = global::SIGD.Properties.Resources.lock_solid;
-            this.pbLogin.Image = global::SIGD.Properties.Resources.user_regular;
+            this.pbLogin.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
+            this.pbLogin.Image = global::CapaPresentacion.Properties.Resources.user_regular;
             this.pbLogin.Location = new System.Drawing.Point(-1, 48);
             this.pbLogin.Name = "pbLogin";
             this.pbLogin.Size = new System.Drawing.Size(305, 63);

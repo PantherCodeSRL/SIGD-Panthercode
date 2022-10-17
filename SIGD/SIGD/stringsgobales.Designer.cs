@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SIGD {
+namespace CapaPresentacion {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SIGD {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SIGD.stringsgobales", typeof(stringsgobales).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CapaPresentacion.stringsgobales", typeof(stringsgobales).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

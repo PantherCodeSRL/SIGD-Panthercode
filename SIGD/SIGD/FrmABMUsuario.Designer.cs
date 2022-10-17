@@ -1,4 +1,4 @@
-﻿namespace SIGD
+﻿namespace CapaPresentacion
 {
     partial class FrmABMUsuario
     {
@@ -75,7 +75,7 @@
             // btnSalida
             // 
             this.btnSalida.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalida.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnSalida.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_xmark_solid;
             this.btnSalida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSalida.FlatAppearance.BorderSize = 0;
             this.btnSalida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;

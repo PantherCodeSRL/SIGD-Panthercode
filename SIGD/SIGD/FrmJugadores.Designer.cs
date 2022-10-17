@@ -1,4 +1,4 @@
-﻿namespace SIGD
+﻿namespace CapaPresentacion
 {
     partial class FrmJugadores
     {
@@ -101,7 +101,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_xmark_solid;
             this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -120,7 +120,7 @@
             // 
             // btnMinimizar
             // 
-            this.btnMinimizar.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.btnMinimizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.minus_solid;
             this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -157,7 +157,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::SIGD.Properties.Resources.people_group_solid;
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.people_group_solid;
             this.pictureBox3.Location = new System.Drawing.Point(188, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 71);
@@ -207,7 +207,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SIGD.Properties.Resources.house_solid;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.house_solid;
             this.pictureBox1.Location = new System.Drawing.Point(65, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 71);
@@ -432,7 +432,7 @@
             // btnCrearE
             // 
             this.btnCrearE.BackColor = System.Drawing.Color.Transparent;
-            this.btnCrearE.BackgroundImage = global::SIGD.Properties.Resources.circle_plus_solid;
+            this.btnCrearE.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_plus_solid;
             this.btnCrearE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCrearE.FlatAppearance.BorderSize = 0;
             this.btnCrearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -447,7 +447,7 @@
             // btnBorrarE
             // 
             this.btnBorrarE.BackColor = System.Drawing.Color.Transparent;
-            this.btnBorrarE.BackgroundImage = global::SIGD.Properties.Resources.eraser_solid;
+            this.btnBorrarE.BackgroundImage = global::CapaPresentacion.Properties.Resources.eraser_solid;
             this.btnBorrarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBorrarE.FlatAppearance.BorderSize = 0;
             this.btnBorrarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -462,7 +462,7 @@
             // btnModificarE
             // 
             this.btnModificarE.BackColor = System.Drawing.Color.Transparent;
-            this.btnModificarE.BackgroundImage = global::SIGD.Properties.Resources.pen_to_square_solid;
+            this.btnModificarE.BackgroundImage = global::CapaPresentacion.Properties.Resources.pen_to_square_solid;
             this.btnModificarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnModificarE.FlatAppearance.BorderSize = 0;
             this.btnModificarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -477,7 +477,7 @@
             // btnBuscarJ
             // 
             this.btnBuscarJ.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuscarJ.BackgroundImage = global::SIGD.Properties.Resources.magnifying_glass_solid;
+            this.btnBuscarJ.BackgroundImage = global::CapaPresentacion.Properties.Resources.magnifying_glass_solid;
             this.btnBuscarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscarJ.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBuscarJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;

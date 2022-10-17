@@ -1,4 +1,4 @@
-﻿namespace SIGD
+﻿namespace CapaPresentacion
 {
     partial class FrmFixtures
     {
@@ -130,7 +130,7 @@
             // 
             // pbMenu
             // 
-            this.pbMenu.Image = global::SIGD.Properties.Resources.house_solid;
+            this.pbMenu.Image = global::CapaPresentacion.Properties.Resources.house_solid;
             this.pbMenu.Location = new System.Drawing.Point(43, 3);
             this.pbMenu.Name = "pbMenu";
             this.pbMenu.Size = new System.Drawing.Size(22, 49);
@@ -170,7 +170,7 @@
             // 
             // pbFix
             // 
-            this.pbFix.Image = global::SIGD.Properties.Resources.file_svg_handball_icon_1167717;
+            this.pbFix.Image = global::CapaPresentacion.Properties.Resources.file_svg_handball_icon_1167717;
             this.pbFix.Location = new System.Drawing.Point(3, 3);
             this.pbFix.Name = "pbFix";
             this.pbFix.Size = new System.Drawing.Size(34, 49);
@@ -180,7 +180,7 @@
             // 
             // pbB
             // 
-            this.pbB.Image = global::SIGD.Properties.Resources.basketball_solid;
+            this.pbB.Image = global::CapaPresentacion.Properties.Resources.basketball_solid;
             this.pbB.Location = new System.Drawing.Point(170, 3);
             this.pbB.Name = "pbB";
             this.pbB.Size = new System.Drawing.Size(22, 49);
@@ -190,7 +190,7 @@
             // 
             // pbF
             // 
-            this.pbF.Image = global::SIGD.Properties.Resources.futbol_solid;
+            this.pbF.Image = global::CapaPresentacion.Properties.Resources.futbol_solid;
             this.pbF.Location = new System.Drawing.Point(297, 3);
             this.pbF.Name = "pbF";
             this.pbF.Size = new System.Drawing.Size(22, 49);
@@ -230,7 +230,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_xmark_solid;
             this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -249,7 +249,7 @@
             // 
             // button5
             // 
-            this.button5.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.button5.BackgroundImage = global::CapaPresentacion.Properties.Resources.minus_solid;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -298,7 +298,7 @@
             // 
             // pictureBox33
             // 
-            this.pictureBox33.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox33.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox33.Location = new System.Drawing.Point(111, 220);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(64, 65);
@@ -317,7 +317,7 @@
             // 
             // pictureBox36
             // 
-            this.pictureBox36.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox36.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox36.Location = new System.Drawing.Point(290, 336);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(64, 65);
@@ -336,7 +336,7 @@
             // 
             // pictureBox42
             // 
-            this.pictureBox42.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox42.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox42.Location = new System.Drawing.Point(290, 452);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(64, 65);
@@ -355,7 +355,7 @@
             // 
             // pictureBox35
             // 
-            this.pictureBox35.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox35.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox35.Location = new System.Drawing.Point(290, 220);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(64, 65);
@@ -383,7 +383,7 @@
             // 
             // pictureBox39
             // 
-            this.pictureBox39.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox39.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox39.Location = new System.Drawing.Point(111, 452);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(64, 65);
@@ -402,7 +402,7 @@
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox34.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox34.Location = new System.Drawing.Point(111, 336);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(64, 65);
@@ -457,7 +457,7 @@
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox29.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox29.Location = new System.Drawing.Point(111, 104);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(64, 65);
@@ -494,7 +494,7 @@
             // 
             // pictureBox31
             // 
-            this.pictureBox31.Image = global::SIGD.Properties.Resources.shield_solid;
+            this.pictureBox31.Image = global::CapaPresentacion.Properties.Resources.shield_solid;
             this.pictureBox31.Location = new System.Drawing.Point(290, 104);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(64, 65);

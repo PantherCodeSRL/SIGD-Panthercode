@@ -1,4 +1,4 @@
-﻿namespace SIGD {     partial class FormP     {         /// <summary>         /// Variable del diseñador necesaria.         /// </summary>         private System.ComponentModel.IContainer components = null;          /// <summary>         /// Limpiar los recursos que se estén usando.         /// </summary>         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>         protected override void Dispose(bool disposing)         {             if (disposing && (components != null))             {                 components.Dispose();             }             base.Dispose(disposing);         }          #region Código generado por el Diseñador de Windows Forms          /// <summary>         /// Método necesario para admitir el Diseñador. No se puede modificar         /// el contenido de este método con el editor de código.         /// </summary>         private void InitializeComponent()         {             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormP));
+﻿namespace CapaPresentacion {     partial class FormP     {         /// <summary>         /// Variable del diseñador necesaria.         /// </summary>         private System.ComponentModel.IContainer components = null;          /// <summary>         /// Limpiar los recursos que se estén usando.         /// </summary>         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>         protected override void Dispose(bool disposing)         {             if (disposing && (components != null))             {                 components.Dispose();             }             base.Dispose(disposing);         }          #region Código generado por el Diseñador de Windows Forms          /// <summary>         /// Método necesario para admitir el Diseñador. No se puede modificar         /// el contenido de este método con el editor de código.         /// </summary>         private void InitializeComponent()         {             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormP));
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblInvitado = new System.Windows.Forms.Label();
             this.lblEmpresa = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             // panInferior
             // 
             this.panInferior.BackColor = System.Drawing.Color.SlateGray;
-            this.panInferior.BackgroundImage = global::SIGD.Properties.Resources.degradou1;
+            this.panInferior.BackgroundImage = global::CapaPresentacion.Properties.Resources.degradou1;
             resources.ApplyResources(this.panInferior, "panInferior");
             this.panInferior.Controls.Add(this.label5);
             this.panInferior.Controls.Add(this.label2);
@@ -130,7 +130,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackgroundImage = global::SIGD.Properties.Resources.circle_xmark_solid;
+            this.btnCerrar.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_xmark_solid;
             resources.ApplyResources(this.btnCerrar, "btnCerrar");
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
@@ -180,14 +180,14 @@
             // 
             // pbFix
             // 
-            this.pbFix.Image = global::SIGD.Properties.Resources.calendar_regular;
+            this.pbFix.Image = global::CapaPresentacion.Properties.Resources.calendar_regular;
             resources.ApplyResources(this.pbFix, "pbFix");
             this.pbFix.Name = "pbFix";
             this.pbFix.TabStop = false;
             // 
             // pbEquipos
             // 
-            this.pbEquipos.Image = global::SIGD.Properties.Resources.people_group_solid;
+            this.pbEquipos.Image = global::CapaPresentacion.Properties.Resources.people_group_solid;
             resources.ApplyResources(this.pbEquipos, "pbEquipos");
             this.pbEquipos.Name = "pbEquipos";
             this.pbEquipos.TabStop = false;
@@ -238,14 +238,14 @@
             // 
             // pbJugadores
             // 
-            this.pbJugadores.Image = global::SIGD.Properties.Resources.person_running_solid;
+            this.pbJugadores.Image = global::CapaPresentacion.Properties.Resources.person_running_solid;
             resources.ApplyResources(this.pbJugadores, "pbJugadores");
             this.pbJugadores.Name = "pbJugadores";
             this.pbJugadores.TabStop = false;
             // 
             // pbAddUser
             // 
-            this.pbAddUser.Image = global::SIGD.Properties.Resources.user_plus_solid;
+            this.pbAddUser.Image = global::CapaPresentacion.Properties.Resources.user_plus_solid;
             resources.ApplyResources(this.pbAddUser, "pbAddUser");
             this.pbAddUser.Name = "pbAddUser";
             this.pbAddUser.TabStop = false;
@@ -276,15 +276,15 @@
             // pbLogin
             // 
             this.pbLogin.BackColor = System.Drawing.Color.SlateGray;
-            this.pbLogin.ErrorImage = global::SIGD.Properties.Resources.user_regular_blue;
-            this.pbLogin.Image = global::SIGD.Properties.Resources.user_regular_blue;
+            this.pbLogin.ErrorImage = global::CapaPresentacion.Properties.Resources.user_regular_blue;
+            this.pbLogin.Image = global::CapaPresentacion.Properties.Resources.user_regular_blue;
             resources.ApplyResources(this.pbLogin, "pbLogin");
             this.pbLogin.Name = "pbLogin";
             this.pbLogin.TabStop = false;
             // 
             // btnMin
             // 
-            this.btnMin.BackgroundImage = global::SIGD.Properties.Resources.minus_solid;
+            this.btnMin.BackgroundImage = global::CapaPresentacion.Properties.Resources.minus_solid;
             resources.ApplyResources(this.btnMin, "btnMin");
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.FlatAppearance.BorderSize = 0;
@@ -382,7 +382,7 @@
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BackgroundImage = global::SIGD.Properties.Resources.Sin_título_6;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.Sin_título_6;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.plSuperior);
             this.Controls.Add(this.flpFix);

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SIGD
+namespace CapaPresentacion
 {
     public partial class FrmABMEquipo : Form
     {

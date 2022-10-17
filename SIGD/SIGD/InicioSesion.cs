@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace SIGD
+namespace CapaPresentacion
 {
     public partial class InicioSesion : Form
     {
@@ -24,12 +24,12 @@ namespace SIGD
 
         private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
-            btnSalida.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid_red;
+            btnSalida.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid_red;
         }
 
         private void btnSalida_MouseLeave(object sender, EventArgs e)
         {
-            btnSalida.BackgroundImage = SIGD.Properties.Resources.circle_xmark_solid;
+            btnSalida.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid;
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
