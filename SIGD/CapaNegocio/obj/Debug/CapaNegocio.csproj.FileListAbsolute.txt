@@ -3,3 +3,4 @@ C:\Users\admin\Repos\SIGD\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
