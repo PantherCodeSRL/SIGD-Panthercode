@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\Capa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "CapaPresentacion\CapaPresentacion.csproj", "{DCEDE77B-6073-4D4D-9D3B-7025E934EE50}"
 	ProjectSection(ProjectDependencies) = postProject
-		{AEC19F13-A9DE-46A0-9B6D-8AC7C4DD9CF5} = {AEC19F13-A9DE-46A0-9B6D-8AC7C4DD9CF5}
+		{CC890122-CA6F-4309-8A7F-B738125F11F7} = {CC890122-CA6F-4309-8A7F-B738125F11F7}
 	EndProjectSection
 EndProject
 Global

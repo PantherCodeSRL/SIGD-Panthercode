@@ -8,9 +8,12 @@ namespace CapaPresentacion
 {
     public class Usuario
     {
-        public Usuario(int cedula,String nombre,String apellidoP,String apellidoM, int telefono,DateTime fechNac)
+        public Usuario(int cedula, String nombre, String apellidoP, String apellidoM, int telefono, DateTime fechaNac, String rol)
         {
 
         }
     }
+
+    
+
 }

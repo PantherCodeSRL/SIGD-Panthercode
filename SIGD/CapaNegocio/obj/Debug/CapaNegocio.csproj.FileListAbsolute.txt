@@ -4,3 +4,15 @@ C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileIn
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb
 C:\Users\admin\Repos\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\bin\Debug\CapaNegocio.dll
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\bin\Debug\CapaNegocio.pdb
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
+d:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\alumno\Desktop\SIGD\CapaNegocio\bin\Debug\CapaNegocio.pdb

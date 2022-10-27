@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using CapaDatos;
+using System.Configuration;
+
 
 namespace CapaPresentacion
 {
@@ -17,10 +20,9 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-
-        bool unavez = false;
         public String rol;
         public FormP principal;
+        
 
         private void btnSalida_MouseEnter(object sender, EventArgs e)
         {
@@ -63,7 +65,7 @@ namespace CapaPresentacion
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (mtbCI.Text == "" || txtPwd.Text == "" || cbxRol.Text == "(seleccione)")
+            if (mtbCI.Text == "" || txtPwd.Text == "")
             {
                 MessageBox.Show("Complete correctamente los campos de ingreso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -72,49 +74,34 @@ namespace CapaPresentacion
                 try
                 {
                     //Conexion
-                    MySqlConnection conexion = new MySqlConnection();
-                    conexion.ConnectionString =
-                    "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
-                    //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                    conexion.Open();
+                    //CD_Conexion conexion = new CD_Conexion();
 
-                    switch (cbxRol.SelectedIndex)
-                    {
-                        case 0:
-                            rol = "Administrador";
-                            break;
-                        case 1:
-                            rol = "Administrativo";
-                            break;
-                        case 2:
-                            rol = "Analista";
-                            break;
-                        case 3:
-                            rol = "Arbitro";
-                            break;
-                        case 4:
-                            rol = "CT";
-                            break;
-                        case 5:
-                            rol = "Seleccionador";
-                            break;
-                    }
+                    
+
+                    //MySqlConnection conexion = new MySqlConnection();
+                    //conexion.ConnectionString =
+                    //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
+                    ////"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
+                    //conexion.Open();
+                    //CD_Conexion.Iniciar();
+
                     //Sentencia
                     MySqlCommand comando = new MySqlCommand();
-                    comando.Connection = conexion;
-                    comando.CommandText =
-                        "SELECT " + rol + ".ci, PASSWORD(Usuario.contraseña), Usuario.nombre, Usuario.apellidoP," +
-                        " Usuario.apellidoS, Usuario.telefono, Usuario.CorreoElec, Usuario.fechaNac FROM Usuario" +
-                        " JOIN " + rol + " ON Usuario.ci = " + rol + ".ci" +
-                        " WHERE Usuario.ci = '" + mtbCI.Text + "' AND contraseña = PASSWORD('" + txtPwd.Text + "')";
+                    CD_Conexion inicio = new CD_Conexion();
+                    comando.Connection = inicio.Iniciar();
 
+                    //comando.CommandText =
+                    //    "SELECT ci, PASSWORD(contraseña), nombre, apellidoP," +
+                    //    " apellidoS, telefono, CorreoElec, fechaNac, rol FROM Usuario" +
+                    //    " WHERE Usuario.ci = '" + mtbCI.Text + "' AND contraseña = PASSWORD('" + txtPwd.Text + "')";
+                    comando = inicio.Login(mtbCI.Text, txtPwd.Text);
                     MySqlDataReader lector = comando.ExecuteReader();
 
                     if (lector.HasRows)
                     {
                         lector.Read();
                         String nombre = lector.GetString("nombre");
-                        //rol = lector.GetString("rol");
+                        String rol = lector.GetString("rol");
                         MessageBox.Show("Hola: " + nombre + ", sos: " + rol);
                         //this.Owner.Enabled = true;
                         //this.Owner.Show();
@@ -153,17 +140,7 @@ namespace CapaPresentacion
         {
             //this.Owner.Enabled = false;
             principal.Enabled = false;
-            cbxRol.SelectedIndex = 6;
-            unavez = false;
-        }
-
-        private void cbxRol_Click(object sender, EventArgs e)
-        {
-            if (unavez == false)
-            {
-                cbxRol.Items.RemoveAt(6);
-            }
-            unavez = true;
+            //MessageBox.Show(new CD_Conexion().Esteban());
         }
     }
 }

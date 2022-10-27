@@ -38,15 +38,11 @@
             this.cbxMC = new System.Windows.Forms.CheckBox();
             this.btnInvitado = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.cbxRol = new System.Windows.Forms.ComboBox();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.pbPwd = new System.Windows.Forms.PictureBox();
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.mtbCI = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
@@ -57,9 +53,9 @@
             this.txtPwd.BackColor = System.Drawing.SystemColors.Window;
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtPwd.Location = new System.Drawing.Point(84, 202);
+            this.txtPwd.Location = new System.Drawing.Point(86, 214);
             this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(154, 19);
+            this.txtPwd.Size = new System.Drawing.Size(134, 19);
             this.txtPwd.TabIndex = 2;
             this.txtPwd.TabStop = false;
             this.txtPwd.UseSystemPasswordChar = true;
@@ -69,7 +65,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(97, 179);
+            this.label5.Location = new System.Drawing.Point(102, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 2;
@@ -80,7 +76,7 @@
             this.lblCiUser.AutoSize = true;
             this.lblCiUser.BackColor = System.Drawing.Color.Transparent;
             this.lblCiUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCiUser.Location = new System.Drawing.Point(118, 121);
+            this.lblCiUser.Location = new System.Drawing.Point(119, 122);
             this.lblCiUser.Name = "lblCiUser";
             this.lblCiUser.Size = new System.Drawing.Size(70, 20);
             this.lblCiUser.TabIndex = 2;
@@ -90,7 +86,7 @@
             // 
             this.lblPwd.AutoSize = true;
             this.lblPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
-            this.lblPwd.Location = new System.Drawing.Point(85, 306);
+            this.lblPwd.Location = new System.Drawing.Point(86, 259);
             this.lblPwd.Name = "lblPwd";
             this.lblPwd.Size = new System.Drawing.Size(134, 13);
             this.lblPwd.TabIndex = 14;
@@ -130,7 +126,7 @@
             // cbxMC
             // 
             this.cbxMC.AutoSize = true;
-            this.cbxMC.Location = new System.Drawing.Point(92, 286);
+            this.cbxMC.Location = new System.Drawing.Point(97, 239);
             this.cbxMC.Name = "cbxMC";
             this.cbxMC.Size = new System.Drawing.Size(118, 17);
             this.cbxMC.TabIndex = 16;
@@ -142,14 +138,13 @@
             // btnInvitado
             // 
             this.btnInvitado.BackColor = System.Drawing.Color.SlateGray;
-            this.btnInvitado.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnInvitado.FlatAppearance.BorderSize = 0;
             this.btnInvitado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnInvitado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvitado.Location = new System.Drawing.Point(0, 333);
+            this.btnInvitado.Location = new System.Drawing.Point(0, 341);
             this.btnInvitado.Name = "btnInvitado";
             this.btnInvitado.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnInvitado.Size = new System.Drawing.Size(304, 49);
+            this.btnInvitado.Size = new System.Drawing.Size(155, 41);
             this.btnInvitado.TabIndex = 17;
             this.btnInvitado.Text = "Invitado";
             this.btnInvitado.UseVisualStyleBackColor = false;
@@ -157,66 +152,24 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.SlateGray;
+            this.btnLogin.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(225, 287);
+            this.btnLogin.Location = new System.Drawing.Point(152, 341);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnLogin.Size = new System.Drawing.Size(70, 33);
+            this.btnLogin.Size = new System.Drawing.Size(152, 41);
             this.btnLogin.TabIndex = 18;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // cbxRol
-            // 
-            this.cbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxRol.FormattingEnabled = true;
-            this.cbxRol.IntegralHeight = false;
-            this.cbxRol.Items.AddRange(new object[] {
-            "Administrador",
-            "Administrativo",
-            "Analista",
-            "Árbitro",
-            "C.T.",
-            "Seleccionador",
-            "(seleccione)"});
-            this.cbxRol.Location = new System.Drawing.Point(84, 249);
-            this.cbxRol.MaxDropDownItems = 6;
-            this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(154, 21);
-            this.cbxRol.TabIndex = 19;
-            this.cbxRol.Click += new System.EventHandler(this.cbxRol_Click);
-            // 
-            // lblRol
-            // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.BackColor = System.Drawing.Color.Transparent;
-            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblRol.Location = new System.Drawing.Point(133, 227);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(41, 20);
-            this.lblRol.TabIndex = 20;
-            this.lblRol.Text = "Rol:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.user_group_solid;
-            this.pictureBox1.Location = new System.Drawing.Point(59, 247);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // pbUser
             // 
             this.pbUser.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbUser.Image = global::CapaPresentacion.Properties.Resources.user_solid;
-            this.pbUser.Location = new System.Drawing.Point(84, 143);
+            this.pbUser.Location = new System.Drawing.Point(40, 151);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(19, 23);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -227,7 +180,7 @@
             // 
             this.pbPwd.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbPwd.Image = global::CapaPresentacion.Properties.Resources.lock_solid;
-            this.pbPwd.Location = new System.Drawing.Point(59, 199);
+            this.pbPwd.Location = new System.Drawing.Point(40, 210);
             this.pbPwd.Name = "pbPwd";
             this.pbPwd.Size = new System.Drawing.Size(19, 23);
             this.pbPwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,10 +203,10 @@
             this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.mtbCI.Location = new System.Drawing.Point(108, 143);
+            this.mtbCI.Location = new System.Drawing.Point(112, 148);
             this.mtbCI.Mask = "0000000-0";
             this.mtbCI.Name = "mtbCI";
-            this.mtbCI.Size = new System.Drawing.Size(86, 26);
+            this.mtbCI.Size = new System.Drawing.Size(83, 26);
             this.mtbCI.TabIndex = 40;
             this.mtbCI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
@@ -264,9 +217,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(304, 382);
             this.Controls.Add(this.mtbCI);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblRol);
-            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnInvitado);
             this.Controls.Add(this.cbxMC);
@@ -283,10 +233,8 @@
             this.Name = "InicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de Sesion";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
@@ -308,9 +256,6 @@
         private System.Windows.Forms.Button btnInvitado;
         private System.Windows.Forms.Button btnLogin;
         public System.Windows.Forms.TextBox txtPwd;
-        private System.Windows.Forms.ComboBox cbxRol;
-        private System.Windows.Forms.Label lblRol;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MaskedTextBox mtbCI;
     }
 }
