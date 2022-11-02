@@ -12,17 +12,21 @@ namespace CapaDatos
 {
     public class CD_Conexion
     {
-        //public string server = ConfigurationManager.AppSettings.Get("Server");
-        //public string bd = ConfigurationManager.AppSettings.Get("Base_de_Datos");
+        //private String server = System.Configuration.ConfigurationManager.AppSettings["Server"];
+        //private String bd = System.Configuration.ConfigurationManager.AppSettings["Base_de_Datos"];
 
-        private string server = "192.168.2.195";
-        private string bd = "PantherCode";
-        private string uid = "jirigoin";
-        private string pwd = "54233708";
+        private String server = "192.168.2.195";
+        private String bd = "PantherCode";
+        private String uid = "jirigoin";
+        private String pwd = "54233708";
+        //private String server = "localhost";
+        //private String bd = "Panthercode";
+        //private String uid = "root";
+        //private String pwd = "";
 
         private MySqlConnection conexion;
 
-        //public string Esteban()
+        //public String Esteban()
         //{
         //    return server;
         //}
@@ -36,7 +40,7 @@ namespace CapaDatos
             return conexion;
         }
 
-        public MySqlConnection Conectar(string uid, string pwd)
+        public MySqlConnection Conectar(String uid, String pwd)
         {
             conexion = new MySqlConnection("Server=" + server + ";DataBase=" + bd + ";Uid=" + uid + ";Pwd=" + pwd);
             if (conexion.State == ConnectionState.Closed)
@@ -53,7 +57,7 @@ namespace CapaDatos
             return conexion;
         }
 
-        public MySqlCommand Login(string cedula, string contra)
+        public MySqlCommand Login(String cedula, String contra)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = new CD_Conexion().Iniciar();
@@ -62,6 +66,35 @@ namespace CapaDatos
                 " apellidoS, telefono, CorreoElec, fechaNac, rol FROM Usuario" +
                 " WHERE Usuario.ci = '" + cedula + "' AND contraseña = PASSWORD('" + contra + "')";
            return comando;
+        }
+
+        public String BDUser(String rol)
+        {
+            switch (rol)
+            {
+                case "Administrador":
+                    rol = "PantherAdmin";
+                    break;
+                case "Administrativo":
+                    rol = "PantherAdmintivo";
+                    break;
+                case "Analista":
+                    rol = "PantherAnalista";
+                    break;
+                case "Arbitro":
+                    rol = "PantherArbitro";
+                    break;
+                case "CT":
+                    rol = "PantherCT";
+                    break;
+                case "Seleccionador":
+                    rol = "Seleccionador";
+                    break;
+                case "Invitado":
+                    rol = "PantherJugador";
+                    break;
+            }
+            return rol;
         }
     }
 }

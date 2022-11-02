@@ -68,10 +68,12 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.lblFH = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvProx = new System.Windows.Forms.DataGridView();
+            this.dgvRes = new System.Windows.Forms.DataGridView();
             this.lblResultados = new System.Windows.Forms.Label();
             this.lblFixture = new System.Windows.Forms.Label();
+            this.btnH = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
@@ -88,8 +90,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -105,7 +108,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 7;
+            this.tableLayoutPanel2.ColumnCount = 10;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -113,6 +116,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel2.Controls.Add(this.pbMenu, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnF, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnB, 4, 0);
@@ -120,18 +126,20 @@
             this.tableLayoutPanel2.Controls.Add(this.pbB, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.pbF, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMenu, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnH, 8, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 7, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(413, 55);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(550, 55);
             this.tableLayoutPanel2.TabIndex = 27;
             // 
             // pbMenu
             // 
             this.pbMenu.Image = global::CapaPresentacion.Properties.Resources.house_solid;
-            this.pbMenu.Location = new System.Drawing.Point(43, 3);
+            this.pbMenu.Location = new System.Drawing.Point(54, 3);
             this.pbMenu.Name = "pbMenu";
             this.pbMenu.Size = new System.Drawing.Size(22, 49);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +151,7 @@
             this.btnF.FlatAppearance.BorderSize = 0;
             this.btnF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnF.Location = new System.Drawing.Point(325, 3);
+            this.btnF.Location = new System.Drawing.Point(336, 3);
             this.btnF.Name = "btnF";
             this.btnF.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnF.Size = new System.Drawing.Size(93, 49);
@@ -158,7 +166,7 @@
             this.btnB.FlatAppearance.BorderSize = 0;
             this.btnB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB.Location = new System.Drawing.Point(198, 3);
+            this.btnB.Location = new System.Drawing.Point(209, 3);
             this.btnB.Name = "btnB";
             this.btnB.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnB.Size = new System.Drawing.Size(93, 49);
@@ -170,10 +178,10 @@
             // 
             // pbFix
             // 
-            this.pbFix.Image = global::CapaPresentacion.Properties.Resources.file_svg_handball_icon_1167717;
+            this.pbFix.Image = global::CapaPresentacion.Properties.Resources.calendar_regular;
             this.pbFix.Location = new System.Drawing.Point(3, 3);
             this.pbFix.Name = "pbFix";
-            this.pbFix.Size = new System.Drawing.Size(34, 49);
+            this.pbFix.Size = new System.Drawing.Size(45, 49);
             this.pbFix.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFix.TabIndex = 13;
             this.pbFix.TabStop = false;
@@ -181,7 +189,7 @@
             // pbB
             // 
             this.pbB.Image = global::CapaPresentacion.Properties.Resources.basketball_solid;
-            this.pbB.Location = new System.Drawing.Point(170, 3);
+            this.pbB.Location = new System.Drawing.Point(181, 3);
             this.pbB.Name = "pbB";
             this.pbB.Size = new System.Drawing.Size(22, 49);
             this.pbB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,7 +199,7 @@
             // pbF
             // 
             this.pbF.Image = global::CapaPresentacion.Properties.Resources.futbol_solid;
-            this.pbF.Location = new System.Drawing.Point(297, 3);
+            this.pbF.Location = new System.Drawing.Point(308, 3);
             this.pbF.Name = "pbF";
             this.pbF.Size = new System.Drawing.Size(22, 49);
             this.pbF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +211,7 @@
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(71, 3);
+            this.btnMenu.Location = new System.Drawing.Point(82, 3);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnMenu.Size = new System.Drawing.Size(93, 49);
@@ -540,25 +548,25 @@
             this.lblFH.TabIndex = 113;
             this.lblFH.Text = "Fixtures Hándbol";
             // 
-            // dataGridView1
+            // dgvProx
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.SlateGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(492, 170);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(457, 363);
-            this.dataGridView1.TabIndex = 115;
+            this.dgvProx.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.dgvProx.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProx.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvProx.Location = new System.Drawing.Point(492, 170);
+            this.dgvProx.Name = "dgvProx";
+            this.dgvProx.Size = new System.Drawing.Size(457, 363);
+            this.dgvProx.TabIndex = 115;
             // 
-            // dataGridView2
+            // dgvRes
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.SlateGray;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 170);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(457, 363);
-            this.dataGridView2.TabIndex = 116;
+            this.dgvRes.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.dgvRes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvRes.Location = new System.Drawing.Point(12, 170);
+            this.dgvRes.Name = "dgvRes";
+            this.dgvRes.Size = new System.Drawing.Size(457, 363);
+            this.dgvRes.TabIndex = 116;
             // 
             // lblResultados
             // 
@@ -580,6 +588,30 @@
             this.lblFixture.TabIndex = 118;
             this.lblFixture.Text = "Proximas fechas";
             // 
+            // btnH
+            // 
+            this.btnH.FlatAppearance.BorderSize = 0;
+            this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnH.Location = new System.Drawing.Point(463, 3);
+            this.btnH.Name = "btnH";
+            this.btnH.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnH.Size = new System.Drawing.Size(93, 49);
+            this.btnH.TabIndex = 18;
+            this.btnH.Text = "Hándbol";
+            this.btnH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnH.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.file_svg_handball_icon_1167717;
+            this.pictureBox1.Location = new System.Drawing.Point(438, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmFixtures
             // 
             this.AllowDrop = true;
@@ -590,8 +622,8 @@
             this.ClientSize = new System.Drawing.Size(961, 547);
             this.Controls.Add(this.lblFixture);
             this.Controls.Add(this.lblResultados);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRes);
+            this.Controls.Add(this.dgvProx);
             this.Controls.Add(this.lblFH);
             this.Controls.Add(this.panelI);
             this.Controls.Add(this.panel4);
@@ -602,7 +634,8 @@
             this.MaximizeBox = false;
             this.Name = "FrmFixtures";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Peru;
+            this.Load += new System.EventHandler(this.FrmFixtures_Load);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
@@ -620,8 +653,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,10 +701,12 @@
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblFH;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvProx;
+        private System.Windows.Forms.DataGridView dgvRes;
         private System.Windows.Forms.Label lblResultados;
         private System.Windows.Forms.Label lblFixture;
+        private System.Windows.Forms.Button btnH;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

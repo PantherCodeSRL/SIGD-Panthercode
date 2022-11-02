@@ -26,7 +26,7 @@ namespace CapaPresentacion
         
         public Form activo;
         bool idioma;
-        public String rol = "INVITADO";
+        public String rolU = "Invitado";
 
         private void cambioIdioma()
         {
@@ -43,7 +43,6 @@ namespace CapaPresentacion
             lblContactos.Text = stringsgobales.contactos;
             btnTraducir.Text = stringsgobales.traducir;
         }
-
 
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
@@ -75,7 +74,7 @@ namespace CapaPresentacion
              
         private void btnH_Click(object sender, EventArgs e)
         {
-            activo = new FrmFixtures() { Owner = this };
+            activo = new FrmFixtures(rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
@@ -96,7 +95,7 @@ namespace CapaPresentacion
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            activo = new FrmJugadores(rol) { Owner = this };
+            activo = new FrmJugadores(rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
@@ -118,7 +117,7 @@ namespace CapaPresentacion
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            activo = new FrmEquipos(rol) { Owner = this };
+            activo = new FrmEquipos(rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
@@ -149,29 +148,29 @@ namespace CapaPresentacion
 
         private void btnA_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMUsuario('A') { Owner = this };
+            activo = new FrmABMUsuario('A', rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
 
         private void btnM_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMUsuario('M') { Owner = this };
+            activo = new FrmABMUsuario('M', rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
 
         private void btnE_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMUsuario('B') { Owner = this };
+            activo = new FrmABMUsuario('B', rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
 
         private void FormP_Activated(object sender, EventArgs e)
         {
-            lblInvitado.Text = rol.ToUpper();
-            if (rol == "Administrador" || rol == "Administrativo")
+            lblInvitado.Text = rolU.ToUpper();
+            if (rolU == "Administrador" || rolU == "Administrativo")
             {
                 btnAgregarUser.Visible = true;
                 pbAddUser.Visible = true;

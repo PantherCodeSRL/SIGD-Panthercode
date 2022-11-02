@@ -21,16 +21,16 @@ namespace CapaPresentacion
       
         private void btnF_Click(object sender, EventArgs e)
         {
-            FF ff = new FF() { Owner = this.Owner };
-            ff.Show();
-            this.Close();
+            //FF ff = new FF() { Owner = this.Owner };
+            //ff.Show();
+            //this.Close();
         }
 
         private void btnH_Click(object sender, EventArgs e)
         {
-            FrmFixtures fh = new FrmFixtures() { Owner = this.Owner };
-            fh.Show();
-            this.Close();
+            //FrmFixtures fh = new FrmFixtures() { Owner = this.Owner };
+            //fh.Show();
+            //this.Close();
         }
 
         private void resizeControl(Rectangle OriginalControlRect, Control control)

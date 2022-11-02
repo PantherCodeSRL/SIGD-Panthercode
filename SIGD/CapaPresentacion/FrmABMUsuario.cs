@@ -8,19 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using CapaDatos;
 
 namespace CapaPresentacion
 {
     public partial class FrmABMUsuario : Form
     {
-        public FrmABMUsuario(char ABM)
+        public FrmABMUsuario(char ABM, String rol)
         {
             InitializeComponent();
             abm = ABM;
+            rolU = rol;
         }
 
         char abm;
-        public String ci, nombre, apellidoP, apellidoS, telefono, correoElec, fnac;
+        public String ci, nombre, apellidoP, apellidoS, telefono, correoElec, fnac, rol;
+        public String rolU;
 
         private void FrmABMUsuario_Activated(object sender, EventArgs e)
         {
@@ -77,11 +80,9 @@ namespace CapaPresentacion
             this.Close();
         }
 
-        public String rol;
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            String sentencia = "", sentencia2 = "";
+            String sentencia = "";
             switch (cbxRol.SelectedIndex)
                 {
                     case 0:
@@ -124,6 +125,8 @@ namespace CapaPresentacion
                     sentencia += txtMailU.Text;
                     sentencia += "','";
                     sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
+                    sentencia += "','";
+                    sentencia += rol;
                     sentencia += "');";
                     break;
                 case 'M':
@@ -147,33 +150,19 @@ namespace CapaPresentacion
                     break;
                 case 'B':
                     //Para tener multiples sentencias se tienen que separar en dos variables
-                    sentencia = "DELETE FROM " + rol + " WHERE (ci = '";
-                    sentencia += mtbCI.Text + "'); ";
-
-                    sentencia2 = "DELETE FROM Usuario WHERE (ci = '";
-                    sentencia2 += mtbCI.Text + "');";
+                    sentencia = "DELETE FROM Usuario WHERE (ci = '";
+                    sentencia += mtbCI.Text + "');";
                     break;
             }
             try
             {
-                //Conexion
-                MySqlConnection conexion = new MySqlConnection();
-                conexion.ConnectionString =
-                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
-                conexion.Open();
+                CD_Conexion conectABMU = new CD_Conexion();
 
                 //Sentencia
                 MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conexion;
+                comando.Connection = conectABMU.Conectar(conectABMU.BDUser(rolU), "'1234'");
                 comando.CommandText = sentencia;
-                comando.ExecuteNonQuery();
-                if (sentencia2 != "")
-                {
-                    comando.CommandText = sentencia2;
-                    comando.ExecuteNonQuery();
-                }
-                
+                comando.ExecuteNonQuery();                
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -200,39 +189,39 @@ namespace CapaPresentacion
             mtbTelefonoU.Text = "";
             txtMailU.Text = "";
             dtpFechNU.Text = "";
+            cbxRol.SelectedIndex = 6;
             txtCU.Text = "";
             txtRCU.Text = "";
         }
-        public void Cargar()
+        private void Cargar()
         {
             try
             {
-                //Conexion
-                MySqlConnection conexion = new MySqlConnection();
-                conexion.ConnectionString =
-                //El string de conexión, mejor dicho, el nombre del usuario y su respectiva contraseña 
-                //deberían cambiarse según el rol del usuario
-                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
-                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                conexion.Open();
-                //Sentencia
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conexion;
-                comando.CommandText = "select ci, nombre, apellidoP, apellidoS, telefono, correoElec, fechaNac from Usuario";
-                comando.ExecuteNonQuery();
-                //Adaptador
-                MySqlDataAdapter adaptador = new MySqlDataAdapter();
-                adaptador.SelectCommand = comando;
-                //Conjunto de resultados
-                DataSet ds = new DataSet();
-                adaptador.Fill(ds, "Usuario");
-                //Cargar los resultados en el Data Grid View
-                dgvUsuarios.DataSource = ds.Tables["Usuario"];
+                CD_Usuario negocioABMU = new CD_Usuario();
+                //Temporal
+                CD_Conexion conectABMU = new CD_Conexion();
+                dgvUsuarios.DataSource = negocioABMU.DGVContenidoU(conectABMU.BDUser(rolU), "'1234'");
+                ////Conexion
+                //CD_Conexion conectABMU = new CD_Conexion();
+
+                ////Sentencia
+                //MySqlCommand comando = new MySqlCommand();
+                //comando.Connection = conectABMU.Conectar(rolU, "");
+                //comando.CommandText = "select ci, nombre, apellidoP, apellidoS, telefono, correoElec, fechaNac, rol from Usuario";
+                //comando.ExecuteNonQuery();
+                ////Adaptador
+                //MySqlDataAdapter adaptador = new MySqlDataAdapter();
+                //adaptador.SelectCommand = comando;
+                ////Conjunto de resultados
+                //DataSet ds = new DataSet();
+                //adaptador.Fill(ds, "Usuario");
+                ////Cargar los resultados en el Data Grid View
+                //dgvUsuarios.DataSource = ds.Tables["Usuario"];
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
                 {
-                    //MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Error: " + ex.Message);
                     switch (ex.Number)
                     {
                         case 0:

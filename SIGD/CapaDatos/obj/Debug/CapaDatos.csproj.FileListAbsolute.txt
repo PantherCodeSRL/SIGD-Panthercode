@@ -28,3 +28,12 @@ C:\Users\alumno\Desktop\SIGD\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInp
 C:\Users\alumno\Desktop\SIGD\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\alumno\Desktop\SIGD\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\alumno\Desktop\SIGD\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Pedro\SIGD\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Pedro\SIGD\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Pedro\SIGD\CapaDatos\bin\Debug\MySql.Data.dll
+E:\Pedro\SIGD\CapaDatos\bin\Debug\MySql.Data.xml
+E:\Pedro\SIGD\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Pedro\SIGD\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+E:\Pedro\SIGD\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+E:\Pedro\SIGD\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Pedro\SIGD\CapaDatos\obj\Debug\CapaDatos.pdb

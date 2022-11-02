@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using CapaDatos;
 
 namespace CapaPresentacion
 {
@@ -16,11 +17,11 @@ namespace CapaPresentacion
         public FrmJugadores(String ROL)
         {
             InitializeComponent();
-            rol = ROL;
+            rolU = ROL;
         }
 
         public FrmABMJugador activo;
-        public String rol;
+        public String rolU;
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -35,7 +36,7 @@ namespace CapaPresentacion
 
         private void btnEquipos_Click(object sender, EventArgs e)
         {
-            Form frmequipos = new FrmEquipos(rol) {Owner = this.Owner };
+            Form frmequipos = new FrmEquipos(rolU) {Owner = this.Owner };
             frmequipos.Show();
             this.Close();
         }
@@ -85,19 +86,15 @@ namespace CapaPresentacion
             this.Enabled = false;
         }
 
-        public void Cargar()
+        private void Cargar()
         {
             try
             {
-                //Conexion
-                MySqlConnection conexion = new MySqlConnection();
-                conexion.ConnectionString =
-                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
-                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                conexion.Open();
+                CD_Conexion conectABMU = new CD_Conexion();
+
                 //Sentencia
                 MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conexion;
+                comando.Connection = conectABMU.Conectar(conectABMU.BDUser(rolU), "'1234'");
                 comando.CommandText = "select * from Jugador";
                 comando.ExecuteNonQuery();
                 //Adaptador
@@ -112,7 +109,7 @@ namespace CapaPresentacion
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
                 {
-                    //MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Error: " + ex.Message);
                     switch (ex.Number)
                     {
                         case 0:
@@ -137,12 +134,12 @@ namespace CapaPresentacion
         private void FrmJugadores_Activated(object sender, EventArgs e)
         {
             Cargar();
-            if (rol == "Administrador" || rol == "Administrativo")
+            if (rolU == "Administrador" || rolU == "Administrativo")
             {
                 plAdminEquipos.Visible = true;
             }
             else { plAdminEquipos.Visible = false; }
-            if (rol == "Administrador" || rol == "Seleccionador")
+            if (rolU == "Administrador" || rolU == "Seleccionador")
             {
                 plFiltro.Visible = true;
             }

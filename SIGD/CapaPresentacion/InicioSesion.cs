@@ -20,7 +20,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-        public String rol;
+        public String rolU;
         public FormP principal;
         
 
@@ -76,8 +76,6 @@ namespace CapaPresentacion
                     //Conexion
                     //CD_Conexion conexion = new CD_Conexion();
 
-                    
-
                     //MySqlConnection conexion = new MySqlConnection();
                     //conexion.ConnectionString =
                     //"Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
@@ -101,13 +99,14 @@ namespace CapaPresentacion
                     {
                         lector.Read();
                         String nombre = lector.GetString("nombre");
-                        String rol = lector.GetString("rol");
-                        MessageBox.Show("Hola: " + nombre + ", sos: " + rol);
+                        String rolU = lector.GetString("rol");
+                        MessageBox.Show("Hola: " + nombre + ", sos: " + rolU);
                         //this.Owner.Enabled = true;
                         //this.Owner.Show();
+                        inicio.Desconectar();
                         principal.Enabled = true;
                         principal.Show();
-                        principal.rol = rol;
+                        principal.rolU = rolU;
                         this.Close();
                     }
                     else
