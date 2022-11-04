@@ -75,10 +75,10 @@ namespace CapaPresentacion
                 switch (abm)
                 {
                     case 'A':
-                        negocioABMJ.AgregarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        negocioABMJ.AgregarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtNombre.Text, txtPApellido.Text, txtSApellido.Text, mtbTelefonoJ.Text, txtMailJ.Text, dtpFechN.Value.ToString("yyyy-MM-dd"));
                         break;
                     case 'M':
-                        negocioABMJ.ModificarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        negocioABMJ.ModificarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtNombre.Text, txtPApellido.Text, txtSApellido.Text, mtbTelefonoJ.Text, txtMailJ.Text, dtpFechN.Value.ToString("yyyy-MM-dd"));
                         break;
                     case 'B':
                         negocioABMJ.BajarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text);

@@ -21,7 +21,6 @@ namespace CapaPresentacion
         }
 
         public string rolU;
-        private DateTime diaActual;
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -66,28 +65,18 @@ namespace CapaPresentacion
         private void FrmFixtures_Load(object sender, EventArgs e)
         {
             Cargar();
-            diaActual.ToLocalTime().ToString("yyyy-MM-dd");
         }
 
         private void Cargar()
         {
             try
             {
-                CD_Conexion ConectABMU = new CD_Conexion();
+                CD_Conexion conectABMF = new CD_Conexion();
+                CD_Partido negocioABMF = new CD_Partido();
 
                 //Sentencia
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = ConectABMU.Conectar(ConectABMU.BDUser(rolU), "'1234'");
-                comando.CommandText = "select * from partido where fechaHora < '" + diaActual + "';";
-                comando.ExecuteNonQuery();
-                //Adaptador
-                MySqlDataAdapter adaptador = new MySqlDataAdapter();
-                adaptador.SelectCommand = comando;
-                //Conjunto de resultados
-                DataSet ds = new DataSet();
-                adaptador.Fill(ds, "partido");
-                //Cargar los resultados en el Data Grid View
-                dgvRes.DataSource = ds.Tables["partido"];
+                dgvRes.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "< '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
+                dgvProx.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "> '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

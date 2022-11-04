@@ -53,14 +53,14 @@ namespace CapaPresentacion
 
         private void btnCrearE_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMJugador('A') { Owner = this };
+            activo = new FrmABMJugador('A',rolU) { Owner = this };
             activo.Show();
             this.Enabled = false;
         }
 
         private void btnModificarE_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMJugador('M') { Owner = this };
+            activo = new FrmABMJugador('M',rolU) { Owner = this };
             activo.ci= dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
             activo.nombre = dgvJugadores.SelectedRows[0].Cells[1].Value.ToString();
             activo.apellidoP = dgvJugadores.SelectedRows[0].Cells[2].Value.ToString();
@@ -74,7 +74,7 @@ namespace CapaPresentacion
 
         private void btnBorrarE_Click(object sender, EventArgs e)
         {
-            activo = new FrmABMJugador('B') { Owner = this };
+            activo = new FrmABMJugador('B',rolU) { Owner = this };
             activo.ci = dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
             activo.nombre = dgvJugadores.SelectedRows[0].Cells[1].Value.ToString();
             activo.apellidoP = dgvJugadores.SelectedRows[0].Cells[2].Value.ToString();
@@ -90,21 +90,10 @@ namespace CapaPresentacion
         {
             try
             {
-                CD_Conexion conectABMU = new CD_Conexion();
-
+                CD_Conexion conectABMJ = new CD_Conexion();
+                CD_Jugador negocioABMJ = new CD_Jugador();
                 //Sentencia
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conectABMU.Conectar(conectABMU.BDUser(rolU), "'1234'");
-                comando.CommandText = "select * from Jugador";
-                comando.ExecuteNonQuery();
-                //Adaptador
-                MySqlDataAdapter adaptador = new MySqlDataAdapter();
-                adaptador.SelectCommand = comando;
-                //Conjunto de resultados
-                DataSet ds = new DataSet();
-                adaptador.Fill(ds, "Jugador");
-                //Cargar los resultados en el Data Grid View
-                dgvJugadores.DataSource = ds.Tables["Jugador"];
+                negocioABMJ.DGVContenidoJ(conectABMJ.BDUser(rolU), "'1234'");
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
