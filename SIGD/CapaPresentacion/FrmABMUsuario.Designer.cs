@@ -370,7 +370,7 @@
             this.dtpFechNU.CustomFormat = "yyyy-MM-dd";
             this.dtpFechNU.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechNU.Location = new System.Drawing.Point(387, 234);
-            this.dtpFechNU.MaxDate = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
+            this.dtpFechNU.MaxDate = new System.DateTime(2049, 12, 31, 0, 0, 0, 0);
             this.dtpFechNU.Name = "dtpFechNU";
             this.dtpFechNU.Size = new System.Drawing.Size(83, 20);
             this.dtpFechNU.TabIndex = 59;

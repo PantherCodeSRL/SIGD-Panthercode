@@ -8,77 +8,82 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using CapaDatos;
 
 namespace CapaPresentacion
 {
     public partial class FrmABMJugador : Form
     {
-        public FrmABMJugador(char ABM)
+        public FrmABMJugador(char ABM, String rol)
         {
             InitializeComponent();
             abm = ABM;
+            rolU = rol;
         }
 
         char abm;
-        public String ci, nombre, apellidoP, apellidoS, telefono, correoElec, fnac;
+        public String ci, nombre, apellidoP, apellidoS, telefono, correoElec, fnac, rolU;
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            String sentencia = "";
-            switch (abm)
-            {
-                case 'A':
-                    //Falta validar datos antes de ingresar
-                    sentencia = "INSERT INTO Jugador(ci,nombre,apellidoP,apellidoS,telefono,correoElec,fechaNac) VALUES (";
-                    sentencia += mtbCI.Text;
-                    sentencia += ",'";
-                    sentencia += txtNombre.Text;
-                    sentencia += "','";
-                    sentencia += txtPApellido.Text;
-                    sentencia += "','";
-                    sentencia += txtSApellido.Text;
-                    sentencia += "','";
-                    sentencia += mtbTelefonoJ.Text;
-                    sentencia += "','";
-                    sentencia += txtMailJ.Text;
-                    sentencia += "','";
-                    sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
-                    sentencia += "');";
-                    break;
-                case 'M':
-                    sentencia = "UPDATE Jugador SET nombre = '";
-                    sentencia += txtNombre.Text;
-                    sentencia += "', apellidoP = '";
-                    sentencia += txtPApellido.Text;
-                    sentencia += "', apellidoS = '";
-                    sentencia += txtSApellido.Text;
-                    sentencia += "', telefono = '";
-                    sentencia += mtbTelefonoJ.Text;
-                    sentencia += "', correoElec = '";
-                    sentencia += txtMailJ.Text;
-                    sentencia += "', fechaNac = '";
-                    sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
-                    sentencia += "' WHERE ci = '";
-                    sentencia += ci + "';";
-                    break;
-                case 'B':
-                    sentencia = "DELETE FROM Jugador WHERE ci = '";
-                    sentencia += ci + "';";
-                    break;
-            }
+            //String sentencia = "";
+            //switch (abm)
+            //{
+            //    case 'A':
+            //        //Falta validar datos antes de ingresar
+            //        sentencia = "INSERT INTO Jugador(ci,nombre,apellidoP,apellidoS,telefono,correoElec,fechaNac) VALUES (";
+            //        sentencia += mtbCI.Text;
+            //        sentencia += ",'";
+            //        sentencia += txtNombre.Text;
+            //        sentencia += "','";
+            //        sentencia += txtPApellido.Text;
+            //        sentencia += "','";
+            //        sentencia += txtSApellido.Text;
+            //        sentencia += "','";
+            //        sentencia += mtbTelefonoJ.Text;
+            //        sentencia += "','";
+            //        sentencia += txtMailJ.Text;
+            //        sentencia += "','";
+            //        sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
+            //        sentencia += "');";
+            //        break;
+            //    case 'M':
+            //        sentencia = "UPDATE Jugador SET nombre = '";
+            //        sentencia += txtNombre.Text;
+            //        sentencia += "', apellidoP = '";
+            //        sentencia += txtPApellido.Text;
+            //        sentencia += "', apellidoS = '";
+            //        sentencia += txtSApellido.Text;
+            //        sentencia += "', telefono = '";
+            //        sentencia += mtbTelefonoJ.Text;
+            //        sentencia += "', correoElec = '";
+            //        sentencia += txtMailJ.Text;
+            //        sentencia += "', fechaNac = '";
+            //        sentencia += dtpFechN.Value.ToString("yyyy-MM-dd");
+            //        sentencia += "' WHERE ci = '";
+            //        sentencia += ci + "';";
+            //        break;
+            //    case 'B':
+            //        sentencia = "DELETE FROM Jugador WHERE ci = '";
+            //        sentencia += ci + "';";
+            //        break;
+            //}
             try
             {
-                //Conexion
-                MySqlConnection conexion = new MySqlConnection();
-                conexion.ConnectionString =
-                //"Server=localhost;Database=Panthercode;Uid=root;Pwd=";
-                "Server=192.168.2.195;Database=PantherCode;Uid=jirigoin;Pwd=54233708";
-                conexion.Open();
-                //Sentencia
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conexion;
-                comando.CommandText = sentencia;
-                comando.ExecuteNonQuery();
+                CD_Jugador negocioABMJ = new CD_Jugador();
+                CD_Conexion conectABMJ = new CD_Conexion();
+                switch (abm)
+                {
+                    case 'A':
+                        negocioABMJ.AgregarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        break;
+                    case 'M':
+                        negocioABMJ.ModificarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        break;
+                    case 'B':
+                        negocioABMJ.BajarJ(conectABMJ.BDUser(rolU), "'1234'", mtbCI.Text);
+                        break;
+                }
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

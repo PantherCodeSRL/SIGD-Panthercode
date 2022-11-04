@@ -82,7 +82,6 @@ namespace CapaPresentacion
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            String sentencia = "";
             switch (cbxRol.SelectedIndex)
                 {
                     case 0:
@@ -107,62 +106,76 @@ namespace CapaPresentacion
             switch (abm)
             {
                 case 'A':
-                    //Falta validar datos antes de ingresar
-                    //Falta agregar usuarios según el tipo de usuario
-                    sentencia = "INSERT INTO Usuario VALUES (";
-                    sentencia += mtbCI.Text;
-                    sentencia += ",PASSWORD('";
-                    sentencia += txtCU.Text;
-                    sentencia += "'),'";
-                    sentencia += txtNombreU.Text;
-                    sentencia += "','";
-                    sentencia += txtPApellidoU.Text;
-                    sentencia += "','";
-                    sentencia += txtSApellidoU.Text;
-                    sentencia += "','";
-                    sentencia += mtbTelefonoU.Text;
-                    sentencia += "','";
-                    sentencia += txtMailU.Text;
-                    sentencia += "','";
-                    sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
-                    sentencia += "','";
-                    sentencia += rol;
-                    sentencia += "');";
+                    ////Falta validar datos antes de ingresar
+                    ////Falta agregar usuarios según el tipo de usuario
+                    //sentencia = "INSERT INTO Usuario VALUES (";
+                    //sentencia += mtbCI.Text;
+                    //sentencia += ",PASSWORD('";
+                    //sentencia += txtCU.Text;
+                    //sentencia += "'),'";
+                    //sentencia += txtNombreU.Text;
+                    //sentencia += "','";
+                    //sentencia += txtPApellidoU.Text;
+                    //sentencia += "','";
+                    //sentencia += txtSApellidoU.Text;
+                    //sentencia += "','";
+                    //sentencia += mtbTelefonoU.Text;
+                    //sentencia += "','";
+                    //sentencia += txtMailU.Text;
+                    //sentencia += "','";
+                    //sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
+                    //sentencia += "','";
+                    //sentencia += rol;
+                    //sentencia += "');";
                     break;
                 case 'M':
                     //Falta agregar modificaciones según el tipo de usuario
-                    sentencia = "UPDATE Usuario SET contraseña = PASSWORD('";
-                    sentencia += txtCU.Text;
-                    sentencia += "'), nombre = '";
-                    sentencia += txtNombreU.Text;
-                    sentencia += "', apellidoP = '";
-                    sentencia += txtPApellidoU.Text;
-                    sentencia += "', apellidoS = '";
-                    sentencia += txtSApellidoU.Text;
-                    sentencia += "', telefono = '";
-                    sentencia += mtbTelefonoU.Text;
-                    sentencia += "', correoElec = '";
-                    sentencia += txtMailU.Text;
-                    sentencia += "', fechaNac = '";
-                    sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
-                    sentencia += "' WHERE (ci = '";
-                    sentencia += mtbCI.Text + "');";
+                    //sentencia = "UPDATE Usuario SET contraseña = PASSWORD('";
+                    //sentencia += txtCU.Text;
+                    //sentencia += "'), nombre = '";
+                    //sentencia += txtNombreU.Text;
+                    //sentencia += "', apellidoP = '";
+                    //sentencia += txtPApellidoU.Text;
+                    //sentencia += "', apellidoS = '";
+                    //sentencia += txtSApellidoU.Text;
+                    //sentencia += "', telefono = '";
+                    //sentencia += mtbTelefonoU.Text;
+                    //sentencia += "', correoElec = '";
+                    //sentencia += txtMailU.Text;
+                    //sentencia += "', fechaNac = '";
+                    //sentencia += dtpFechNU.Value.ToString("yyyy-MM-dd");
+                    //sentencia += "' WHERE (ci = '";
+                    //sentencia += mtbCI.Text + "');";
                     break;
                 case 'B':
                     //Para tener multiples sentencias se tienen que separar en dos variables
-                    sentencia = "DELETE FROM Usuario WHERE (ci = '";
-                    sentencia += mtbCI.Text + "');";
+                    //sentencia = "DELETE FROM Usuario WHERE (ci = '";
+                    //sentencia += mtbCI.Text + "');";
                     break;
             }
             try
             {
+                CD_Usuario negocioABMU = new CD_Usuario();
                 CD_Conexion conectABMU = new CD_Conexion();
 
+                switch (abm)
+                {
+                    case 'A':
+                        negocioABMU.AgregarU(conectABMU.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        break;
+                    case 'M':
+                        negocioABMU.ModificarU(conectABMU.BDUser(rolU), "'1234'", mtbCI.Text, txtCU.Text, txtNombreU.Text, txtPApellidoU.Text, txtSApellidoU.Text, mtbTelefonoU.Text, txtMailU.Text, dtpFechNU.Value.ToString("yyyy-MM-dd"), rol);
+                        break;
+                    case 'B':
+                        negocioABMU.BajarU(conectABMU.BDUser(rolU), "'1234'", mtbCI.Text);
+                        break;
+                }
+
                 //Sentencia
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conectABMU.Conectar(conectABMU.BDUser(rolU), "'1234'");
-                comando.CommandText = sentencia;
-                comando.ExecuteNonQuery();                
+                //MySqlCommand comando = new MySqlCommand();
+                //comando.Connection = conectABMU.Conectar(conectABMU.BDUser(rolU), "'1234'");
+                //comando.CommandText = sentencia;
+                //comando.ExecuteNonQuery();                
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
