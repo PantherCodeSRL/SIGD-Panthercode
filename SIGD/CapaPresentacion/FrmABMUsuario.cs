@@ -69,6 +69,7 @@ namespace CapaPresentacion
             mtbTelefonoU.Text = "";
             txtMailU.Text = "";
             dtpFechNU.Text = "";
+            cbxRol.SelectedIndex = 6;
             txtCU.Text = "";
             txtRCU.Text = "";
         }

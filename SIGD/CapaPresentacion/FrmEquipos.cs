@@ -15,10 +15,10 @@ namespace CapaPresentacion
         public FrmEquipos(String ROL)
         {
             InitializeComponent();
-            rol = ROL;
+            rolU = ROL;
         }
 
-        public String rol;
+        public String rolU;
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace CapaPresentacion
 
         private void btnJugadores_Click(object sender, EventArgs e)
         {
-            Form frmjugadores = new FrmJugadores(rol) { Owner = this.Owner };
+            Form frmjugadores = new FrmJugadores(rolU) { Owner = this.Owner };
             frmjugadores.Show();
             this.Close();
         }

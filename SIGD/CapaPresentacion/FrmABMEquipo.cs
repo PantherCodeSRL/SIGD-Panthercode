@@ -12,9 +12,13 @@ namespace CapaPresentacion
 {
     public partial class FrmABMEquipo : Form
     {
-        public FrmABMEquipo()
+        public FrmABMEquipo(String ROL)
         {
             InitializeComponent();
+            rolU = ROL;
         }
+
+        public FrmABMEquipo activo;
+        public String rolU;
     }
 }

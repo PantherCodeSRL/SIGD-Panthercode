@@ -38,6 +38,8 @@
             this.pbB = new System.Windows.Forms.PictureBox();
             this.pbF = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.btnH = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -72,14 +74,13 @@
             this.dgvRes = new System.Windows.Forms.DataGridView();
             this.lblResultados = new System.Windows.Forms.Label();
             this.lblFixture = new System.Windows.Forms.Label();
-            this.btnH = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
@@ -92,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -220,6 +220,31 @@
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnH
+            // 
+            this.btnH.FlatAppearance.BorderSize = 0;
+            this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
+            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnH.Location = new System.Drawing.Point(463, 3);
+            this.btnH.Name = "btnH";
+            this.btnH.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnH.Size = new System.Drawing.Size(93, 49);
+            this.btnH.TabIndex = 18;
+            this.btnH.Text = "Hándbol";
+            this.btnH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.btnH_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.file_svg_handball_icon_1167717;
+            this.pictureBox1.Location = new System.Drawing.Point(438, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -588,30 +613,6 @@
             this.lblFixture.TabIndex = 118;
             this.lblFixture.Text = "Proximas fechas";
             // 
-            // btnH
-            // 
-            this.btnH.FlatAppearance.BorderSize = 0;
-            this.btnH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(118)))), ((int)(((byte)(130)))));
-            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnH.Location = new System.Drawing.Point(463, 3);
-            this.btnH.Name = "btnH";
-            this.btnH.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnH.Size = new System.Drawing.Size(93, 49);
-            this.btnH.TabIndex = 18;
-            this.btnH.Text = "Hándbol";
-            this.btnH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnH.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.file_svg_handball_icon_1167717;
-            this.pictureBox1.Location = new System.Drawing.Point(438, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmFixtures
             // 
             this.AllowDrop = true;
@@ -642,6 +643,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelI.ResumeLayout(false);
             this.panelI.PerformLayout();
@@ -655,7 +657,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

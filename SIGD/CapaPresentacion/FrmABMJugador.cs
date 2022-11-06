@@ -14,11 +14,11 @@ namespace CapaPresentacion
 {
     public partial class FrmABMJugador : Form
     {
-        public FrmABMJugador(char ABM, String rol)
+        public FrmABMJugador(char ABM, String ROL)
         {
             InitializeComponent();
             abm = ABM;
-            rolU = rol;
+            rolU = ROL;
         }
 
         char abm;

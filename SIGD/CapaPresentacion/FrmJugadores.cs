@@ -51,14 +51,14 @@ namespace CapaPresentacion
             btnCerrar.BackgroundImage = CapaPresentacion.Properties.Resources.circle_xmark_solid;
         }
 
-        private void btnCrearE_Click(object sender, EventArgs e)
+        private void btnCrearJ_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('A',rolU) { Owner = this };
             activo.Show();
             this.Enabled = false;
         }
 
-        private void btnModificarE_Click(object sender, EventArgs e)
+        private void btnModificarJ_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('M',rolU) { Owner = this };
             activo.ci= dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
@@ -72,7 +72,7 @@ namespace CapaPresentacion
             this.Enabled = false;
         }
 
-        private void btnBorrarE_Click(object sender, EventArgs e)
+        private void btnBorrarJ_Click(object sender, EventArgs e)
         {
             activo = new FrmABMJugador('B',rolU) { Owner = this };
             activo.ci = dgvJugadores.SelectedRows[0].Cells[0].Value.ToString();
@@ -93,7 +93,7 @@ namespace CapaPresentacion
                 CD_Conexion conectABMJ = new CD_Conexion();
                 CD_Jugador negocioABMJ = new CD_Jugador();
                 //Sentencia
-                negocioABMJ.DGVContenidoJ(conectABMJ.BDUser(rolU), "'1234'");
+                dgvJugadores.DataSource = negocioABMJ.DGVContenidoJ(conectABMJ.BDUser(rolU), "'1234'");
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

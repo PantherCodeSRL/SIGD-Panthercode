@@ -53,7 +53,7 @@
             this.txtPwd.BackColor = System.Drawing.SystemColors.Window;
             this.txtPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtPwd.Location = new System.Drawing.Point(86, 214);
+            this.txtPwd.Location = new System.Drawing.Point(87, 243);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(134, 19);
             this.txtPwd.TabIndex = 2;
@@ -65,7 +65,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(102, 187);
+            this.label5.Location = new System.Drawing.Point(103, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 2;
@@ -76,7 +76,7 @@
             this.lblCiUser.AutoSize = true;
             this.lblCiUser.BackColor = System.Drawing.Color.Transparent;
             this.lblCiUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCiUser.Location = new System.Drawing.Point(119, 122);
+            this.lblCiUser.Location = new System.Drawing.Point(120, 151);
             this.lblCiUser.Name = "lblCiUser";
             this.lblCiUser.Size = new System.Drawing.Size(70, 20);
             this.lblCiUser.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             this.lblPwd.AutoSize = true;
             this.lblPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
-            this.lblPwd.Location = new System.Drawing.Point(86, 259);
+            this.lblPwd.Location = new System.Drawing.Point(87, 297);
             this.lblPwd.Name = "lblPwd";
             this.lblPwd.Size = new System.Drawing.Size(134, 13);
             this.lblPwd.TabIndex = 14;
@@ -126,7 +126,7 @@
             // cbxMC
             // 
             this.cbxMC.AutoSize = true;
-            this.cbxMC.Location = new System.Drawing.Point(97, 239);
+            this.cbxMC.Location = new System.Drawing.Point(92, 274);
             this.cbxMC.Name = "cbxMC";
             this.cbxMC.Size = new System.Drawing.Size(118, 17);
             this.cbxMC.TabIndex = 16;
@@ -169,7 +169,7 @@
             // 
             this.pbUser.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbUser.Image = global::CapaPresentacion.Properties.Resources.user_solid;
-            this.pbUser.Location = new System.Drawing.Point(40, 151);
+            this.pbUser.Location = new System.Drawing.Point(41, 180);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(19, 23);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +180,7 @@
             // 
             this.pbPwd.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbPwd.Image = global::CapaPresentacion.Properties.Resources.lock_solid;
-            this.pbPwd.Location = new System.Drawing.Point(40, 210);
+            this.pbPwd.Location = new System.Drawing.Point(41, 239);
             this.pbPwd.Name = "pbPwd";
             this.pbPwd.Size = new System.Drawing.Size(19, 23);
             this.pbPwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,7 +191,7 @@
             // 
             this.pbLogin.ErrorImage = global::CapaPresentacion.Properties.Resources.lock_solid;
             this.pbLogin.Image = global::CapaPresentacion.Properties.Resources.user_regular;
-            this.pbLogin.Location = new System.Drawing.Point(-1, 48);
+            this.pbLogin.Location = new System.Drawing.Point(0, 77);
             this.pbLogin.Name = "pbLogin";
             this.pbLogin.Size = new System.Drawing.Size(305, 63);
             this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +203,7 @@
             this.mtbCI.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mtbCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.mtbCI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.mtbCI.Location = new System.Drawing.Point(112, 148);
+            this.mtbCI.Location = new System.Drawing.Point(113, 177);
             this.mtbCI.Mask = "0000000-0";
             this.mtbCI.Name = "mtbCI";
             this.mtbCI.Size = new System.Drawing.Size(83, 26);

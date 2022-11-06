@@ -14,13 +14,15 @@ namespace CapaPresentacion
 {
     public partial class FrmFixtures : Form
     {
-        public FrmFixtures(string ROL)
+        public FrmFixtures(String DEPORTE, String ROL)
         {
             InitializeComponent();
             rolU = ROL;
+            deporte = DEPORTE;
         }
 
-        public string rolU;
+        public String rolU;
+        public String deporte;
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -45,16 +47,20 @@ namespace CapaPresentacion
 
         private void btnB_Click(object sender, EventArgs e)
         {
-            //FB fb= new FB() { Owner = this.Owner };
-            //fb.Show();
-            //this.Close();
+            deporte = "2";
+            Cargar();
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
-            //FF ff = new FF() { Owner = this.Owner };
-            //ff.Show();
-            //this.Close();
+            deporte = "1";
+            Cargar();
+        }
+
+        private void btnH_Click(object sender, EventArgs e)
+        {
+            deporte = "3";
+            Cargar();
         }
 
         private void btnMin_Click(object sender, EventArgs e)
@@ -74,7 +80,6 @@ namespace CapaPresentacion
                 CD_Conexion conectABMF = new CD_Conexion();
                 CD_Partido negocioABMF = new CD_Partido();
 
-                //Sentencia
                 dgvRes.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "< '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
                 dgvProx.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "> '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
             }

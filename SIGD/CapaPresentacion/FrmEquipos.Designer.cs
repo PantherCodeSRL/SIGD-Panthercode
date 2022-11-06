@@ -31,13 +31,13 @@
             this.plSuperior = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.tlpOpciones = new System.Windows.Forms.TableLayoutPanel();
             this.pbJugadores = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnJugadores = new System.Windows.Forms.Button();
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.txtFiltroNombre = new System.Windows.Forms.TextBox();
-            this.cbxTitulos = new System.Windows.Forms.ComboBox();
             this.lblFP = new System.Windows.Forms.Label();
             this.lblN = new System.Windows.Forms.Label();
             this.plInferior = new System.Windows.Forms.Panel();
@@ -53,7 +53,6 @@
             this.btnCrearE = new System.Windows.Forms.Button();
             this.btnBorrarE = new System.Windows.Forms.Button();
             this.btnModificarE = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
             this.plSuperior.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tlpOpciones.SuspendLayout();
@@ -105,6 +104,20 @@
             this.btnCerrar.TabIndex = 23;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.minus_solid;
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
+            this.btnMinimizar.TabIndex = 21;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // tlpOpciones
             // 
@@ -192,26 +205,17 @@
             // 
             // txtFiltroNombre
             // 
-            this.txtFiltroNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtFiltroNombre.Location = new System.Drawing.Point(121, 150);
+            this.txtFiltroNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltroNombre.Location = new System.Drawing.Point(21, 218);
             this.txtFiltroNombre.Name = "txtFiltroNombre";
-            this.txtFiltroNombre.Size = new System.Drawing.Size(211, 22);
+            this.txtFiltroNombre.Size = new System.Drawing.Size(307, 22);
             this.txtFiltroNombre.TabIndex = 26;
-            // 
-            // cbxTitulos
-            // 
-            this.cbxTitulos.FormattingEnabled = true;
-            this.cbxTitulos.Location = new System.Drawing.Point(22, 150);
-            this.cbxTitulos.Name = "cbxTitulos";
-            this.cbxTitulos.Size = new System.Drawing.Size(93, 21);
-            this.cbxTitulos.TabIndex = 29;
-            this.cbxTitulos.Text = "Titulos";
             // 
             // lblFP
             // 
             this.lblFP.AutoSize = true;
             this.lblFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFP.Location = new System.Drawing.Point(19, 131);
+            this.lblFP.Location = new System.Drawing.Point(24, 132);
             this.lblFP.Name = "lblFP";
             this.lblFP.Size = new System.Drawing.Size(79, 16);
             this.lblFP.TabIndex = 28;
@@ -221,7 +225,7 @@
             // 
             this.lblN.AutoSize = true;
             this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblN.Location = new System.Drawing.Point(121, 131);
+            this.lblN.Location = new System.Drawing.Point(24, 199);
             this.lblN.Name = "lblN";
             this.lblN.Size = new System.Drawing.Size(67, 16);
             this.lblN.TabIndex = 28;
@@ -240,7 +244,7 @@
             // 
             this.lblFdF.AutoSize = true;
             this.lblFdF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblFdF.Location = new System.Drawing.Point(19, 208);
+            this.lblFdF.Location = new System.Drawing.Point(26, 255);
             this.lblFdF.Name = "lblFdF";
             this.lblFdF.Size = new System.Drawing.Size(153, 16);
             this.lblFdF.TabIndex = 28;
@@ -248,10 +252,11 @@
             // 
             // cbxDeporte
             // 
+            this.cbxDeporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxDeporte.FormattingEnabled = true;
-            this.cbxDeporte.Location = new System.Drawing.Point(22, 177);
+            this.cbxDeporte.Location = new System.Drawing.Point(21, 162);
             this.cbxDeporte.Name = "cbxDeporte";
-            this.cbxDeporte.Size = new System.Drawing.Size(93, 21);
+            this.cbxDeporte.Size = new System.Drawing.Size(93, 24);
             this.cbxDeporte.TabIndex = 29;
             this.cbxDeporte.Text = "Deporte";
             // 
@@ -277,10 +282,11 @@
             // 
             // dtpFechF
             // 
+            this.dtpFechF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechF.Location = new System.Drawing.Point(178, 204);
+            this.dtpFechF.Location = new System.Drawing.Point(226, 251);
             this.dtpFechF.Name = "dtpFechF";
-            this.dtpFechF.Size = new System.Drawing.Size(102, 20);
+            this.dtpFechF.Size = new System.Drawing.Size(102, 22);
             this.dtpFechF.TabIndex = 40;
             // 
             // btnBuscarE
@@ -294,7 +300,7 @@
             this.btnBuscarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuscarE.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarE.Location = new System.Drawing.Point(23, 239);
+            this.btnBuscarE.Location = new System.Drawing.Point(19, 285);
             this.btnBuscarE.Margin = new System.Windows.Forms.Padding(6);
             this.btnBuscarE.Name = "btnBuscarE";
             this.btnBuscarE.Padding = new System.Windows.Forms.Padding(5);
@@ -385,20 +391,6 @@
             this.btnModificarE.TabIndex = 41;
             this.btnModificarE.UseVisualStyleBackColor = false;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.minus_solid;
-            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 35);
-            this.btnMinimizar.TabIndex = 21;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
             // FrmEquipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,7 +404,6 @@
             this.Controls.Add(this.lblBE);
             this.Controls.Add(this.plInferior);
             this.Controls.Add(this.cbxDeporte);
-            this.Controls.Add(this.cbxTitulos);
             this.Controls.Add(this.lblFdF);
             this.Controls.Add(this.lblN);
             this.Controls.Add(this.lblFP);
@@ -444,7 +435,6 @@
         private System.Windows.Forms.Button btnJugadores;
         private System.Windows.Forms.PictureBox pbMenu;
         private System.Windows.Forms.TextBox txtFiltroNombre;
-        private System.Windows.Forms.ComboBox cbxTitulos;
         private System.Windows.Forms.Label lblFP;
         private System.Windows.Forms.Label lblN;
         private System.Windows.Forms.Button btnBuscar;

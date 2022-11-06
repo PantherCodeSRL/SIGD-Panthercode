@@ -74,21 +74,21 @@ namespace CapaPresentacion
              
         private void btnH_Click(object sender, EventArgs e)
         {
-            activo = new FrmFixtures(rolU) { Owner = this };
+            activo = new FrmFixtures("3",rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
-            activo = new FF() { Owner = this };
+            activo = new FrmFixtures("1",rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
-            activo = new FB() { Owner = this };
+            activo = new FrmFixtures("2",rolU) { Owner = this };
             activo.Show();
             this.Hide();
         }

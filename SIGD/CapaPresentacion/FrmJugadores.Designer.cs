@@ -58,9 +58,9 @@
             this.dgvJugadores = new System.Windows.Forms.DataGridView();
             this.plAdminEquipos = new System.Windows.Forms.Panel();
             this.lblHAJ = new System.Windows.Forms.Label();
-            this.btnCrearE = new System.Windows.Forms.Button();
-            this.btnBorrarE = new System.Windows.Forms.Button();
-            this.btnModificarE = new System.Windows.Forms.Button();
+            this.btnCrearJ = new System.Windows.Forms.Button();
+            this.btnBorrarJ = new System.Windows.Forms.Button();
+            this.btnModificarJ = new System.Windows.Forms.Button();
             this.btnBuscarJ = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -411,9 +411,9 @@
             // plAdminEquipos
             // 
             this.plAdminEquipos.Controls.Add(this.lblHAJ);
-            this.plAdminEquipos.Controls.Add(this.btnCrearE);
-            this.plAdminEquipos.Controls.Add(this.btnBorrarE);
-            this.plAdminEquipos.Controls.Add(this.btnModificarE);
+            this.plAdminEquipos.Controls.Add(this.btnCrearJ);
+            this.plAdminEquipos.Controls.Add(this.btnBorrarJ);
+            this.plAdminEquipos.Controls.Add(this.btnModificarJ);
             this.plAdminEquipos.Location = new System.Drawing.Point(0, 338);
             this.plAdminEquipos.Name = "plAdminEquipos";
             this.plAdminEquipos.Size = new System.Drawing.Size(337, 106);
@@ -429,50 +429,50 @@
             this.lblHAJ.TabIndex = 43;
             this.lblHAJ.Text = "Herramientas de Administración de Jugadores";
             // 
-            // btnCrearE
+            // btnCrearJ
             // 
-            this.btnCrearE.BackColor = System.Drawing.Color.Transparent;
-            this.btnCrearE.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_plus_solid;
-            this.btnCrearE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCrearE.FlatAppearance.BorderSize = 0;
-            this.btnCrearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearE.Location = new System.Drawing.Point(25, 48);
-            this.btnCrearE.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCrearE.Name = "btnCrearE";
-            this.btnCrearE.Size = new System.Drawing.Size(50, 50);
-            this.btnCrearE.TabIndex = 41;
-            this.btnCrearE.UseVisualStyleBackColor = false;
-            this.btnCrearE.Click += new System.EventHandler(this.btnCrearE_Click);
+            this.btnCrearJ.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrearJ.BackgroundImage = global::CapaPresentacion.Properties.Resources.circle_plus_solid;
+            this.btnCrearJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCrearJ.FlatAppearance.BorderSize = 0;
+            this.btnCrearJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearJ.Location = new System.Drawing.Point(25, 48);
+            this.btnCrearJ.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCrearJ.Name = "btnCrearJ";
+            this.btnCrearJ.Size = new System.Drawing.Size(50, 50);
+            this.btnCrearJ.TabIndex = 41;
+            this.btnCrearJ.UseVisualStyleBackColor = false;
+            this.btnCrearJ.Click += new System.EventHandler(this.btnCrearJ_Click);
             // 
-            // btnBorrarE
+            // btnBorrarJ
             // 
-            this.btnBorrarE.BackColor = System.Drawing.Color.Transparent;
-            this.btnBorrarE.BackgroundImage = global::CapaPresentacion.Properties.Resources.eraser_solid;
-            this.btnBorrarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrarE.FlatAppearance.BorderSize = 0;
-            this.btnBorrarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrarE.Location = new System.Drawing.Point(157, 48);
-            this.btnBorrarE.Margin = new System.Windows.Forms.Padding(0);
-            this.btnBorrarE.Name = "btnBorrarE";
-            this.btnBorrarE.Size = new System.Drawing.Size(50, 50);
-            this.btnBorrarE.TabIndex = 41;
-            this.btnBorrarE.UseVisualStyleBackColor = false;
-            this.btnBorrarE.Click += new System.EventHandler(this.btnBorrarE_Click);
+            this.btnBorrarJ.BackColor = System.Drawing.Color.Transparent;
+            this.btnBorrarJ.BackgroundImage = global::CapaPresentacion.Properties.Resources.eraser_solid;
+            this.btnBorrarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrarJ.FlatAppearance.BorderSize = 0;
+            this.btnBorrarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarJ.Location = new System.Drawing.Point(157, 48);
+            this.btnBorrarJ.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBorrarJ.Name = "btnBorrarJ";
+            this.btnBorrarJ.Size = new System.Drawing.Size(50, 50);
+            this.btnBorrarJ.TabIndex = 41;
+            this.btnBorrarJ.UseVisualStyleBackColor = false;
+            this.btnBorrarJ.Click += new System.EventHandler(this.btnBorrarJ_Click);
             // 
-            // btnModificarE
+            // btnModificarJ
             // 
-            this.btnModificarE.BackColor = System.Drawing.Color.Transparent;
-            this.btnModificarE.BackgroundImage = global::CapaPresentacion.Properties.Resources.pen_to_square_solid;
-            this.btnModificarE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnModificarE.FlatAppearance.BorderSize = 0;
-            this.btnModificarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarE.Location = new System.Drawing.Point(94, 48);
-            this.btnModificarE.Margin = new System.Windows.Forms.Padding(0);
-            this.btnModificarE.Name = "btnModificarE";
-            this.btnModificarE.Size = new System.Drawing.Size(50, 50);
-            this.btnModificarE.TabIndex = 41;
-            this.btnModificarE.UseVisualStyleBackColor = false;
-            this.btnModificarE.Click += new System.EventHandler(this.btnModificarE_Click);
+            this.btnModificarJ.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificarJ.BackgroundImage = global::CapaPresentacion.Properties.Resources.pen_to_square_solid;
+            this.btnModificarJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificarJ.FlatAppearance.BorderSize = 0;
+            this.btnModificarJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarJ.Location = new System.Drawing.Point(94, 48);
+            this.btnModificarJ.Margin = new System.Windows.Forms.Padding(0);
+            this.btnModificarJ.Name = "btnModificarJ";
+            this.btnModificarJ.Size = new System.Drawing.Size(50, 50);
+            this.btnModificarJ.TabIndex = 41;
+            this.btnModificarJ.UseVisualStyleBackColor = false;
+            this.btnModificarJ.Click += new System.EventHandler(this.btnModificarJ_Click);
             // 
             // btnBuscarJ
             // 
@@ -562,8 +562,8 @@
         private System.Windows.Forms.DateTimePicker dtpFechF;
         private System.Windows.Forms.Panel plAdminEquipos;
         private System.Windows.Forms.Label lblHAJ;
-        private System.Windows.Forms.Button btnCrearE;
-        private System.Windows.Forms.Button btnBorrarE;
-        private System.Windows.Forms.Button btnModificarE;
+        private System.Windows.Forms.Button btnCrearJ;
+        private System.Windows.Forms.Button btnBorrarJ;
+        private System.Windows.Forms.Button btnModificarJ;
     }
 }
