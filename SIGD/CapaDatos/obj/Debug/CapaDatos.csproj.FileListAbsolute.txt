@@ -1,4 +1,3 @@
-C:\Users\admin\Repos\SIGD\CapaDatos\bin\Debug\CapaDatos.dll.config
 C:\Users\admin\Repos\SIGD\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\admin\Repos\SIGD\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\admin\Repos\SIGD\CapaDatos\bin\Debug\MySql.Data.dll

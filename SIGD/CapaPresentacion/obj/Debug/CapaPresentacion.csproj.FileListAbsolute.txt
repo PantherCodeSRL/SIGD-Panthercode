@@ -31,8 +31,6 @@ C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\en\CapaPresentacion.resourc
 C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\MySql.Data.dll
 C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\MySql.Data.xml
 C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
-C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FF.resources
-C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FB.resources
 C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FrmABMEquipo.resources
 C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FrmABMUsuario.resources
 C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FrmABMJugador.resources
@@ -110,7 +108,6 @@ C:\Users\alumno\Desktop\SIGD\CapaPresentacion\bin\Debug\CapaDatos.pdb
 C:\Users\alumno\Desktop\SIGD\CapaPresentacion\bin\Debug\CapaDatos.dll.config
 C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\CapaDatos.pdb
-C:\Users\admin\Repos\SIGD\CapaPresentacion\bin\Debug\CapaDatos.dll.config
 E:\Pedro\SIGD\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
 E:\Pedro\SIGD\CapaPresentacion\bin\Debug\CapaPresentacion.exe
 E:\Pedro\SIGD\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
@@ -197,3 +194,5 @@ C:\Users\pedro\source\repos\Proyecto\SIGD\CapaPresentacion\obj\Debug\en\CapaPres
 C:\Users\pedro\source\repos\Proyecto\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\pedro\source\repos\Proyecto\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\pedro\source\repos\Proyecto\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FrmABMIncidencias.resources
+C:\Users\admin\Repos\SIGD\CapaPresentacion\obj\Debug\CapaPresentacion.FrmIncidencias.resources

@@ -48,19 +48,19 @@ namespace CapaPresentacion
         private void btnB_Click(object sender, EventArgs e)
         {
             deporte = "2";
-            Cargar();
+            cargar();
         }
 
         private void btnF_Click(object sender, EventArgs e)
         {
             deporte = "1";
-            Cargar();
+            cargar();
         }
 
         private void btnH_Click(object sender, EventArgs e)
         {
             deporte = "3";
-            Cargar();
+            cargar();
         }
 
         private void btnMin_Click(object sender, EventArgs e)
@@ -70,18 +70,18 @@ namespace CapaPresentacion
 
         private void FrmFixtures_Load(object sender, EventArgs e)
         {
-            Cargar();
+            cargar();
         }
 
-        private void Cargar()
+        private void cargar()
         {
             try
             {
                 CD_Conexion conectABMF = new CD_Conexion();
                 CD_Partido negocioABMF = new CD_Partido();
 
-                dgvRes.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "< '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
-                dgvProx.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "> '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
+                dgvRes.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", "<",deporte);
+                dgvProx.DataSource = negocioABMF.DGVContenidoP(conectABMF.BDUser(rolU), "'1234'", ">",deporte);
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

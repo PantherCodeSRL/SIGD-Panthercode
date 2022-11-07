@@ -20,16 +20,11 @@ namespace CapaDatos
         //private String uid = "jirigoin";
         //private String pwd = "54233708";
         private String server = "localhost";
-        private String bd = "Panthercode";
+        private String bd = "PantherCode";
         private String uid = "root";
         private String pwd = "";
 
         private MySqlConnection conexion;
-
-        //public String Esteban()
-        //{
-        //    return server;
-        //}
 
         public MySqlConnection Iniciar()
         {

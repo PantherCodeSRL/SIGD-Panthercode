@@ -146,19 +146,26 @@ namespace CapaDatos
         MySqlCommand comando = new MySqlCommand();
 
         //Agregar al Diagrama de Clases
-        public DataTable DGVContenidoP(String uid, String pwd, String filtro)
+        public DataTable DGVContenidoP(String uid, String pwd, String filtro, String deporte)
         {
+            dgv.Clear();
             comando.Connection = conectABMP.Conectar(uid, pwd);
-            if (filtro != "")
+            if (filtro == "<")
             {
-                comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita FROM Partido WHERE fechaHora " + filtro;
+                comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita, D.nombreD FROM Partido P " +
+                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D on P.idLocal = E.idEquipo or P.idVisitante = E.idEquipo and E.idEquipo = R.idEquipo and R.idDeporte = D.idDeporte " +
+                    "WHERE D.idDeporte = '" + deporte + "' AND fechaHora < now()";
+                lector = comando.ExecuteReader();
             }
             else
             {
-                comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita FROM Partido";
+                comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita, D.nombreD FROM Partido P " +
+                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D on P.idLocal = E.idEquipo or P.idVisitante = E.idEquipo and E.idEquipo = R.idEquipo and R.idDeporte = D.idDeporte " +
+                    "WHERE D.idDeporte = '" + deporte + "' AND fechaHora >= now()";
+                lector = comando.ExecuteReader();
+                //'" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
             }
             
-            lector = comando.ExecuteReader();
             dgv.Load(lector);
             conectABMP.Desconectar();
             return dgv;
