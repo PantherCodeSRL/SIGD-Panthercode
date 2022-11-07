@@ -153,15 +153,15 @@ namespace CapaDatos
             if (filtro == "<")
             {
                 comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita, D.nombreD FROM Partido P " +
-                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D on P.idLocal = E.idEquipo or P.idVisitante = E.idEquipo and E.idEquipo = R.idEquipo and R.idDeporte = D.idDeporte " +
-                    "WHERE D.idDeporte = '" + deporte + "' AND fechaHora < now()";
+                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D ON P.idLocal = E.idEquipo AND P.idVisitante = E.idEquipo AND E.idEquipo = R.idEquipo AND R.idDeporte = D.idDeporte " +
+                    "WHERE D.idDeporte = '" + deporte + "' AND D.idDeporte = R.idDeporte AND fechaHora < now()";
                 lector = comando.ExecuteReader();
             }
             else
             {
                 comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita, D.nombreD FROM Partido P " +
-                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D on P.idLocal = E.idEquipo or P.idVisitante = E.idEquipo and E.idEquipo = R.idEquipo and R.idDeporte = D.idDeporte " +
-                    "WHERE D.idDeporte = '" + deporte + "' AND fechaHora >= now()";
+                    "JOIN Equipo E JOIN Pertenece R JOIN Deporte D ON P.idLocal = E.idEquipo AND P.idVisitante = E.idEquipo AND E.idEquipo = R.idEquipo AND R.idDeporte = D.idDeporte " +
+                    "WHERE D.idDeporte = '" + deporte + "' AND D.idDeporte = R.idDeporte AND fechaHora >= now()";
                 lector = comando.ExecuteReader();
                 //'" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
             }
@@ -225,6 +225,16 @@ namespace CapaDatos
         {
             comando.Connection = conectABMD.Conectar(uid, pwd);
             comando.CommandText = "SELECT idDeporte, nombreD FROM Deporte";
+            lector = comando.ExecuteReader();
+            dgv.Load(lector);
+            conectABMD.Desconectar();
+            return dgv;
+        }
+
+        public DataTable CBXContenidoD(String uid, String pwd)
+        {
+            comando.Connection = conectABMD.Conectar(uid, pwd);
+            comando.CommandText = "SELECT nombreD FROM Deporte";
             lector = comando.ExecuteReader();
             dgv.Load(lector);
             conectABMD.Desconectar();

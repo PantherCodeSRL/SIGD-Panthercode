@@ -15,14 +15,14 @@ namespace CapaDatos
         //private String server = System.Configuration.ConfigurationManager.AppSettings["Server"];
         //private String bd = System.Configuration.ConfigurationManager.AppSettings["Base_de_Datos"];
 
-        //private String server = "192.168.2.195";
-        //private String bd = "PantherCode";
-        //private String uid = "jirigoin";
-        //private String pwd = "54233708";
-        private String server = "localhost";
+        private String server = "192.168.2.195";
         private String bd = "PantherCode";
-        private String uid = "root";
-        private String pwd = "";
+        private String uid = "jirigoin";
+        private String pwd = "54233708";
+        //private String server = "localhost";
+        //private String bd = "PantherCode";
+        //private String uid = "root";
+        //private String pwd = "";
 
         private MySqlConnection conexion;
 

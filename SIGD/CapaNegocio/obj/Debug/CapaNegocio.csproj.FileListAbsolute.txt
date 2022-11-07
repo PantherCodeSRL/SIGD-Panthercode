@@ -28,3 +28,9 @@ D:\Users\alumno\Desktop\Repo\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemb
 D:\Users\alumno\Desktop\Repo\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 D:\Users\alumno\Desktop\Repo\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\Users\alumno\Desktop\Repo\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\alumno\Source\Repos\SIGD-Panthercode\SIGD\CapaNegocio\obj\Debug\CapaNegocio.pdb

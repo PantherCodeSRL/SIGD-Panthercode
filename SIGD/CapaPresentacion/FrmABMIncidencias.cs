@@ -22,6 +22,13 @@ namespace CapaPresentacion
 
         char abm;
         public String nIncidencia, descripcion, tiempo, idTipoInci, fechaRegistro, rolU;
+        CD_Conexion conectABMI = new CD_Conexion();
+
+        private void FrmABMIncidencias_Load(object sender, EventArgs e)
+        {
+            CD_Deporte negocioABMD = new CD_Deporte();
+            cbxTipoInci.DataSource = negocioABMD.CBXContenidoD(conectABMI.BDUser(rolU), "'1234'");
+        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -45,7 +52,6 @@ namespace CapaPresentacion
             try
             {
                 CD_Incidencia negocioABMI = new CD_Incidencia();
-                CD_Conexion conectABMI = new CD_Conexion();
                 switch (abm)
                 {
                     case 'A':

@@ -216,6 +216,7 @@
             this.Name = "FrmABMIncidencias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAMBJugador";
+            this.Load += new System.EventHandler(this.FrmABMIncidencias_Load);
             this.plTop.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nudTiempo)).EndInit();
