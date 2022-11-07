@@ -44,7 +44,7 @@
             this.lblFdF = new System.Windows.Forms.Label();
             this.cbxDeporte = new System.Windows.Forms.ComboBox();
             this.lblBE = new System.Windows.Forms.Label();
-            this.dgvJugadores = new System.Windows.Forms.DataGridView();
+            this.dgvEquipo = new System.Windows.Forms.DataGridView();
             this.dtpFechF = new System.Windows.Forms.DateTimePicker();
             this.btnBuscarE = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             this.tlpOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).BeginInit();
             this.plAdminEquipos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +104,9 @@
             this.btnCerrar.TabIndex = 23;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
+            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
             // 
             // btnMinimizar
             // 
@@ -270,15 +273,15 @@
             this.lblBE.TabIndex = 32;
             this.lblBE.Text = "Búsqueda de Equipos";
             // 
-            // dgvJugadores
+            // dgvEquipo
             // 
-            this.dgvJugadores.BackgroundColor = System.Drawing.Color.SlateGray;
-            this.dgvJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvJugadores.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvJugadores.Location = new System.Drawing.Point(346, 96);
-            this.dgvJugadores.Name = "dgvJugadores";
-            this.dgvJugadores.Size = new System.Drawing.Size(583, 337);
-            this.dgvJugadores.TabIndex = 38;
+            this.dgvEquipo.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEquipo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvEquipo.Location = new System.Drawing.Point(346, 96);
+            this.dgvEquipo.Name = "dgvEquipo";
+            this.dgvEquipo.Size = new System.Drawing.Size(583, 337);
+            this.dgvEquipo.TabIndex = 38;
             // 
             // dtpFechF
             // 
@@ -288,6 +291,7 @@
             this.dtpFechF.Name = "dtpFechF";
             this.dtpFechF.Size = new System.Drawing.Size(102, 22);
             this.dtpFechF.TabIndex = 40;
+            this.dtpFechF.ValueChanged += new System.EventHandler(this.dtpFechF_ValueChanged);
             // 
             // btnBuscarE
             // 
@@ -308,6 +312,7 @@
             this.btnBuscarE.TabIndex = 39;
             this.btnBuscarE.TabStop = false;
             this.btnBuscarE.UseVisualStyleBackColor = false;
+            this.btnBuscarE.Click += new System.EventHandler(this.btnBuscarE_Click);
             // 
             // btnBuscar
             // 
@@ -362,6 +367,7 @@
             this.btnCrearE.Size = new System.Drawing.Size(50, 50);
             this.btnCrearE.TabIndex = 41;
             this.btnCrearE.UseVisualStyleBackColor = false;
+            this.btnCrearE.Click += new System.EventHandler(this.btnCrearE_Click);
             // 
             // btnBorrarE
             // 
@@ -376,6 +382,7 @@
             this.btnBorrarE.Size = new System.Drawing.Size(50, 50);
             this.btnBorrarE.TabIndex = 41;
             this.btnBorrarE.UseVisualStyleBackColor = false;
+            this.btnBorrarE.Click += new System.EventHandler(this.btnBorrarE_Click);
             // 
             // btnModificarE
             // 
@@ -390,6 +397,7 @@
             this.btnModificarE.Size = new System.Drawing.Size(50, 50);
             this.btnModificarE.TabIndex = 41;
             this.btnModificarE.UseVisualStyleBackColor = false;
+            this.btnModificarE.Click += new System.EventHandler(this.btnModificarE_Click);
             // 
             // FrmEquipos
             // 
@@ -400,7 +408,7 @@
             this.Controls.Add(this.plAdminEquipos);
             this.Controls.Add(this.dtpFechF);
             this.Controls.Add(this.btnBuscarE);
-            this.Controls.Add(this.dgvJugadores);
+            this.Controls.Add(this.dgvEquipo);
             this.Controls.Add(this.lblBE);
             this.Controls.Add(this.plInferior);
             this.Controls.Add(this.cbxDeporte);
@@ -414,12 +422,13 @@
             this.Name = "FrmEquipos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEquipos";
+            this.Load += new System.EventHandler(this.FrmEquipos_Load);
             this.plSuperior.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tlpOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbJugadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).EndInit();
             this.plAdminEquipos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -442,7 +451,7 @@
         private System.Windows.Forms.Label lblFdF;
         private System.Windows.Forms.ComboBox cbxDeporte;
         private System.Windows.Forms.Label lblBE;
-        private System.Windows.Forms.DataGridView dgvJugadores;
+        private System.Windows.Forms.DataGridView dgvEquipo;
         private System.Windows.Forms.Button btnBuscarE;
         private System.Windows.Forms.DateTimePicker dtpFechF;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

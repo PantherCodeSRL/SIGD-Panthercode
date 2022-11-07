@@ -154,7 +154,7 @@ namespace CapaDatos
             {
                 comando.CommandText = "SELECT idPartido, fechaHora, idLocal, idVisitante, resultadoLocal, resultadoVisita, D.nombreD FROM Partido P " +
                     "JOIN Equipo E JOIN Pertenece R JOIN Deporte D ON P.idLocal = E.idEquipo AND P.idVisitante = E.idEquipo AND E.idEquipo = R.idEquipo AND R.idDeporte = D.idDeporte " +
-                    "WHERE D.idDeporte = '" + deporte + "' AND D.idDeporte = R.idDeporte AND fechaHora < now()";
+                    "WHERE D.idDeporte = '" + deporte + "' AND D.idDeporte = R.idDeporte AND fechaHora < '2030-12-12 01:01:01'";
                 lector = comando.ExecuteReader();
             }
             else
@@ -286,19 +286,19 @@ namespace CapaDatos
         public DataTable DGVContenidoI(String uid, String pwd)
         {
             comando.Connection = conectABMI.Conectar(uid, pwd);
-            comando.CommandText = "SELECT nIncidencia, descripcion, tiempo, idTipoInci, fechaRegistro FROM Incidencia";
+            comando.CommandText = "SELECT nIncidencia, nombreEq, tiempo, idTipoInci, fechaRegistro FROM Incidencia";
             lector = comando.ExecuteReader();
             dgv.Load(lector);
             conectABMI.Desconectar();
             return dgv;
         }
 
-        public void AgregarI(String uid, String pwd, String descripcion, String tiempo, String idTipoInci, String fechaRegistro)
+        public void AgregarI(String uid, String pwd, String nombreEq, String tiempo, String idTipoInci, String fechaRegistro)
         {
             comando.Connection = conectABMI.Conectar(uid, pwd); ;
-            comando.CommandText = "INSERT INTO Incidencia (descripcion,tiempo,idTipoInci,fechaRegistro) " +
-                "VALUES(@descripcion,@tiempo,@idTipoInci,@fechaRegistro)";
-            comando.Parameters.AddWithValue("@descripcion", descripcion);
+            comando.CommandText = "INSERT INTO Incidencia (nombreEq,tiempo,idTipoInci,fechaRegistro) " +
+                "VALUES(@nombreEq,@tiempo,@idTipoInci,@fechaRegistro)";
+            comando.Parameters.AddWithValue("@nombreEq", nombreEq);
             comando.Parameters.AddWithValue("@tiempo", tiempo);
             comando.Parameters.AddWithValue("@idTipoInci", idTipoInci);
             comando.Parameters.AddWithValue("@fechaRegistro", fechaRegistro);
@@ -381,6 +381,71 @@ namespace CapaDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conectABMTi.Desconectar();
+        }
+    }
+
+    public class CD_Equipo
+    {
+        private CD_Conexion conectABME = new CD_Conexion();
+        DataTable dgv = new DataTable();
+        MySqlDataReader lector;
+        MySqlCommand comando = new MySqlCommand();
+
+        //Agregar al Diagrama de Clases
+        public DataTable DGVContenidoE(String uid, String pwd, String filtro)
+        {
+            if (filtro.Equals(""))
+            { 
+                comando.Connection = conectABME.Conectar(uid, pwd);
+                comando.CommandText = "SELECT E.idEquipo, E.nombreEq, E.fechaFundacion, D.nombreD FROM Equipo E "
+                    + "JOIN Pertenece P JOIN Deporte D ON E.idEquipo = P.idEquipo AND P.idDeporte = D.idDeporte ";
+                lector = comando.ExecuteReader();
+            }
+            else
+            {
+                comando.Connection = conectABME.Conectar(uid, pwd);
+                comando.CommandText = "SELECT E.idEquipo, E.nombreEq, E.fechaFundacion, D.nombreD FROM Equipo E " +
+                    "JOIN Pertenece P JOIN Deporte D ON E.idEquipo = P.idEquipo AND P.idDeporte = D.idDeporte " +
+                    "WHERE " + filtro;
+                lector = comando.ExecuteReader();
+            }
+            dgv.Load(lector);
+            conectABME.Desconectar();
+            return dgv;
+        }
+
+        public void AgregarE(String uid, String pwd, String nombreEq, String fechaFundacion)
+        {
+            comando.Connection = conectABME.Conectar(uid, pwd); ;
+            comando.CommandText = "INSERT INTO Equipo (nombreEq,fechaFundacion,idTipoInci,fechaRegistro) " +
+                "VALUES(@nombreEq,@fechaFundacion)";
+            comando.Parameters.AddWithValue("@nombreEq", nombreEq);
+            comando.Parameters.AddWithValue("@fechaFundacion", fechaFundacion);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conectABME.Desconectar();
+        }
+
+        public void ModificarE(String uid, String pwd, String idEquipo, String nombreEq, String fechaFundacion)
+        {
+            comando.Connection = conectABME.Conectar(uid, pwd);
+            comando.CommandText = "UPDATE Equipo SET nombreEq = @nombreEq,fechaFundacion = @fechaFundacion" +
+                "WHERE idEquipo = @idEquipo";
+            comando.Parameters.AddWithValue("@nombreEq", nombreEq);
+            comando.Parameters.AddWithValue("@fechaFundacion", fechaFundacion);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conectABME.Desconectar();
+        }
+
+        public void BajarE(String uid, String pwd, String idEquipo)
+        {
+            comando.Connection = conectABME.Conectar(uid, pwd);
+            comando.CommandText = "DELETE FROM Equipo WHERE idEquipo = @idEquipo";
+            comando.Parameters.AddWithValue("@idEquipo", idEquipo);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conectABME.Desconectar();
         }
     }
 }
